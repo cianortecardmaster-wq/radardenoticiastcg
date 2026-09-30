@@ -12,6 +12,7 @@ from pathlib import Path
 from urllib.parse import urlencode, urlparse
 
 import feedparser
+import requests
 import yaml
 from bs4 import BeautifulSoup
 
@@ -186,6 +187,12 @@ def collect_feed(game: dict, locale: dict, query: str, official_domains: dict) -
 
 
 CONTENT_RULES = {
+    "art": ["fan art", "fanart", "artwork", "illustration", "alter", "altered", "painted", "painting", "artist", "playmat", "sleeves", "token art", "cosplay", "arte", "ilustração", "ilustracao", "pintura"],
+    "meme": ["meme", "memes", "humor", "funny", "joke", "shitpost", "circlejerk", "comedy", "engraçado", "engracado", "piada"],
+    "play": ["gameplay", "game play", "play of the", "crazy play", "misplay", "lethal", "damage", "match video", "game review", "how would you play", "jogada", "partida", "turno"],
+    "discussion": ["discussion", "question", "thoughts", "what do you think", "hot take", "debate", "opinion", "opinião", "opiniao", "discussão", "discussao", "pergunta"],
+    "video": ["video", "clip", "shorts", "youtube", "twitch", "stream", "livestream", "reel", "vídeo", "clipe", "live"],
+    "community": ["community", "armory", "local game store", "lgs", "meetup", "fan friday", "content creator", "creator spotlight", "community corner", "comunidade", "evento local", "criador"],
     "lore": ["lore", "story", "stories", "narrative", "worldbuilding", "rathe", "história", "historia", "histoire", "récit", "物語", "ストーリー", "世界観", "剧情", "故事", "世界观"],
     "deck": ["deck", "decklist", "deck tech", "deckbuilding", "build", "archetype", "baralho", "lista", "mazo", "baraja", "デッキ", "デッキリスト", "卡组", "牌组"],
     "combo": ["combo", "combos", "synergy", "synergies", "interaction", "loop", "sinergia", "sinergias", "combinação", "combinación", "synergie", "コンボ", "シナジー", "连招", "组合"],
@@ -200,7 +207,7 @@ CONTENT_RULES = {
     "news": ["news", "announcement", "announced", "release", "released", "revealed", "update", "ban", "banned", "restricted", "launch", "product", "set", "new ", "notícia", "anúncio", "lançamento", "revelado", "atualização", "banido", "noticia", "anuncio", "lanzamiento", "nouveau", "annonce", "sortie", "ニュース", "発表", "発売", "新弾", "新闻", "公布", "发布", "新品"],
 }
 
-TYPE_PRIORITY = ["rumor", "speculation", "lore", "combo", "deck", "rules", "meta", "design", "curiosity", "market", "industry", "news"]
+TYPE_PRIORITY = ["meme", "art", "play", "video", "discussion", "community", "rumor", "speculation", "lore", "combo", "deck", "rules", "meta", "design", "curiosity", "market", "industry", "news"]
 CORE_GAME_IDS = {"flesh-and-blood", "pokemon", "magic"}
 
 
@@ -209,6 +216,8 @@ def classify_content(item: dict) -> list[str]:
         str(item.get("title", "")),
         str(item.get("excerpt", "")),
         str(item.get("source", "")),
+        str(item.get("reddit_flair", "")),
+        str(item.get("media_kind", "")),
     ]))
     types = []
     for hint in item.get("default_content_types", []) or []:
@@ -303,6 +312,183 @@ def collect_independent_search(source: dict, locales: list[dict], games: list[di
         }
         out.append(item)
     return out
+
+
+def _reddit_preview(data: dict) -> str:
+    preview = data.get("preview") or {}
+    images = preview.get("images") or []
+    if images:
+        src = ((images[0] or {}).get("source") or {}).get("url") or ""
+        if src:
+            return html.unescape(src)
+    thumb = data.get("thumbnail") or ""
+    if isinstance(thumb, str) and thumb.startswith(("http://", "https://")):
+        return html.unescape(thumb)
+    return ""
+
+
+def _reddit_hints(data: dict, source: dict) -> list[str]:
+    hints = list(source.get("default_content_types", []) or [])
+    flair = normalize_title(data.get("link_flair_text") or "")
+    title = normalize_title(data.get("title") or "")
+    domain = (data.get("domain") or "").lower()
+    post_hint = (data.get("post_hint") or "").lower()
+    text = f"{flair} {title}"
+
+    def add(kind: str):
+        if kind not in hints:
+            hints.append(kind)
+
+    if "meme" in text or "humor" in text or "shitpost" in text or "circlejerk" in source.get("subreddit", "").lower():
+        add("meme")
+    if any(k in text for k in ["fan art", "fanart", "alter", "artwork", "art project", "painted", "painting", "playmat", "cosplay"]):
+        add("art")
+    if any(k in text for k in ["discussion", "question", "thoughts", "what do you think", "hot take"]):
+        add("discussion")
+    if any(k in text for k in ["gameplay", "how would you play", "crazy play", "misplay", "lethal", "damage", "match"]):
+        add("play")
+    if post_hint in {"hosted:video", "rich:video"} or data.get("is_video") or domain in {"youtube.com", "youtu.be", "twitch.tv", "clips.twitch.tv"}:
+        add("video")
+    return hints
+
+
+def collect_reddit_source(source: dict) -> list[dict]:
+    subreddit = source["subreddit"]
+    max_items = int(source.get("max_items", 60))
+    sorts = source.get("sorts", ["new", "top"])
+    time_filter = source.get("time_filter", "week")
+    cutoff = datetime.now(timezone.utc) - timedelta(days=RETENTION_DAYS)
+    future_limit = datetime.now(timezone.utc) + timedelta(hours=FUTURE_TOLERANCE_HOURS)
+    headers = {"User-Agent": "CCMaster-TCGRadar/1.0 (+https://github.com/)"}
+    by_post = {}
+
+    def add_json_post(data: dict):
+        post_id = data.get("id")
+        title = normalize_space(data.get("title") or "")
+        if not post_id or not title or data.get("over_18"):
+            return
+        try:
+            dt = datetime.fromtimestamp(float(data.get("created_utc")), tz=timezone.utc)
+        except Exception:
+            return
+        if not (cutoff <= dt <= future_limit):
+            return
+
+        permalink = data.get("permalink") or ""
+        reddit_url = f"https://www.reddit.com{permalink}" if permalink.startswith("/") else permalink
+        outbound = data.get("url_overridden_by_dest") or data.get("url") or reddit_url
+        excerpt = normalize_space(data.get("selftext") or "")[:700]
+        flair = normalize_space(data.get("link_flair_text") or "")
+        score = int(data.get("score") or 0)
+        comments = int(data.get("num_comments") or 0)
+        hints = _reddit_hints(data, source)
+        preview = _reddit_preview(data)
+        media_kind = "video" if "video" in hints else ("image" if preview else "post")
+        published_at = dt.isoformat()
+        item = {
+            "id": make_id(source["game_id"], source.get("language", "en"), title, source["name"], published_at),
+            "game_id": source["game_id"],
+            "game": source["game"],
+            "language": source.get("language", "en"),
+            "locale": source.get("locale", "en-US"),
+            "region": source.get("region", "global"),
+            "title": title,
+            "excerpt": excerpt,
+            "url": reddit_url or outbound,
+            "outbound_url": outbound,
+            "source": source["name"],
+            "source_home": f"https://www.reddit.com/r/{subreddit}/",
+            "source_domain": "reddit.com",
+            "official": False,
+            "published_at": published_at,
+            "discovered_at": now_iso(),
+            "status": "pending",
+            "collector": "reddit-json",
+            "trust": source.get("trust", "community"),
+            "confidence": "high",
+            "date_verified": True,
+            "retention_days": RETENTION_DAYS,
+            "default_content_types": hints,
+            "reddit_flair": flair,
+            "author": data.get("author") or "",
+            "score": score,
+            "num_comments": comments,
+            "engagement_score": score + comments * 2,
+            "image_url": preview,
+            "media_kind": media_kind,
+        }
+        old = by_post.get(post_id)
+        if not old or item["engagement_score"] >= old.get("engagement_score", 0):
+            by_post[post_id] = item
+
+    def add_rss_entry(entry):
+        title = strip_html(getattr(entry, "title", ""))
+        published_at = parse_entry_date(entry)
+        link = normalize_space(getattr(entry, "link", ""))
+        if not title or not published_at or not link:
+            return
+        dt = datetime.fromisoformat(published_at.replace("Z", "+00:00"))
+        if not (cutoff <= dt <= future_limit):
+            return
+        summary_html = getattr(entry, "summary", "") or getattr(entry, "description", "") or ""
+        excerpt = strip_html(summary_html)[:700]
+        soup = BeautifulSoup(summary_html, "html.parser")
+        img = soup.find("img")
+        image_url = html.unescape(img.get("src", "")) if img and img.get("src") else ""
+        entry_id = normalize_space(getattr(entry, "id", "")) or link
+        hints = list(source.get("default_content_types", []) or [])
+        text = normalize_title(f"{title} {excerpt}")
+        if "meme" in text or "circlejerk" in subreddit.lower():
+            hints.append("meme") if "meme" not in hints else None
+        if any(k in text for k in ["fan art", "fanart", "alter", "artwork", "painted", "playmat", "cosplay"]):
+            hints.append("art") if "art" not in hints else None
+        if any(k in text for k in ["gameplay", "how would you play", "misplay", "lethal", "damage"]):
+            hints.append("play") if "play" not in hints else None
+        if any(k in text for k in ["discussion", "question", "thoughts", "hot take"]):
+            hints.append("discussion") if "discussion" not in hints else None
+        if any(k in text for k in ["youtube", "twitch", "video", "clip", "stream"]):
+            hints.append("video") if "video" not in hints else None
+        item = {
+            "id": make_id(source["game_id"], source.get("language", "en"), title, source["name"], published_at),
+            "game_id": source["game_id"], "game": source["game"],
+            "language": source.get("language", "en"), "locale": source.get("locale", "en-US"),
+            "region": source.get("region", "global"), "title": title, "excerpt": excerpt,
+            "url": link, "source": source["name"], "source_home": f"https://www.reddit.com/r/{subreddit}/",
+            "source_domain": "reddit.com", "official": False, "published_at": published_at,
+            "discovered_at": now_iso(), "status": "pending", "collector": "reddit-rss",
+            "trust": source.get("trust", "community"), "confidence": "medium", "date_verified": True,
+            "retention_days": RETENTION_DAYS, "default_content_types": hints,
+            "image_url": image_url, "media_kind": "image" if image_url else "post",
+            "score": 0, "num_comments": 0, "engagement_score": 0,
+        }
+        by_post.setdefault(entry_id, item)
+
+    for sort in sorts:
+        params = {"limit": min(max_items, 100), "raw_json": 1}
+        if sort == "top":
+            params["t"] = time_filter
+        json_url = f"https://www.reddit.com/r/{subreddit}/{sort}.json"
+        try:
+            response = requests.get(json_url, params=params, headers=headers, timeout=20)
+            response.raise_for_status()
+            listing = response.json().get("data", {}).get("children", [])
+            for child in listing:
+                add_json_post(child.get("data") or {})
+        except Exception as json_exc:
+            rss_url = f"https://www.reddit.com/r/{subreddit}/{sort}/.rss"
+            rss_params = {"t": time_filter} if sort == "top" else {}
+            try:
+                response = requests.get(rss_url, params=rss_params, headers=headers, timeout=20)
+                response.raise_for_status()
+                parsed = feedparser.parse(response.content)
+                for entry in parsed.entries[:max_items]:
+                    add_rss_entry(entry)
+                print(f"[WARN] Reddit JSON falhou; RSS usado em r/{subreddit}/{sort}: {json_exc}", file=sys.stderr)
+            except Exception as rss_exc:
+                print(f"[WARN] Reddit falhou em r/{subreddit}/{sort}: JSON={json_exc}; RSS={rss_exc}", file=sys.stderr)
+        time.sleep(REQUEST_PAUSE_SECONDS)
+
+    return list(by_post.values())
 
 def merge_items(existing_items: list[dict], new_items: list[dict]) -> list[dict]:
     by_id = {item.get("id"): item for item in existing_items if item.get("id")}
@@ -449,6 +635,7 @@ def main():
     independent_errors = []
     page_sources = [s for s in independent_cfg.get("sources", []) if s.get("mode") == "page"]
     search_sources = [s for s in independent_cfg.get("sources", []) if s.get("mode") == "search"]
+    reddit_sources = [s for s in independent_cfg.get("sources", []) if s.get("mode") == "reddit"]
 
     if page_sources:
         page_items, page_errors = collect_official_sources(page_sources, summary_cache=summary_cache)
@@ -464,6 +651,21 @@ def main():
                 "source_id": source.get("id"),
                 "source": source.get("name"),
                 "url": source.get("domain") or source.get("url"),
+                "error": str(exc)[:400],
+            })
+
+    reddit_items = []
+    for source in reddit_sources:
+        print(f"[REDDIT] {source['name']}")
+        try:
+            found = collect_reddit_source(source)
+            reddit_items.extend(found)
+            independent_items.extend(found)
+        except Exception as exc:
+            independent_errors.append({
+                "source_id": source.get("id"),
+                "source": source.get("name"),
+                "url": f"https://www.reddit.com/r/{source.get('subreddit', '')}/",
                 "error": str(exc)[:400],
             })
 
@@ -496,6 +698,7 @@ def main():
             "google_news_items": len(collected),
             "official_source_errors": len(direct_errors),
             "independent_items": len(independent_items),
+            "reddit_items": len(reddit_items),
             "independent_source_errors": len(independent_errors),
         },
         "items": items,

@@ -9,8 +9,8 @@ sources:
   trust: media
   games:
   - '*'
-  query: 'site:tcgplayer.com/content (TCG OR "trading card game" OR "Flesh and Blood" OR "Magic: The Gathering" OR "Pokemon
-    TCG" OR Lorcana OR Riftbound OR "One Piece Card Game")'
+  query: 'site:tcgplayer.com/content (TCG OR "trading card game" OR "Flesh and Blood" OR "Magic: The Gathering" OR "Pokemon TCG" OR Lorcana OR
+    Riftbound OR "One Piece Card Game")'
   max_items: 25
 - id: card-gamer
   mode: search
@@ -701,3 +701,221 @@ sources:
   query: site:rathetimes.com "Flesh and Blood"
   max_items: 25
   retention_days: 7
+- id: edhrec-articles
+  mode: page
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: EDHREC Articles
+  url: https://edhrec.com/articles
+  language: en
+  region: global
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /articles/
+  max_items: 45
+  detail_fetch_limit: 25
+  retention_days: 7
+  default_content_types:
+  - community
+- id: commanders-herald
+  mode: search
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Commander's Herald
+  domain: commandersherald.com
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - magic
+  query: site:commandersherald.com (Magic OR MTG OR Commander)
+  max_items: 35
+  retention_days: 7
+- id: hipsters-of-the-coast
+  mode: search
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Hipsters of the Coast
+  domain: hipstersofthecoast.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - magic
+  query: site:hipstersofthecoast.com (Magic OR MTG)
+  max_items: 30
+  retention_days: 7
+- id: draftsim-magic
+  mode: search
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Draftsim
+  domain: draftsim.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - magic
+  query: site:draftsim.com (Magic OR MTG)
+  max_items: 30
+  retention_days: 7
+- id: reddit-fab-community
+  mode: reddit
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Reddit — r/FleshandBloodTCG
+  subreddit: FleshandBloodTCG
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 70
+  retention_days: 7
+  default_content_types:
+  - community
+- id: reddit-magic-community
+  mode: reddit
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Reddit — r/magicTCG
+  subreddit: magicTCG
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 70
+  retention_days: 7
+  default_content_types:
+  - community
+- id: reddit-mtg-community
+  mode: reddit
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Reddit — r/mtg
+  subreddit: mtg
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 60
+  retention_days: 7
+  default_content_types:
+  - community
+- id: reddit-edh
+  mode: reddit
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Reddit — r/EDH
+  subreddit: EDH
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 70
+  retention_days: 7
+  default_content_types:
+  - discussion
+  - community
+- id: reddit-mtgmemes
+  mode: reddit
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Reddit — r/MTGmemes
+  subreddit: MTGmemes
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 60
+  retention_days: 7
+  default_content_types:
+  - meme
+- id: reddit-magic-circlejerk
+  mode: reddit
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Reddit — r/magicthecirclejerking
+  subreddit: magicthecirclejerking
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 60
+  retention_days: 7
+  default_content_types:
+  - meme
+- id: reddit-edh-circlejerk
+  mode: reddit
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Reddit — r/edhcirclejerk
+  subreddit: edhcirclejerk
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 50
+  retention_days: 7
+  default_content_types:
+  - meme
+- id: reddit-mtg-altered
+  mode: reddit
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Reddit — r/mtgaltered
+  subreddit: mtgaltered
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 60
+  retention_days: 7
+  default_content_types:
+  - art
+- id: reddit-custom-magic
+  mode: reddit
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Reddit — r/custommagic
+  subreddit: custommagic
+  language: en
+  region: global
+  trust: community
+  sorts:
+  - new
+  - top
+  time_filter: week
+  max_items: 60
+  retention_days: 7
+  default_content_types:
+  - art
+  - design
+  - community

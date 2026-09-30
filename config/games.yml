@@ -6,15 +6,17 @@ games:
   - Flesh and Blood
   - FABTCG
   group: principal
-  content_query: '"Flesh and Blood" (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy OR rumor
-    OR leak OR speculation OR theory OR rules OR ruling OR puzzle OR design)'
+  content_query: '"Flesh and Blood" (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy OR rumor OR leak OR speculation
+    OR theory OR rules OR ruling OR puzzle OR design OR meme OR funny OR "fan art" OR fanart OR alter OR gameplay OR clip OR video OR community
+    OR discussion OR "content creator" OR cosplay OR playmat OR token)'
   content_query_overrides:
-    pt: '"Flesh and Blood" (lore OR história OR baralho OR deck OR combo OR sinergia OR guia OR estratégia OR rumor OR vazamento
-      OR especulação OR regras OR curiosidade)'
-    es: '"Flesh and Blood" (lore OR historia OR mazo OR deck OR combo OR sinergia OR guía OR estrategia OR rumor OR filtración
-      OR especulación OR reglas OR curiosidad)'
-    fr: '"Flesh and Blood" (lore OR histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR spéculation
-      OR règles OR curiosité)'
+    pt: '"Flesh and Blood" (lore OR história OR baralho OR deck OR combo OR sinergia OR guia OR estratégia OR rumor OR vazamento OR especulação
+      OR regras OR curiosidade OR meme OR engraçado OR "fan art" OR arte OR alter OR gameplay OR jogada OR vídeo OR comunidade OR discussão OR
+      cosplay OR playmat OR token)'
+    es: '"Flesh and Blood" (lore OR historia OR mazo OR deck OR combo OR sinergia OR guía OR estrategia OR rumor OR filtración OR especulación
+      OR reglas OR curiosidad)'
+    fr: '"Flesh and Blood" (lore OR histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR spéculation OR règles OR
+      curiosité)'
     ja: '"Flesh and Blood" (ロア OR ストーリー OR デッキ OR コンボ OR シナジー OR 攻略 OR 考察 OR 噂 OR リーク OR ルール)'
     zh: '"Flesh and Blood" (剧情 OR 故事 OR 卡组 OR 牌组 OR 连招 OR 组合 OR 攻略 OR 推测 OR 传闻 OR 泄露 OR 规则)'
 - id: magic
@@ -29,15 +31,17 @@ games:
   - 万智牌
   - マジック：ザ・ギャザリング
   group: principal
-  content_query: '"Magic: The Gathering" (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy OR
-    rumor OR leak OR speculation OR theory OR rules OR design OR trivia)'
+  content_query: '("Magic: The Gathering" OR MTG) (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy OR rumor OR leak
+    OR speculation OR theory OR rules OR design OR trivia OR meme OR funny OR "fan art" OR fanart OR alter OR gameplay OR clip OR video OR community
+    OR discussion OR "content creator" OR cosplay OR playmat OR token)'
   content_query_overrides:
-    pt: '"Magic: The Gathering" (lore OR história OR deck OR baralho OR combo OR sinergia OR guia OR estratégia OR rumor OR
-      vazamento OR especulação OR regras OR design OR curiosidade)'
-    es: '"Magic: The Gathering" (lore OR historia OR deck OR mazo OR combo OR sinergia OR guía OR estrategia OR rumor OR filtración
-      OR especulación OR reglas OR diseño OR curiosidad)'
-    fr: '"Magic: The Gathering" (lore OR histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR
-      spéculation OR règles OR design OR curiosité)'
+    pt: '("Magic: The Gathering" OR MTG) (lore OR história OR deck OR baralho OR combo OR sinergia OR guia OR estratégia OR rumor OR vazamento
+      OR especulação OR regras OR design OR curiosidade OR meme OR engraçado OR "fan art" OR arte OR alter OR gameplay OR jogada OR vídeo OR comunidade
+      OR discussão OR cosplay OR playmat OR token)'
+    es: '"Magic: The Gathering" (lore OR historia OR deck OR mazo OR combo OR sinergia OR guía OR estrategia OR rumor OR filtración OR especulación
+      OR reglas OR diseño OR curiosidad)'
+    fr: '"Magic: The Gathering" (lore OR histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR spéculation OR règles
+      OR design OR curiosité)'
     ja: '"マジック：ザ・ギャザリング" (ストーリー OR デッキ OR コンボ OR シナジー OR 攻略 OR 考察 OR 噂 OR リーク OR ルール OR デザイン)'
     zh: '"万智牌" (剧情 OR 故事 OR 卡组 OR 连招 OR 组合 OR 攻略 OR 推测 OR 传闻 OR 泄露 OR 规则 OR 设计)'
 - id: pokemon
@@ -53,15 +57,15 @@ games:
   - ポケモンカードゲーム
   - 宝可梦集换式卡牌游戏
   group: principal
-  content_query: ("Pokémon TCG" OR "Pokemon TCG") (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy
-    OR rumor OR leak OR speculation OR theory OR rules OR trivia)
+  content_query: ("Pokémon TCG" OR "Pokemon TCG") (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy OR rumor OR leak
+    OR speculation OR theory OR rules OR trivia)
   content_query_overrides:
-    pt: ("Pokémon TCG" OR "Pokemon TCG") (história OR deck OR baralho OR combo OR sinergia OR guia OR estratégia OR rumor
-      OR vazamento OR especulação OR regras OR curiosidade)
-    es: ("Pokémon TCG" OR "Pokemon TCG") (historia OR deck OR mazo OR combo OR sinergia OR guía OR estrategia OR rumor OR
-      filtración OR especulación OR reglas OR curiosidad)
-    fr: ("Pokémon TCG" OR "Pokemon TCG") (histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR
-      spéculation OR règles OR curiosité)
+    pt: ("Pokémon TCG" OR "Pokemon TCG") (história OR deck OR baralho OR combo OR sinergia OR guia OR estratégia OR rumor OR vazamento OR especulação
+      OR regras OR curiosidade)
+    es: ("Pokémon TCG" OR "Pokemon TCG") (historia OR deck OR mazo OR combo OR sinergia OR guía OR estrategia OR rumor OR filtración OR especulación
+      OR reglas OR curiosidad)
+    fr: ("Pokémon TCG" OR "Pokemon TCG") (histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR spéculation OR règles
+      OR curiosité)
     ja: ("ポケモンカードゲーム" OR "ポケカ") (デッキ OR コンボ OR シナジー OR 攻略 OR 考察 OR 噂 OR リーク OR ルール OR 豆知識)
     zh: ("宝可梦集换式卡牌游戏" OR "宝可梦卡牌") (卡组 OR 牌组 OR 连招 OR 组合 OR 攻略 OR 推测 OR 传闻 OR 泄露 OR 规则 OR 冷知识)
 - id: sorcery

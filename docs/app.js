@@ -4,6 +4,7 @@ const DISPLAY_DAYS = 7;
 const CORE_GAMES = new Set(["flesh-and-blood", "pokemon", "magic"]);
 
 const TYPE_LABELS = {
+  art: "ARTE", meme: "MEME", play: "JOGADA", discussion: "DISCUSSÃO", video: "VÍDEO", community: "COMUNIDADE",
   news: "NOTÍCIA", lore: "LORE", deck: "DECK", combo: "COMBO", meta: "META",
   rules: "REGRAS", rumor: "RUMOR", speculation: "ESPECULAÇÃO", curiosity: "CURIOSIDADE",
   design: "DESIGN", market: "MERCADO", industry: "INDÚSTRIA",
@@ -24,13 +25,13 @@ const els = {
   list: document.querySelector("#newsList"), template: document.querySelector("#itemTemplate"),
   search: document.querySelector("#searchInput"), contentType: document.querySelector("#contentTypeFilter"),
   language: document.querySelector("#languageFilter"), trust: document.querySelector("#trustFilter"),
-  state: document.querySelector("#stateFilter"), stats: document.querySelector("#stats"),
+  sort: document.querySelector("#sortFilter"), state: document.querySelector("#stateFilter"), stats: document.querySelector("#stats"),
   generated: document.querySelector("#generatedAt"), visible: document.querySelector("#visibleCount"),
   export: document.querySelector("#exportButton"), more: document.querySelector("#showMoreButton"),
   allGamePills: document.querySelector("#allGamePills"), newsView: document.querySelector("#newsView"),
   mediaView: document.querySelector("#mediaView"), mediaList: document.querySelector("#mediaList"),
-  mediaSearch: document.querySelector("#mediaSearchInput"), mediaPlatform: document.querySelector("#mediaPlatformFilter"),
-  mediaLanguage: document.querySelector("#mediaLanguageFilter"), mediaCount: document.querySelector("#mediaCount"),
+  mediaSearch: document.querySelector("#mediaSearchInput"), mediaGame: document.querySelector("#mediaGameFilter"),
+  mediaPlatform: document.querySelector("#mediaPlatformFilter"), mediaLanguage: document.querySelector("#mediaLanguageFilter"), mediaCount: document.querySelector("#mediaCount"),
 };
 
 function loadCuration() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; } }
@@ -74,6 +75,12 @@ function contentTypesFor(item) {
   if (Array.isArray(item.content_types) && item.content_types.length) return item.content_types;
   const text = normalize(`${item.title || ""} ${item.excerpt || ""}`);
   const rules = {
+    art:["fan art","fanart","artwork","illustration","alter","painted","painting","playmat","cosplay","arte","ilustração"],
+    meme:["meme","humor","funny","joke","shitpost","circlejerk","comedy","piada","engraçado"],
+    play:["gameplay","crazy play","misplay","lethal","damage","how would you play","jogada","partida"],
+    discussion:["discussion","question","thoughts","what do you think","hot take","opinion","opinião","discussão"],
+    video:["video","clip","youtube","twitch","stream","shorts","reel","vídeo","clipe"],
+    community:["community","armory","local game store","lgs","meetup","fan friday","content creator","creator spotlight","comunidade"],
     lore:["lore","story","história","historia","世界観","剧情"], deck:["deck","decklist","baralho","mazo","デッキ","卡组"],
     combo:["combo","synergy","sinergia","コンボ","连招"], meta:["meta","tier list","tournament","competitive","matchup","torneio","大会"],
     rules:["rules","ruling","judge","regra","regras","ルール","规则"], rumor:["rumor","leak","vazamento","rumeur","リーク","泄露"],
@@ -89,8 +96,8 @@ function recentItems() { return payload.items.filter(item => isWithinWindow(item
 
 function filteredItems() {
   const q = normalize(els.search.value.trim()); const language = els.language.value;
-  const state = els.state.value; const type = els.contentType.value; const trust = els.trust.value;
-  return recentItems().filter(item => {
+  const state = els.state.value; const type = els.contentType.value; const trust = els.trust.value; const sort = els.sort.value;
+  const filtered = recentItems().filter(item => {
     const itemState = stateOf(item.id);
     if (gameMode.game && item.game_id !== gameMode.game) return false;
     if (!gameMode.game && gameMode.scope === "core" && !CORE_GAMES.has(item.game_id)) return false;
@@ -103,7 +110,11 @@ function filteredItems() {
       if (!haystack.includes(q)) return false;
     }
     return true;
-  }).sort((a,b) => (Date.parse(b.published_at || "") || 0) - (Date.parse(a.published_at || "") || 0));
+  });
+  if (sort === "circulating") {
+    return filtered.sort((a,b) => ((b.engagement_score || 0) - (a.engagement_score || 0)) || ((Date.parse(b.published_at || "") || 0) - (Date.parse(a.published_at || "") || 0)));
+  }
+  return filtered.sort((a,b) => (Date.parse(b.published_at || "") || 0) - (Date.parse(a.published_at || "") || 0));
 }
 
 function badge(text, className="") { const span=document.createElement("span"); span.className=`badge ${className}`.trim(); span.textContent=text; return span; }
@@ -112,13 +123,13 @@ function renderStats() {
   const base = recentItems();
   const visibleBase = base.filter(x => !gameMode.game ? (gameMode.scope !== "core" || CORE_GAMES.has(x.game_id)) : x.game_id === gameMode.game);
   const interesting = base.filter(x => stateOf(x.id)==="interesting").length;
-  const official = visibleBase.filter(x => x.official).length;
-  const loreStrategy = visibleBase.filter(x => contentTypesFor(x).some(t => ["lore","deck","combo","speculation","curiosity"].includes(t))).length;
+  const social = visibleBase.filter(x => contentTypesFor(x).some(t => ["art","meme","play","discussion","video","community"].includes(t))).length;
+  const ideaContent = visibleBase.filter(x => contentTypesFor(x).some(t => ["art","meme","play","discussion","video","community","lore","curiosity"].includes(t))).length;
   els.stats.innerHTML = `
     <div class="stat"><strong>${visibleBase.length}</strong><span>conteúdos dos últimos 7 dias</span></div>
-    <div class="stat"><strong>${official}</strong><span>fontes oficiais</span></div>
-    <div class="stat"><strong>${loreStrategy}</strong><span>lore, decks, combos e ideias</span></div>
-    <div class="stat"><strong>${interesting}</strong><span>marcados como interessantes</span></div>`;
+    <div class="stat"><strong>${social}</strong><span>arte, memes, jogadas e comunidade</span></div>
+    <div class="stat"><strong>${ideaContent}</strong><span>itens úteis para curadoria</span></div>
+    <div class="stat"><strong>${interesting}</strong><span>salvos para usar depois</span></div>`;
 }
 
 function render() {
@@ -129,6 +140,7 @@ function render() {
   const fragment=document.createDocumentFragment();
   for (const item of items) {
     const node=els.template.content.cloneNode(true); const article=node.querySelector(".news-item");
+    const preview=node.querySelector(".preview-link"), previewImage=node.querySelector(".preview-image");
     const badges=node.querySelector(".badges"), time=node.querySelector("time"), title=node.querySelector(".title-link"), summary=node.querySelector(".summary");
     const source=node.querySelector(".source"), origin=node.querySelector(".origin"), open=node.querySelector(".link");
     const interesting=node.querySelector(".interesting"), ignore=node.querySelector(".ignore"); const current=stateOf(item.id); article.dataset.state=current;
@@ -138,8 +150,11 @@ function render() {
     badges.appendChild(badge((item.language || "?").toUpperCase()));
     time.textContent=fmtDate(item.published_at); time.dateTime=item.published_at || "";
     title.textContent=compact(item.title); title.href=item.url; summary.textContent=cleanSummary(item);
+    if (item.image_url) { preview.hidden=false; preview.href=item.url; previewImage.src=item.image_url; previewImage.alt=`Prévia de ${compact(item.title)}`; article.classList.add("has-preview"); }
     source.textContent=`Fonte: ${item.source || "não identificada"}`;
-    const details=[item.region,item.collector === "official-page" ? "coleta oficial" : item.collector === "independent-page" ? "portal direto" : item.collector === "independent-search" ? "busca por fonte" : "agregador"].filter(Boolean).join(" · ");
+    const engagement = ["reddit-json","reddit-rss"].includes(item.collector) && ((item.score || 0) || (item.num_comments || 0)) ? [`↑ ${item.score || 0}`, `${item.num_comments || 0} comentários`] : [];
+    const collectorLabel=item.collector === "official-page" ? "coleta oficial" : item.collector === "independent-page" ? "portal direto" : item.collector === "independent-search" ? "busca por fonte" : ["reddit-json","reddit-rss"].includes(item.collector) ? "comunidade / Reddit" : "agregador";
+    const details=[...engagement,item.reddit_flair,item.region,collectorLabel].filter(Boolean).join(" · ");
     origin.textContent=details ? ` · ${details}` : ""; open.href=item.url;
     interesting.classList.toggle("active",current==="interesting"); ignore.classList.toggle("active",current==="ignored");
     interesting.addEventListener("click",()=>setState(item.id,current==="interesting"?"pending":"interesting"));
@@ -166,8 +181,9 @@ function exportInteresting() {
 }
 
 function mediaFiltered() {
-  const q=normalize(els.mediaSearch.value.trim()); const platform=els.mediaPlatform.value; const language=els.mediaLanguage.value;
+  const q=normalize(els.mediaSearch.value.trim()); const game=els.mediaGame.value; const platform=els.mediaPlatform.value; const language=els.mediaLanguage.value;
   return (mediaPayload.sources || []).filter(item => {
+    if (game && item.game_id !== game) return false;
     if (platform && item.platform !== platform) return false;
     if (language && item.language !== language) return false;
     if (q) {
@@ -189,8 +205,9 @@ function renderMedia() {
     const platform=document.createElement("span"); platform.className="media-platform"; platform.textContent=PLATFORM_LABELS[item.platform] || item.platform || "Canal";
     const lang=document.createElement("span"); lang.className="media-lang"; lang.textContent=(item.language || "?").toUpperCase();
     top.append(platform,lang);
+    const game=document.createElement("span"); game.className="media-game"; game.textContent=item.game_id === "magic" ? "MAGIC" : "FAB";
     const title=document.createElement("h3"); title.textContent=item.name;
-    const focus=document.createElement("div"); focus.className="media-focus";
+    const focus=document.createElement("div"); focus.className="media-focus"; focus.appendChild(badge(game.textContent,"media-game-badge"));
     for (const tag of item.focus || []) focus.appendChild(badge(tag,"media-tag"));
     const link=document.createElement("a"); link.className="button media-link"; link.href=item.url; link.target="_blank"; link.rel="noopener noreferrer"; link.textContent=item.platform === "podcast" ? "Abrir podcast" : item.platform === "twitch" ? "Abrir / buscar na Twitch" : "Abrir / buscar no YouTube";
     card.append(top,title,focus,link); frag.appendChild(card);
@@ -218,8 +235,8 @@ async function init() {
   payload=news; mediaPayload=media;
   populateOtherGames(); wireGamePills();
   els.generated.textContent=payload.generated_at ? `Atualizado: ${fmtDate(payload.generated_at,true)} · janela: 7 dias · coleta: 3h` : "Ainda não atualizado.";
-  [els.search,els.contentType,els.language,els.trust,els.state].forEach(el=>el.addEventListener("input",resetAndRender));
-  [els.mediaSearch,els.mediaPlatform,els.mediaLanguage].forEach(el=>el.addEventListener("input",renderMedia));
+  [els.search,els.contentType,els.language,els.trust,els.sort,els.state].forEach(el=>el.addEventListener("input",resetAndRender));
+  [els.mediaSearch,els.mediaGame,els.mediaPlatform,els.mediaLanguage].forEach(el=>el.addEventListener("input",renderMedia));
   document.querySelectorAll(".view-tab").forEach(btn=>btn.addEventListener("click",()=>setView(btn.dataset.view)));
   els.export.addEventListener("click",exportInteresting); els.more.addEventListener("click",()=>{visibleLimit+=PAGE_SIZE;render();});
   render(); renderMedia();

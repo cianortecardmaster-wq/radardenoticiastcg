@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T19:20:00+00:00",
-  "count": 61,
+  "generated_at": "2026-09-30T20:06:10.123671+00:00",
+  "count": 94,
   "sources": [
     {
       "name": "DMArmada",
@@ -714,6 +714,417 @@
         "opinião"
       ],
       "url": "https://www.youtube.com/results?search_query=Three+Vibing+Flesh+and+Blood"
+    },
+    {
+      "name": "Tolarian Community College",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "comunidade",
+        "opinião",
+        "gameplay",
+        "produtos",
+        "humor"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Tolarian+Community+College+Magic"
+    },
+    {
+      "name": "MTGGoldfish",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "decks",
+        "gameplay",
+        "notícias",
+        "brews"
+      ],
+      "url": "https://www.youtube.com/results?search_query=MTGGoldfish"
+    },
+    {
+      "name": "The Command Zone",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "gameplay",
+        "deck tech",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=The+Command+Zone+MTG"
+    },
+    {
+      "name": "EDHREC",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "decks",
+        "dados",
+        "opinião"
+      ],
+      "url": "https://www.youtube.com/results?search_query=EDHREC+Magic"
+    },
+    {
+      "name": "LoadingReadyRun MTG",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "gameplay",
+        "humor",
+        "draft",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=LoadingReadyRun+MTG"
+    },
+    {
+      "name": "Cardmarket Magic",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "gameplay",
+        "desafios",
+        "humor",
+        "competitivo"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Cardmarket+Magic"
+    },
+    {
+      "name": "Play to Win",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "cEDH",
+        "gameplay",
+        "deck tech"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Play+to+Win+MTG"
+    },
+    {
+      "name": "Playing With Power MTG",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "cEDH",
+        "gameplay",
+        "jogadas"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Playing+With+Power+MTG"
+    },
+    {
+      "name": "Commander at Home",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "gameplay",
+        "entretenimento"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Commander+at+Home+MTG"
+    },
+    {
+      "name": "Elder Dragon Hijinks",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "gameplay",
+        "humor"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Elder+Dragon+Hijinks"
+    },
+    {
+      "name": "Rhystic Studies",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "história",
+        "arte",
+        "lore",
+        "ensaios"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Rhystic+Studies+Magic"
+    },
+    {
+      "name": "Spice8Rack",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "lore",
+        "cultura",
+        "humor",
+        "ensaios"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Spice8Rack+Magic"
+    },
+    {
+      "name": "PleasantKenobi",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "opinião",
+        "humor",
+        "notícias",
+        "gameplay"
+      ],
+      "url": "https://www.youtube.com/results?search_query=PleasantKenobi+MTG"
+    },
+    {
+      "name": "Nitpicking Nerds",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "opinião",
+        "decks",
+        "listas"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Nitpicking+Nerds"
+    },
+    {
+      "name": "The Spike Feeders",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "cEDH",
+        "gameplay",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=The+Spike+Feeders+MTG"
+    },
+    {
+      "name": "CovertGoBlue",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Arena",
+        "gameplay",
+        "decks"
+      ],
+      "url": "https://www.youtube.com/results?search_query=CovertGoBlue+MTG"
+    },
+    {
+      "name": "Crokeyz",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Arena",
+        "gameplay",
+        "competitivo"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Crokeyz+MTG"
+    },
+    {
+      "name": "NumotTheNummy",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Limited",
+        "draft",
+        "gameplay"
+      ],
+      "url": "https://www.youtube.com/results?search_query=NumotTheNummy+MTG"
+    },
+    {
+      "name": "MTGRemy",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "música",
+        "memes",
+        "humor"
+      ],
+      "url": "https://www.youtube.com/results?search_query=MTGRemy"
+    },
+    {
+      "name": "Magic The Noah",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "humor",
+        "brincadeiras",
+        "gameplay alternativo"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Magic+The+Noah+MTG"
+    },
+    {
+      "name": "MaldHound",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "humor",
+        "memes",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=MaldHound+MTG"
+    },
+    {
+      "name": "Magic",
+      "platform": "twitch",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "oficial",
+        "eventos",
+        "gameplay"
+      ],
+      "url": "https://www.twitch.tv/magic"
+    },
+    {
+      "name": "Crokeyz",
+      "platform": "twitch",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Arena",
+        "gameplay",
+        "competitivo"
+      ],
+      "url": "https://www.twitch.tv/search?term=Crokeyz"
+    },
+    {
+      "name": "NumotTheNummy",
+      "platform": "twitch",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Limited",
+        "draft",
+        "gameplay"
+      ],
+      "url": "https://www.twitch.tv/search?term=NumotTheNummy"
+    },
+    {
+      "name": "Limited Resources",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Limited",
+        "draft",
+        "estratégia"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Limited+Resources+podcast+MTG"
+    },
+    {
+      "name": "Lords of Limited",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Limited",
+        "draft",
+        "estratégia"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Lords+of+Limited+podcast"
+    },
+    {
+      "name": "Drive to Work",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "design",
+        "história",
+        "bastidores"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Drive+to+Work+Mark+Rosewater"
+    },
+    {
+      "name": "MTGGoldfish Podcast",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "notícias",
+        "opinião",
+        "mercado",
+        "decks"
+      ],
+      "url": "https://www.youtube.com/results?search_query=MTGGoldfish+Podcast"
+    },
+    {
+      "name": "The Command Zone Podcast",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "deckbuilding",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Command+Zone+Podcast"
+    },
+    {
+      "name": "EDHRECast",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Commander",
+        "dados",
+        "deckbuilding"
+      ],
+      "url": "https://www.youtube.com/results?search_query=EDHRECast"
+    },
+    {
+      "name": "Lucky Paper Radio",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Cube",
+        "design",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Lucky+Paper+Radio+MTG"
+    },
+    {
+      "name": "The Dive Down",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "Modern",
+        "Pioneer",
+        "competitivo"
+      ],
+      "url": "https://www.youtube.com/results?search_query=The+Dive+Down+MTG+Podcast"
+    },
+    {
+      "name": "Faithless Brewing",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "magic",
+      "focus": [
+        "brews",
+        "Modern",
+        "Pioneer",
+        "deckbuilding"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Faithless+Brewing+MTG"
     }
   ]
 }

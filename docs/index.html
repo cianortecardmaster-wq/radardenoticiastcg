@@ -12,14 +12,14 @@
     <div>
       <p class="eyebrow">CURADORIA CC MASTER</p>
       <h1>Radar TCG</h1>
-      <p class="subtitle">Notícias, lore, decks, combos, meta, regras, rumores, especulações e curiosidades. Só conteúdos publicados nos últimos 7 dias, com coleta automática a cada 3 horas.</p>
+      <p class="subtitle">Radar de conteúdo para curadoria: notícias, arte, memes, jogadas, curiosidades, discussões, vídeos, comunidade, lore e decks. Só publicações dos últimos 7 dias, com coleta automática a cada 3 horas.</p>
     </div>
-    <button id="exportButton" class="button primary">Exportar interessantes</button>
+    <button id="exportButton" class="button primary">Exportar salvos</button>
   </header>
 
   <main>
     <nav class="view-tabs" aria-label="Seções do radar">
-      <button class="view-tab active" data-view="news">Conteúdos recentes</button>
+      <button class="view-tab active" data-view="news">Radar de conteúdo</button>
       <button class="view-tab" data-view="media">Canais & podcasts</button>
     </nav>
 
@@ -56,6 +56,13 @@
 
         <select id="contentTypeFilter">
           <option value="">Todos os conteúdos</option>
+          <option value="art">Arte / fanart / alters</option>
+          <option value="meme">Memes / humor</option>
+          <option value="play">Jogadas / gameplay</option>
+          <option value="discussion">Discussões / opinião</option>
+          <option value="video">Vídeos / clips</option>
+          <option value="community">Comunidade</option>
+          <option value="curiosity">Curiosidades</option>
           <option value="news">Notícias</option>
           <option value="lore">Lore / história</option>
           <option value="deck">Decks / deck tech</option>
@@ -64,7 +71,6 @@
           <option value="rules">Regras / rulings</option>
           <option value="rumor">Rumores / leaks</option>
           <option value="speculation">Especulações / teorias</option>
-          <option value="curiosity">Curiosidades</option>
           <option value="design">Design / desenvolvimento</option>
           <option value="market">Mercado</option>
           <option value="industry">Indústria / novos TCGs</option>
@@ -89,11 +95,16 @@
           <option value="archive">Arquivo</option>
         </select>
 
+        <select id="sortFilter">
+          <option value="recent">Mais recentes</option>
+          <option value="circulating">Em circulação</option>
+        </select>
+
         <select id="stateFilter">
           <option value="pending">Pendentes</option>
-          <option value="interesting">Interessantes</option>
-          <option value="ignored">Ignoradas</option>
-          <option value="all">Todas</option>
+          <option value="interesting">Salvos para curadoria</option>
+          <option value="ignored">Ignorados</option>
+          <option value="all">Todos</option>
         </select>
       </section>
 
@@ -112,15 +123,20 @@
     <section id="mediaView" class="media-view" hidden>
       <div class="media-heading">
         <div>
-          <p class="eyebrow">FLESH AND BLOOD</p>
+          <p class="eyebrow">FLESH AND BLOOD + MAGIC</p>
           <h2>Canais, streams e podcasts</h2>
-          <p>Diretório de criadores para encontrar gameplay, lore, deck techs, meta, opinião, mercado e transmissões.</p>
+          <p>Diretório de criadores para encontrar arte, humor, gameplay, lore, deck techs, opinião, comunidade e transmissões.</p>
         </div>
         <span id="mediaCount" class="media-count"></span>
       </div>
 
       <div class="media-filters">
         <input id="mediaSearchInput" type="search" placeholder="Buscar canal, podcast ou assunto…">
+        <select id="mediaGameFilter">
+          <option value="">Flesh and Blood + Magic</option>
+          <option value="flesh-and-blood">Flesh and Blood</option>
+          <option value="magic">Magic: The Gathering</option>
+        </select>
         <select id="mediaPlatformFilter">
           <option value="">Todas as plataformas</option>
           <option value="youtube">YouTube</option>
@@ -140,6 +156,7 @@
 
   <template id="itemTemplate">
     <article class="news-item">
+      <a class="preview-link" target="_blank" rel="noopener noreferrer" hidden><img class="preview-image" alt="" loading="lazy"></a>
       <div class="news-content">
         <div class="news-topline">
           <div class="badges"></div>
@@ -157,7 +174,7 @@
 
       <div class="actions">
         <a class="button link" target="_blank" rel="noopener noreferrer">Abrir original</a>
-        <button class="button interesting">Interessante</button>
+        <button class="button interesting">Salvar ideia</button>
         <button class="button ignore">Ignorar</button>
       </div>
     </article>
