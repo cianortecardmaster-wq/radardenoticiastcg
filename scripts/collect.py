@@ -82,11 +82,18 @@ def google_news_url(query: str, locale: dict) -> str:
     return "https://news.google.com/rss/search?" + urlencode(params)
 
 
-def parse_entry_date(entry) -> str:
+def parse_entry_date(entry) -> str | None:
     parsed = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
-    if parsed:
-        return datetime(*parsed[:6], tzinfo=timezone.utc).isoformat()
-    return now_iso()
+    if not parsed:
+        return None
+
+    dt = datetime(*parsed[:6], tzinfo=timezone.utc)
+
+    # Não aceite datas muito no futuro.
+    if dt > datetime.now(timezone.utc) + timedelta(days=2):
+        return None
+
+    return dt.isoformat()
 
 
 def entry_source(entry) -> tuple[str, str]:
@@ -139,6 +146,10 @@ def collect_feed(game: dict, locale: dict, query: str, official_domains: dict) -
         source_host = domain_of(source_home)
 
         published_at = parse_entry_date(entry)
+        if not published_at:
+            # Sem data real no feed, não inventamos "hoje".
+            continue
+
         excerpt = strip_html(getattr(entry, "summary", "") or getattr(entry, "description", ""))
         if excerpt == title:
             excerpt = ""
@@ -163,6 +174,7 @@ def collect_feed(game: dict, locale: dict, query: str, official_domains: dict) -
             "status": "pending",
             "collector": "google-news-rss",
             "confidence": "medium",
+            "date_verified": True,
         }
         items.append(item)
 
@@ -202,14 +214,26 @@ def merge_items(existing_items: list[dict], new_items: list[dict]) -> list[dict]
             by_id[item["id"]] = item
             exact_index[key] = item["id"]
 
-    cutoff = datetime.now(timezone.utc) - timedelta(days=RETENTION_DAYS)
+    now = datetime.now(timezone.utc)
+    cutoff = now - timedelta(days=RETENTION_DAYS)
+    future_limit = now + timedelta(days=2)
+
     kept = []
     for item in by_id.values():
+        raw_date = item.get("published_at")
+        if not raw_date:
+            continue
+
         try:
-            dt = datetime.fromisoformat(item["published_at"].replace("Z", "+00:00"))
+            dt = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            else:
+                dt = dt.astimezone(timezone.utc)
         except Exception:
-            dt = datetime.now(timezone.utc)
-        if dt >= cutoff:
+            continue
+
+        if cutoff <= dt <= future_limit:
             kept.append(item)
 
     kept.sort(key=lambda x: x.get("published_at", ""), reverse=True)
@@ -269,6 +293,7 @@ def main():
     existing_items = [
         item for item in existing.get("items", [])
         if item.get("collector") != "official-page"
+        and item.get("date_verified") is True
     ]
     items = merge_items(existing_items, direct_items + collected)
 

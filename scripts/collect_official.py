@@ -9,7 +9,7 @@ from urllib.parse import urljoin, urlparse, urldefrag
 import requests
 from bs4 import BeautifulSoup
 
-USER_AGENT = "Mozilla/5.0 (compatible; TCGNewsRadar/1.2; +https://github.com/)"
+USER_AGENT = "Mozilla/5.0 (compatible; TCGNewsRadar/1.3; +https://github.com/)"
 
 NAV_WORDS = {
     "home", "news", "events", "products", "cards", "rules", "about", "shop",
@@ -199,7 +199,53 @@ def listing_summary(context, title):
     return good_summary(full, title)
 
 
-def article_summary(url, language):
+def _parse_machine_date(value):
+    value = clean(value)
+    if not value:
+        return None
+
+    # ISO 8601 / RFC3339, common in meta tags and JSON-LD.
+    try:
+        normalized = value.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(normalized)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        else:
+            dt = dt.astimezone(timezone.utc)
+        return _valid_date(dt)
+    except Exception:
+        pass
+
+    return parse_date(value)
+
+
+def _json_date(value):
+    if isinstance(value, dict):
+        for key in ("datePublished", "dateCreated", "uploadDate"):
+            if value.get(key):
+                parsed = _parse_machine_date(str(value[key]))
+                if parsed:
+                    return parsed
+        for child in value.values():
+            parsed = _json_date(child)
+            if parsed:
+                return parsed
+
+    if isinstance(value, list):
+        for child in value:
+            parsed = _json_date(child)
+            if parsed:
+                return parsed
+
+    return None
+
+
+def article_details(url, language):
+    """Retorna (resumo, data_publicacao).
+
+    A regra é deliberadamente conservadora: se a página não expõe uma data
+    de publicação verificável, a notícia NÃO recebe a data de hoje.
+    """
     try:
         response = requests.get(
             url,
@@ -209,6 +255,41 @@ def article_summary(url, language):
         response.raise_for_status()
         soup = BeautifulSoup(response.text, "html.parser")
 
+        published = None
+
+        # Metadados estruturados são as fontes mais confiáveis.
+        date_selectors = [
+            ('meta[property="article:published_time"]', "content"),
+            ('meta[property="og:published_time"]', "content"),
+            ('meta[name="date"]', "content"),
+            ('meta[name="publish-date"]', "content"),
+            ('meta[name="pubdate"]', "content"),
+            ('meta[itemprop="datePublished"]', "content"),
+            ('time[datetime]', "datetime"),
+        ]
+        for selector, attr in date_selectors:
+            tag = soup.select_one(selector)
+            if tag:
+                published = _parse_machine_date(tag.get(attr, ""))
+                if published:
+                    break
+
+        # JSON-LD costuma trazer datePublished em sites de notícias modernos.
+        if not published:
+            import json
+            for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
+                raw = script.string or script.get_text(" ", strip=True)
+                if not raw:
+                    continue
+                try:
+                    payload = json.loads(raw)
+                except Exception:
+                    continue
+                published = _json_date(payload)
+                if published:
+                    break
+
+        summary = ""
         selectors = [
             ('meta[property="og:description"]', "content"),
             ('meta[name="description"]', "content"),
@@ -219,20 +300,23 @@ def article_summary(url, language):
             if tag:
                 text = good_summary(tag.get(attr, ""))
                 if text:
-                    return text
+                    summary = text
+                    break
 
-        areas = soup.select("article p, main p") or soup.find_all("p")
-        chunks = []
-        for p in areas:
-            text = good_summary(p.get_text(" ", strip=True))
-            if text and text not in chunks:
-                chunks.append(text)
-            if len(" ".join(chunks)) >= 650:
-                break
-        return clean(" ".join(chunks))[:900]
+        if not summary:
+            areas = soup.select("article p, main p") or soup.find_all("p")
+            chunks = []
+            for p in areas:
+                text = good_summary(p.get_text(" ", strip=True))
+                if text and text not in chunks:
+                    chunks.append(text)
+                if len(" ".join(chunks)) >= 650:
+                    break
+            summary = clean(" ".join(chunks))[:900]
+
+        return summary, published
     except Exception:
-        return ""
-
+        return "", None
 
 def collect_source(source, summary_cache=None):
     summary_cache = summary_cache or {}
@@ -298,16 +382,35 @@ def collect_source(source, summary_cache=None):
     candidates.sort(key=lambda x: (x["published"], x["score"]), reverse=True)
     candidates = candidates[:int(source.get("max_items", 40))]
 
-    # Busca o detalhe somente para as notícias mais recentes que ainda não têm resumo.
-    # O cache do news.json evita repetir a mesma requisição em execuções futuras.
-    fetch_limit = int(source.get("summary_fetch_limit", 6))
+    # Consulta a matéria quando falta resumo OU data.
+    # Data ausente nunca é substituída pela data da coleta.
+    fetch_limit = int(source.get("detail_fetch_limit", max(int(source.get("summary_fetch_limit", 6)), 12)))
     fetched = 0
     for candidate in candidates:
-        if candidate["excerpt"] or fetched >= fetch_limit:
+        needs_summary = not candidate["excerpt"]
+        needs_date = not candidate["published"]
+
+        if not (needs_summary or needs_date):
             continue
-        candidate["excerpt"] = article_summary(candidate["url"], source.get("language", "en"))
+        if fetched >= fetch_limit:
+            continue
+
+        detail_summary, detail_published = article_details(
+            candidate["url"],
+            source.get("language", "en"),
+        )
         fetched += 1
+
+        if needs_summary and detail_summary:
+            candidate["excerpt"] = detail_summary
+        if needs_date and detail_published:
+            candidate["published"] = detail_published
+
         time.sleep(0.08)
+
+    # Para um radar de notícias atuais, "data desconhecida" não pode significar
+    # "hoje". Se não conseguimos verificar a data, descartamos a entrada.
+    candidates = [candidate for candidate in candidates if candidate["published"]]
 
     out = []
     for candidate in candidates:
@@ -325,12 +428,13 @@ def collect_source(source, summary_cache=None):
             "source_home": source["url"],
             "source_domain": (urlparse(source["url"]).hostname or "").lower(),
             "official": True,
-            "published_at": candidate["published"] or now_iso(),
+            "published_at": candidate["published"],
             "discovered_at": now_iso(),
             "status": "pending",
             "collector": "official-page",
             "source_id": source["id"],
-            "confidence": "high" if candidate["published"] else "medium",
+            "confidence": "high",
+            "date_verified": True,
         })
     return out
 
