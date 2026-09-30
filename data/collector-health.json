@@ -1,7 +1,14 @@
 {
-  "generated_at": null,
-  "official_sources_configured": 0,
-  "official_sources_ok": 0,
-  "official_sources_failed": 0,
-  "errors": []
+  "generated_at": "2026-09-30T15:52:37.159332+00:00",
+  "official_sources_configured": 21,
+  "official_sources_ok": 20,
+  "official_sources_failed": 1,
+  "errors": [
+    {
+      "source_id": "fab-global",
+      "source": "Flesh and Blood Official",
+      "url": "https://fabtcg.com/en/articles/",
+      "error": "403 Client Error: Forbidden for url: https://fabtcg.com/en/articles/"
+    }
+  ]
 }
