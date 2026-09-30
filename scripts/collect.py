@@ -227,7 +227,21 @@ def main():
     locales = locales_cfg["locales"]
     official_domains = official_cfg["official_domains"]
 
-    direct_items, direct_errors = collect_official_sources(direct_cfg["sources"])
+    # Carrega o estado anterior antes da coleta direta para reaproveitar resumos
+    # já extraídos de páginas oficiais e evitar bater novamente nas mesmas URLs.
+    existing = load_existing()
+    summary_cache = {
+        item.get("url"): item.get("excerpt", "")
+        for item in existing.get("items", [])
+        if item.get("collector") == "official-page"
+        and item.get("url")
+        and item.get("excerpt")
+    }
+
+    direct_items, direct_errors = collect_official_sources(
+        direct_cfg["sources"],
+        summary_cache=summary_cache,
+    )
     collected = []
 
     for game in games:
@@ -250,8 +264,13 @@ def main():
         collected.extend(collect_feed(discovery_game, locale, query, official_domains))
         time.sleep(REQUEST_PAUSE_SECONDS)
 
-    existing = load_existing()
-    items = merge_items(existing.get("items", []), direct_items + collected)
+    # Itens oficiais diretos são reconstruídos em cada execução. Assim, erros
+    # antigos de parsing (título/data/menu) não ficam presos por 45 dias.
+    existing_items = [
+        item for item in existing.get("items", [])
+        if item.get("collector") != "official-page"
+    ]
+    items = merge_items(existing_items, direct_items + collected)
 
     payload = {
         "generated_at": now_iso(),

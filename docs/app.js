@@ -1,11 +1,13 @@
 const STORAGE_KEY = "tcg-radar-curation-v1";
+const PAGE_SIZE = 50;
 
 let payload = { items: [], generated_at: null };
 let curation = loadCuration();
+let visibleLimit = PAGE_SIZE;
 
 const els = {
   list: document.querySelector("#newsList"),
-  template: document.querySelector("#cardTemplate"),
+  template: document.querySelector("#itemTemplate"),
   search: document.querySelector("#searchInput"),
   game: document.querySelector("#gameFilter"),
   language: document.querySelector("#languageFilter"),
@@ -15,6 +17,7 @@ const els = {
   generated: document.querySelector("#generatedAt"),
   visible: document.querySelector("#visibleCount"),
   export: document.querySelector("#exportButton"),
+  more: document.querySelector("#showMoreButton"),
 };
 
 function loadCuration() {
@@ -41,18 +44,50 @@ function setState(id, state) {
 }
 
 function fmtDate(value) {
+  if (!value) return "Data não informada";
   try {
     return new Intl.DateTimeFormat("pt-BR", {
       dateStyle: "short",
       timeStyle: "short",
     }).format(new Date(value));
   } catch {
-    return value || "";
+    return value;
   }
 }
 
 function normalize(value) {
   return (value || "").toLocaleLowerCase();
+}
+
+function compact(value) {
+  return (value || "").replace(/\s+/g, " ").trim();
+}
+
+function trimText(value, max = 520) {
+  const text = compact(value);
+  if (text.length <= max) return text;
+  const cut = text.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return `${cut.slice(0, lastSpace > 350 ? lastSpace : max).trim()}…`;
+}
+
+function cleanSummary(item) {
+  const title = compact(item.title);
+  let summary = compact(item.excerpt || item.summary || "");
+
+  if (summary) {
+    // Alguns feeds repetem título e fonte dentro da descrição.
+    if (summary.startsWith(title)) summary = compact(summary.slice(title.length));
+    if (item.source && summary.endsWith(item.source)) {
+      summary = compact(summary.slice(0, -item.source.length));
+    }
+  }
+
+  if (summary.length >= 45) return trimText(summary);
+
+  // Fallback para fontes em que a página de listagem ainda não forneceu descrição.
+  // Não inventa informação: deixa claro que o resumo detalhado não foi extraído.
+  return `Publicação de ${item.source || "fonte externa"} sobre “${trimText(title, 180)}”. O coletor ainda não conseguiu extrair um resumo mais detalhado desta página.`;
 }
 
 function filteredItems() {
@@ -62,26 +97,34 @@ function filteredItems() {
   const state = els.state.value;
   const official = els.official.checked;
 
-  return payload.items.filter(item => {
-    const itemState = stateOf(item.id);
-    if (game && item.game_id !== game) return false;
-    if (language && item.language !== language) return false;
-    if (official && !item.official) return false;
-    if (state !== "all" && itemState !== state) return false;
+  return payload.items
+    .filter(item => {
+      const itemState = stateOf(item.id);
+      if (game && item.game_id !== game) return false;
+      if (language && item.language !== language) return false;
+      if (official && !item.official) return false;
+      if (state !== "all" && itemState !== state) return false;
 
-    if (q) {
-      const haystack = normalize([
-        item.title,
-        item.excerpt,
-        item.source,
-        item.game,
-        item.language,
-      ].join(" "));
-      if (!haystack.includes(q)) return false;
-    }
+      if (q) {
+        const haystack = normalize([
+          item.title,
+          item.excerpt,
+          item.summary,
+          item.source,
+          item.game,
+          item.language,
+          item.region,
+        ].join(" "));
+        if (!haystack.includes(q)) return false;
+      }
 
-    return true;
-  });
+      return true;
+    })
+    .sort((a, b) => {
+      const da = Date.parse(a.published_at || "") || 0;
+      const db = Date.parse(b.published_at || "") || 0;
+      return db - da;
+    });
 }
 
 function badge(text, className = "") {
@@ -99,7 +142,7 @@ function renderStats() {
 
   els.stats.innerHTML = `
     <div class="stat"><strong>${all}</strong><span>no radar</span></div>
-    <div class="stat"><strong>${official}</strong><span>fontes oficiais</span></div>
+    <div class="stat"><strong>${official}</strong><span>de fontes oficiais</span></div>
     <div class="stat"><strong>${interesting}</strong><span>interessantes</span></div>
     <div class="stat"><strong>${ignored}</strong><span>ignoradas</span></div>
   `;
@@ -107,9 +150,14 @@ function renderStats() {
 
 function render() {
   renderStats();
-  const items = filteredItems();
-  els.visible.textContent = `${items.length} notícia(s) exibida(s)`;
+  const allFiltered = filteredItems();
+  const items = allFiltered.slice(0, visibleLimit);
 
+  els.visible.textContent = allFiltered.length > items.length
+    ? `Mostrando ${items.length} de ${allFiltered.length} notícia(s)`
+    : `${allFiltered.length} notícia(s)`;
+
+  els.more.hidden = items.length >= allFiltered.length;
   els.list.innerHTML = "";
 
   if (!items.length) {
@@ -121,34 +169,37 @@ function render() {
 
   for (const item of items) {
     const node = els.template.content.cloneNode(true);
-    const card = node.querySelector(".card");
+    const article = node.querySelector(".news-item");
     const badges = node.querySelector(".badges");
     const time = node.querySelector("time");
-    const title = node.querySelector("h2");
-    const excerpt = node.querySelector(".excerpt");
+    const title = node.querySelector(".title-link");
+    const summary = node.querySelector(".summary");
     const source = node.querySelector(".source");
+    const origin = node.querySelector(".origin");
     const open = node.querySelector(".link");
     const interesting = node.querySelector(".interesting");
     const ignore = node.querySelector(".ignore");
 
     const current = stateOf(item.id);
-    card.dataset.state = current;
+    article.dataset.state = current;
 
     badges.appendChild(badge(item.game, "game"));
-    badges.appendChild(badge(item.language));
-    if (item.official) badges.appendChild(badge("oficial", "official"));
+    badges.appendChild(badge((item.language || "?").toUpperCase()));
+    if (item.official) badges.appendChild(badge("OFICIAL", "official"));
 
     time.textContent = fmtDate(item.published_at);
-    time.dateTime = item.published_at;
-    title.textContent = item.title;
+    time.dateTime = item.published_at || "";
 
-    if (item.excerpt) {
-      excerpt.textContent = item.excerpt;
-    } else {
-      excerpt.remove();
-    }
+    title.textContent = compact(item.title);
+    title.href = item.url;
+    summary.textContent = cleanSummary(item);
 
-    source.textContent = `Fonte: ${item.source}`;
+    source.textContent = `Fonte: ${item.source || "não identificada"}`;
+    const details = [item.region, item.collector === "official-page" ? "coleta direta" : "agregador"]
+      .filter(Boolean)
+      .join(" · ");
+    origin.textContent = details ? ` · ${details}` : "";
+
     open.href = item.url;
 
     interesting.classList.toggle("active", current === "interesting");
@@ -178,6 +229,11 @@ function populateGames() {
     option.textContent = name;
     els.game.appendChild(option);
   }
+}
+
+function resetAndRender() {
+  visibleLimit = PAGE_SIZE;
+  render();
 }
 
 function exportInteresting() {
@@ -214,9 +270,14 @@ async function init() {
       : "Ainda não atualizado.";
 
     [els.search, els.game, els.language, els.state, els.official]
-      .forEach(el => el.addEventListener("input", render));
+      .forEach(el => el.addEventListener("input", resetAndRender));
 
     els.export.addEventListener("click", exportInteresting);
+    els.more.addEventListener("click", () => {
+      visibleLimit += PAGE_SIZE;
+      render();
+    });
+
     render();
   } catch (err) {
     els.list.innerHTML = `<div class="empty">Não foi possível carregar o radar: ${err.message}</div>`;

@@ -12,7 +12,7 @@
     <div>
       <p class="eyebrow">CURADORIA CC MASTER</p>
       <h1>Radar de Notícias TCG</h1>
-      <p class="subtitle">Notícias globais para você filtrar antes de levar algo ao CC Master.</p>
+      <p class="subtitle">Notícias globais reunidas em uma lista para triagem editorial.</p>
     </div>
     <button id="exportButton" class="button primary">Exportar interessantes</button>
   </header>
@@ -20,8 +20,8 @@
   <main>
     <section class="stats" id="stats"></section>
 
-    <section class="filters">
-      <input id="searchInput" type="search" placeholder="Buscar título, fonte ou jogo…">
+    <section class="filters" aria-label="Filtros do radar">
+      <input id="searchInput" type="search" placeholder="Buscar título, resumo, fonte ou jogo…">
 
       <select id="gameFilter">
         <option value="">Todos os jogos</option>
@@ -55,20 +55,33 @@
       <span id="visibleCount"></span>
     </section>
 
-    <section id="newsList" class="news-list"></section>
+    <section id="newsList" class="news-list" aria-live="polite"></section>
+
+    <div class="more-wrap">
+      <button id="showMoreButton" class="button more-button" hidden>Mostrar mais notícias</button>
+    </div>
   </main>
 
-  <template id="cardTemplate">
-    <article class="card">
-      <div class="card-head">
-        <div class="badges"></div>
-        <time></time>
+  <template id="itemTemplate">
+    <article class="news-item">
+      <div class="news-content">
+        <div class="news-topline">
+          <div class="badges"></div>
+          <time></time>
+        </div>
+
+        <h2><a class="title-link" target="_blank" rel="noopener noreferrer"></a></h2>
+
+        <p class="summary"></p>
+
+        <div class="source-line">
+          <span class="source"></span>
+          <span class="origin"></span>
+        </div>
       </div>
-      <h2></h2>
-      <p class="excerpt"></p>
-      <div class="source"></div>
+
       <div class="actions">
-        <a class="button link" target="_blank" rel="noopener noreferrer">Abrir notícia</a>
+        <a class="button link" target="_blank" rel="noopener noreferrer">Abrir original</a>
         <button class="button interesting">Interessante</button>
         <button class="button ignore">Ignorar</button>
       </div>
