@@ -4,15 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="color-scheme" content="dark light">
-  <title>Radar de Notícias TCG</title>
+  <title>Radar TCG — CC Master</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header class="topbar">
     <div>
       <p class="eyebrow">CURADORIA CC MASTER</p>
-      <h1>Radar de Notícias TCG</h1>
-      <p class="subtitle">Notícias globais reunidas em uma lista para triagem editorial.</p>
+      <h1>Radar TCG</h1>
+      <p class="subtitle">Notícias, lore, decks, combos, meta, regras, rumores, especulações e curiosidades em um só lugar.</p>
     </div>
     <button id="exportButton" class="button primary">Exportar interessantes</button>
   </header>
@@ -20,11 +20,48 @@
   <main>
     <section class="stats" id="stats"></section>
 
-    <section class="filters" aria-label="Filtros do radar">
-      <input id="searchInput" type="search" placeholder="Buscar título, resumo, fonte ou jogo…">
+    <section class="game-browser" aria-label="Jogos do radar">
+      <div class="game-row primary-games">
+        <div class="game-row-title">
+          <strong>Principais jogos</strong>
+          <span>prioridade editorial</span>
+        </div>
+        <div class="game-pills">
+          <button class="game-pill active" data-scope="core">Todos os principais</button>
+          <button class="game-pill" data-game="flesh-and-blood">Flesh and Blood</button>
+          <button class="game-pill" data-game="pokemon">Pokémon</button>
+          <button class="game-pill" data-game="magic">Magic</button>
+        </div>
+      </div>
 
-      <select id="gameFilter">
-        <option value="">Todos os jogos</option>
+      <div class="game-row all-games">
+        <div class="game-row-title">
+          <strong>Todos os jogos</strong>
+          <span>demais TCGs e novidades</span>
+        </div>
+        <div class="game-pills" id="allGamePills">
+          <button class="game-pill" data-scope="all">Todos os jogos</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="filters" aria-label="Filtros do radar">
+      <input id="searchInput" type="search" placeholder="Buscar título, resumo, fonte, carta, herói ou assunto…">
+
+      <select id="contentTypeFilter">
+        <option value="">Todos os conteúdos</option>
+        <option value="news">Notícias</option>
+        <option value="lore">Lore / história</option>
+        <option value="deck">Decks / deck tech</option>
+        <option value="combo">Combos / sinergias</option>
+        <option value="meta">Meta / competitivo</option>
+        <option value="rules">Regras / rulings</option>
+        <option value="rumor">Rumores / leaks</option>
+        <option value="speculation">Especulações / teorias</option>
+        <option value="curiosity">Curiosidades</option>
+        <option value="design">Design / desenvolvimento</option>
+        <option value="market">Mercado</option>
+        <option value="industry">Indústria / novos TCGs</option>
       </select>
 
       <select id="languageFilter">
@@ -37,17 +74,21 @@
         <option value="zh">简体中文</option>
       </select>
 
+      <select id="trustFilter">
+        <option value="">Todas as fontes</option>
+        <option value="official">Oficial</option>
+        <option value="media">Imprensa / portal</option>
+        <option value="community">Comunidade</option>
+        <option value="rumor">Rumor / vazamento</option>
+        <option value="archive">Arquivo</option>
+      </select>
+
       <select id="stateFilter">
         <option value="pending">Pendentes</option>
         <option value="interesting">Interessantes</option>
         <option value="ignored">Ignoradas</option>
         <option value="all">Todas</option>
       </select>
-
-      <label class="check">
-        <input id="officialOnly" type="checkbox">
-        apenas oficiais
-      </label>
     </section>
 
     <section class="meta">
@@ -58,7 +99,7 @@
     <section id="newsList" class="news-list" aria-live="polite"></section>
 
     <div class="more-wrap">
-      <button id="showMoreButton" class="button more-button" hidden>Mostrar mais notícias</button>
+      <button id="showMoreButton" class="button more-button" hidden>Mostrar mais conteúdos</button>
     </div>
   </main>
 
@@ -71,7 +112,6 @@
         </div>
 
         <h2><a class="title-link" target="_blank" rel="noopener noreferrer"></a></h2>
-
         <p class="summary"></p>
 
         <div class="source-line">

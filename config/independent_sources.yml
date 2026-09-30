@@ -1,0 +1,378 @@
+sources:
+- id: tcgplayer-content
+  mode: search
+  name: TCGplayer Content
+  domain: tcgplayer.com
+  language: en
+  locale: en-US
+  region: us
+  trust: media
+  games:
+  - '*'
+  query: 'site:tcgplayer.com/content (TCG OR "trading card game" OR "Flesh and Blood" OR "Magic: The Gathering" OR "Pokemon TCG" OR Lorcana OR
+    Riftbound OR "One Piece Card Game")'
+  max_items: 25
+- id: card-gamer
+  mode: search
+  name: Card Gamer
+  domain: cardgamer.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - '*'
+  query: site:cardgamer.com (TCG OR "trading card game" OR cards)
+  max_items: 25
+- id: icv2
+  mode: search
+  name: ICv2
+  domain: icv2.com
+  language: en
+  locale: en-US
+  region: us
+  trust: media
+  games:
+  - '*'
+  query: site:icv2.com (TCG OR "trading card game" OR collectible)
+  max_items: 20
+  default_content_types:
+  - industry
+- id: wargamer-tcg
+  mode: search
+  name: Wargamer
+  domain: wargamer.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - '*'
+  query: site:wargamer.com (TCG OR "Magic the Gathering" OR Pokemon OR Lorcana OR Riftbound)
+  max_items: 20
+- id: tcg-rumors
+  mode: search
+  name: TCG Rumors
+  domain: tcgrumors.com
+  language: en
+  locale: en-US
+  region: global
+  trust: rumor
+  games:
+  - '*'
+  query: site:tcgrumors.com (TCG OR Pokemon OR Magic OR Lorcana OR Riftbound OR "One Piece" OR Yu-Gi-Oh OR "Flesh and Blood")
+  max_items: 25
+- id: bmj-tcg
+  mode: search
+  name: BMJ TCG
+  domain: bmjtcg.com.br
+  language: pt
+  locale: pt-BR
+  region: br
+  trust: media
+  games:
+  - '*'
+  query: site:bmjtcg.com.br (TCG OR Pokemon OR Magic OR Lorcana OR Yu-Gi-Oh OR "One Piece")
+  max_items: 20
+- id: fabtcg-gg
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: FaBTCG.gg
+  domain: fabtcg.gg
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - flesh-and-blood
+  query: site:fabtcg.gg "Flesh and Blood"
+  max_items: 35
+  retention_days: 180
+- id: legendary-stories
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Legendary Stories
+  url: https://legendarystories.net/
+  language: en
+  region: global
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /(?!$).+
+  max_items: 40
+  allow_undated: true
+  evergreen: true
+  retention_days: 3650
+  default_content_types:
+  - lore
+- id: rathe-times
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: The Rathe Times
+  domain: rathetimes.com
+  language: en
+  locale: en-US
+  region: global
+  trust: archive
+  games:
+  - flesh-and-blood
+  query: site:rathetimes.com/articles "Flesh"
+  max_items: 30
+  evergreen: true
+  retention_days: 3650
+- id: age-fab
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: AGE
+  url: https://www.age.events/articles
+  language: en
+  region: us
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /articles/
+  max_items: 40
+  retention_days: 365
+- id: judge-blog-fab
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Flesh and Blood Judge Blog
+  domain: blog.judge.fabtcg.com
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:blog.judge.fabtcg.com Flesh Blood rules ruling judge
+  max_items: 20
+  default_content_types:
+  - rules
+  retention_days: 730
+- id: tcg-times-fab
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: TCG Times — Flesh and Blood
+  url: https://www.tcgtimes.blog/category/flesh-and-blood
+  language: en
+  region: global
+  trust: media
+  official: false
+  collector: independent-page
+  include_path_regex: /(?!category/flesh-and-blood/?$).+
+  max_items: 25
+  retention_days: 730
+- id: grave-troll-fab
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Grave-Troll Games — FaB 101
+  url: https://gravetrollgames.com/blogs/fab-101
+  language: en
+  region: us
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /blogs/fab-101/
+  max_items: 20
+  retention_days: 730
+  default_content_types:
+  - deck
+- id: pokebeach
+  mode: page
+  game_id: pokemon
+  game: Pokémon TCG
+  name: PokéBeach
+  url: https://www.pokebeach.com/category/tcg
+  language: en
+  region: global
+  trust: media
+  official: false
+  collector: independent-page
+  include_path_regex: /(20\d{2}/\d{2}/|category/tcg)
+  max_items: 45
+  retention_days: 180
+- id: pokeguardian
+  mode: search
+  game_id: pokemon
+  game: Pokémon TCG
+  name: PokéGuardian
+  domain: pokeguardian.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - pokemon
+  query: site:pokeguardian.com Pokemon TCG
+  max_items: 30
+  retention_days: 180
+- id: mtggoldfish
+  mode: search
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: MTGGoldfish
+  domain: mtggoldfish.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - magic
+  query: site:mtggoldfish.com/articles "Magic"
+  max_items: 40
+  retention_days: 180
+- id: mtgrocks
+  mode: search
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: MTG Rocks
+  domain: mtgrocks.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - magic
+  query: site:mtgrocks.com MTG Magic
+  max_items: 35
+  retention_days: 180
+- id: sorcery-brasil
+  mode: page
+  game_id: sorcery
+  game: 'Sorcery: Contested Realm'
+  name: Sorcery Brasil
+  url: https://sorcery.com.br/artigos/
+  language: pt
+  region: br
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /artigos/
+  max_items: 35
+  retention_days: 730
+- id: sorceryrec
+  mode: page
+  game_id: sorcery
+  game: 'Sorcery: Contested Realm'
+  name: SorceryRec
+  url: https://sorceryrec.com/pt/articles
+  language: pt
+  region: global
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /pt/articles/
+  max_items: 30
+  retention_days: 730
+- id: onepiece-gg
+  mode: page
+  game_id: one-piece
+  game: One Piece Card Game
+  name: OnePiece.gg
+  url: https://onepiece.gg/
+  language: en
+  region: global
+  trust: media
+  official: false
+  collector: independent-page
+  include_path_regex: ^/(?!$|cards|decks|builder|prices|products/?$|sets/?$).+
+  max_items: 45
+  retention_days: 180
+- id: ygorganization
+  mode: search
+  game_id: yugioh
+  game: Yu-Gi-Oh!
+  name: YGOrganization
+  domain: ygorganization.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - yugioh
+  query: site:ygorganization.com Yu-Gi-Oh
+  max_items: 40
+  retention_days: 180
+- id: starwarsunlimited-gg
+  mode: page
+  game_id: star-wars-unlimited
+  game: 'Star Wars: Unlimited'
+  name: StarWarsUnlimited.gg
+  url: https://starwarsunlimited.gg/
+  language: en
+  region: global
+  trust: media
+  official: false
+  collector: independent-page
+  include_path_regex: ^/(?!$|cards|decks|builder|prices|products|meta|tournaments/?$).+
+  max_items: 40
+  retention_days: 365
+- id: garbage-rollers
+  mode: search
+  game_id: star-wars-unlimited
+  game: 'Star Wars: Unlimited'
+  name: Garbage Rollers
+  domain: garbagerollers.com
+  language: en
+  locale: en-US
+  region: us
+  trust: archive
+  games:
+  - star-wars-unlimited
+  query: site:garbagerollers.com "Star Wars Unlimited"
+  max_items: 20
+  evergreen: true
+  retention_days: 3650
+- id: riftbound-gg
+  mode: page
+  game_id: riftbound
+  game: Riftbound
+  name: Riftbound.gg
+  url: https://riftbound.gg/guides/
+  language: en
+  region: global
+  trust: media
+  official: false
+  collector: independent-page
+  include_path_regex: ^/(?!guides/?$).+
+  max_items: 35
+  retention_days: 365
+  default_content_types:
+  - deck
+- id: digimon-meta
+  mode: search
+  game_id: digimon
+  game: Digimon Card Game
+  name: Digimon Card Meta
+  domain: digimonmeta.com
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - digimon
+  query: site:digimonmeta.com Digimon card
+  max_items: 30
+  retention_days: 365
+- id: mushu-report
+  mode: search
+  game_id: lorcana
+  game: Disney Lorcana
+  name: Mushu Report
+  domain: mushureport.com
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - lorcana
+  query: site:mushureport.com Lorcana
+  max_items: 30
+  retention_days: 365

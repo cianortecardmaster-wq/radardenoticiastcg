@@ -1,6 +1,6 @@
-# Radar de Notícias TCG
+# Radar TCG
 
-Agregador de notícias para curadoria editorial do CC Master.
+Agregador de notícias e conteúdo TCG para curadoria editorial do CC Master.
 
 A ideia é simples:
 
@@ -121,3 +121,18 @@ Na V2 podemos persistir a curadoria no próprio GitHub ou em um banco simples.
 - ranking de prioridade editorial;
 - integração com o repositório do CC Master;
 - geração de rascunho `.md` para uma notícia aprovada.
+
+
+## Conteúdo editorial ampliado
+
+O Radar não busca apenas notícias. Ele classifica publicações em: **notícias, lore, decks/deck tech, combos/sinergias, meta, regras/rulings, rumores/leaks, especulações/teorias, curiosidades, design/desenvolvimento, mercado e indústria**.
+
+Os três jogos de prioridade editorial são **Flesh and Blood, Pokémon TCG e Magic: The Gathering**. A interface abre por padrão em “Principais jogos”, mas mantém uma segunda linha com **Todos os jogos** para Sorcery, Naruto, One Piece, Star Wars: Unlimited, Riftbound, Digimon, Yu-Gi-Oh!, Disney Lorcana e novos TCGs.
+
+### Fontes independentes
+
+`config/independent_sources.yml` reúne portais gerais e especializados. Cada fonte pode indicar `trust` (`media`, `community`, `rumor`, `archive`), retenção própria e dicas de classificação. A coleta usa páginas diretas quando viável e busca por domínio como fallback para portais mais difíceis de raspar.
+
+### Flesh and Blood
+
+Além das fontes oficiais, o radar passa a acompanhar conteúdo de FaBTCG.gg, Legendary Stories, The Rathe Times (arquivo), AGE, Judge Blog, TCG Times e Grave-Troll Games/FaB 101, permitindo encontrar lore, estratégia, deckbuilding, puzzles, regras, teorias e especulações.

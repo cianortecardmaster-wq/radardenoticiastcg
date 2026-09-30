@@ -1,109 +1,142 @@
 games:
-  - id: flesh-and-blood
-    name: Flesh and Blood
-    query: '"Flesh and Blood" TCG OR FABTCG'
-    aliases:
-      - Flesh and Blood
-      - FABTCG
-
-  - id: magic
-    name: "Magic: The Gathering"
-    query: '"Magic: The Gathering" OR "MTG" card game'
-    query_overrides:
-      ja: '"マジック：ザ・ギャザリング" OR "Magic: The Gathering"'
-      zh: '"万智牌" OR "Magic: The Gathering"'
-    aliases:
-      - Magic: The Gathering
-      - MTG
-      - 万智牌
-      - マジック：ザ・ギャザリング
-
-  - id: pokemon
-    name: Pokémon TCG
-    query: '"Pokémon TCG" OR "Pokemon TCG" OR "Pokémon Trading Card Game"'
-    query_overrides:
-      ja: '"ポケモンカードゲーム" OR "ポケカ"'
-      zh: '"宝可梦集换式卡牌游戏" OR "宝可梦卡牌"'
-    aliases:
-      - Pokémon TCG
-      - Pokemon TCG
-      - Pokémon Trading Card Game
-      - ポケモンカードゲーム
-      - 宝可梦集换式卡牌游戏
-
-  - id: sorcery
-    name: "Sorcery: Contested Realm"
-    query: '"Sorcery: Contested Realm" OR "Sorcery TCG"'
-    aliases:
-      - Sorcery: Contested Realm
-      - Sorcery TCG
-
-  - id: naruto
-    name: Naruto Card Game
-    query: '"NARUTO CARD GAME" OR "Naruto TCG"'
-    aliases:
-      - NARUTO CARD GAME
-      - Naruto TCG
-
-  - id: one-piece
-    name: One Piece Card Game
-    query: '"ONE PIECE CARD GAME" OR "One Piece TCG"'
-    query_overrides:
-      ja: '"ワンピースカードゲーム" OR "ONE PIECE CARD GAME"'
-    aliases:
-      - ONE PIECE CARD GAME
-      - One Piece TCG
-      - ワンピースカードゲーム
-
-  - id: star-wars-unlimited
-    name: "Star Wars: Unlimited"
-    query: '"Star Wars Unlimited" card game OR "Star Wars: Unlimited"'
-    query_overrides:
-      ja: '"スター・ウォーズ：アンリミテッド" OR "Star Wars Unlimited"'
-    aliases:
-      - Star Wars Unlimited
-      - Star Wars: Unlimited
-
-  - id: riftbound
-    name: Riftbound
-    query: '"Riftbound" TCG OR "Riftbound League of Legends"'
-    aliases:
-      - Riftbound
-      - Riftbound League of Legends
-
-  - id: digimon
-    name: Digimon Card Game
-    query: '"Digimon Card Game" OR "Digimon TCG"'
-    query_overrides:
-      ja: '"デジモンカードゲーム" OR "Digimon Card Game"'
-    aliases:
-      - Digimon Card Game
-      - Digimon TCG
-      - デジモンカードゲーム
-
-  - id: yugioh
-    name: Yu-Gi-Oh!
-    query: '"Yu-Gi-Oh!" TCG OR OCG'
-    query_overrides:
-      ja: '"遊戯王OCG" OR "遊戯王カード"'
-      zh: '"游戏王" OCG OR TCG'
-    aliases:
-      - Yu-Gi-Oh!
-      - Yugioh
-      - 遊戯王
-      - 游戏王
-
-  - id: lorcana
-    name: Disney Lorcana
-    query: '"Disney Lorcana" OR "Lorcana TCG"'
-    query_overrides:
-      ja: '"ディズニー・ロルカナ" OR "Disney Lorcana"'
-      zh: '"迪士尼洛卡纳" OR "Disney Lorcana"'
-    aliases:
-      - Disney Lorcana
-      - Lorcana TCG
-      - 迪士尼洛卡纳
-
+- id: flesh-and-blood
+  name: Flesh and Blood
+  query: '"Flesh and Blood" TCG OR FABTCG'
+  aliases:
+  - Flesh and Blood
+  - FABTCG
+  group: principal
+  content_query: '"Flesh and Blood" (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy OR rumor
+    OR leak OR speculation OR theory OR rules OR ruling OR puzzle OR design)'
+  content_query_overrides:
+    pt: '"Flesh and Blood" (lore OR história OR baralho OR deck OR combo OR sinergia OR guia OR estratégia OR rumor OR vazamento
+      OR especulação OR regras OR curiosidade)'
+    es: '"Flesh and Blood" (lore OR historia OR mazo OR deck OR combo OR sinergia OR guía OR estrategia OR rumor OR filtración
+      OR especulación OR reglas OR curiosidad)'
+    fr: '"Flesh and Blood" (lore OR histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR spéculation
+      OR règles OR curiosité)'
+    ja: '"Flesh and Blood" (ロア OR ストーリー OR デッキ OR コンボ OR シナジー OR 攻略 OR 考察 OR 噂 OR リーク OR ルール)'
+    zh: '"Flesh and Blood" (剧情 OR 故事 OR 卡组 OR 牌组 OR 连招 OR 组合 OR 攻略 OR 推测 OR 传闻 OR 泄露 OR 规则)'
+- id: magic
+  name: 'Magic: The Gathering'
+  query: '"Magic: The Gathering" OR "MTG" card game'
+  query_overrides:
+    ja: '"マジック：ザ・ギャザリング" OR "Magic: The Gathering"'
+    zh: '"万智牌" OR "Magic: The Gathering"'
+  aliases:
+  - Magic: The Gathering
+  - MTG
+  - 万智牌
+  - マジック：ザ・ギャザリング
+  group: principal
+  content_query: '"Magic: The Gathering" (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy OR
+    rumor OR leak OR speculation OR theory OR rules OR design OR trivia)'
+  content_query_overrides:
+    pt: '"Magic: The Gathering" (lore OR história OR deck OR baralho OR combo OR sinergia OR guia OR estratégia OR rumor OR
+      vazamento OR especulação OR regras OR design OR curiosidade)'
+    es: '"Magic: The Gathering" (lore OR historia OR deck OR mazo OR combo OR sinergia OR guía OR estrategia OR rumor OR filtración
+      OR especulación OR reglas OR diseño OR curiosidad)'
+    fr: '"Magic: The Gathering" (lore OR histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR
+      spéculation OR règles OR design OR curiosité)'
+    ja: '"マジック：ザ・ギャザリング" (ストーリー OR デッキ OR コンボ OR シナジー OR 攻略 OR 考察 OR 噂 OR リーク OR ルール OR デザイン)'
+    zh: '"万智牌" (剧情 OR 故事 OR 卡组 OR 连招 OR 组合 OR 攻略 OR 推测 OR 传闻 OR 泄露 OR 规则 OR 设计)'
+- id: pokemon
+  name: Pokémon TCG
+  query: '"Pokémon TCG" OR "Pokemon TCG" OR "Pokémon Trading Card Game"'
+  query_overrides:
+    ja: '"ポケモンカードゲーム" OR "ポケカ"'
+    zh: '"宝可梦集换式卡牌游戏" OR "宝可梦卡牌"'
+  aliases:
+  - Pokémon TCG
+  - Pokemon TCG
+  - Pokémon Trading Card Game
+  - ポケモンカードゲーム
+  - 宝可梦集换式卡牌游戏
+  group: principal
+  content_query: ("Pokémon TCG" OR "Pokemon TCG") (lore OR story OR deck OR "deck tech" OR combo OR synergy OR guide OR strategy
+    OR rumor OR leak OR speculation OR theory OR rules OR trivia)
+  content_query_overrides:
+    pt: ("Pokémon TCG" OR "Pokemon TCG") (história OR deck OR baralho OR combo OR sinergia OR guia OR estratégia OR rumor
+      OR vazamento OR especulação OR regras OR curiosidade)
+    es: ("Pokémon TCG" OR "Pokemon TCG") (historia OR deck OR mazo OR combo OR sinergia OR guía OR estrategia OR rumor OR
+      filtración OR especulación OR reglas OR curiosidad)
+    fr: ("Pokémon TCG" OR "Pokemon TCG") (histoire OR deck OR combo OR synergie OR guide OR stratégie OR rumeur OR fuite OR
+      spéculation OR règles OR curiosité)
+    ja: ("ポケモンカードゲーム" OR "ポケカ") (デッキ OR コンボ OR シナジー OR 攻略 OR 考察 OR 噂 OR リーク OR ルール OR 豆知識)
+    zh: ("宝可梦集换式卡牌游戏" OR "宝可梦卡牌") (卡组 OR 牌组 OR 连招 OR 组合 OR 攻略 OR 推测 OR 传闻 OR 泄露 OR 规则 OR 冷知识)
+- id: sorcery
+  name: 'Sorcery: Contested Realm'
+  query: '"Sorcery: Contested Realm" OR "Sorcery TCG"'
+  aliases:
+  - Sorcery: Contested Realm
+  - Sorcery TCG
+  group: outros
+- id: naruto
+  name: Naruto Card Game
+  query: '"NARUTO CARD GAME" OR "Naruto TCG"'
+  aliases:
+  - NARUTO CARD GAME
+  - Naruto TCG
+  group: outros
+- id: one-piece
+  name: One Piece Card Game
+  query: '"ONE PIECE CARD GAME" OR "One Piece TCG"'
+  query_overrides:
+    ja: '"ワンピースカードゲーム" OR "ONE PIECE CARD GAME"'
+  aliases:
+  - ONE PIECE CARD GAME
+  - One Piece TCG
+  - ワンピースカードゲーム
+  group: outros
+- id: star-wars-unlimited
+  name: 'Star Wars: Unlimited'
+  query: '"Star Wars Unlimited" card game OR "Star Wars: Unlimited"'
+  query_overrides:
+    ja: '"スター・ウォーズ：アンリミテッド" OR "Star Wars Unlimited"'
+  aliases:
+  - Star Wars Unlimited
+  - Star Wars: Unlimited
+  group: outros
+- id: riftbound
+  name: Riftbound
+  query: '"Riftbound" TCG OR "Riftbound League of Legends"'
+  aliases:
+  - Riftbound
+  - Riftbound League of Legends
+  group: outros
+- id: digimon
+  name: Digimon Card Game
+  query: '"Digimon Card Game" OR "Digimon TCG"'
+  query_overrides:
+    ja: '"デジモンカードゲーム" OR "Digimon Card Game"'
+  aliases:
+  - Digimon Card Game
+  - Digimon TCG
+  - デジモンカードゲーム
+  group: outros
+- id: yugioh
+  name: Yu-Gi-Oh!
+  query: '"Yu-Gi-Oh!" TCG OR OCG'
+  query_overrides:
+    ja: '"遊戯王OCG" OR "遊戯王カード"'
+    zh: '"游戏王" OCG OR TCG'
+  aliases:
+  - Yu-Gi-Oh!
+  - Yugioh
+  - 遊戯王
+  - 游戏王
+  group: outros
+- id: lorcana
+  name: Disney Lorcana
+  query: '"Disney Lorcana" OR "Lorcana TCG"'
+  query_overrides:
+    ja: '"ディズニー・ロルカナ" OR "Disney Lorcana"'
+    zh: '"迪士尼洛卡纳" OR "Disney Lorcana"'
+  aliases:
+  - Disney Lorcana
+  - Lorcana TCG
+  - 迪士尼洛卡纳
+  group: outros
 discovery:
   id: novidades
   name: Novos TCGs

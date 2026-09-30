@@ -9,7 +9,7 @@ from urllib.parse import urljoin, urlparse, urldefrag
 import requests
 from bs4 import BeautifulSoup
 
-USER_AGENT = "Mozilla/5.0 (compatible; TCGNewsRadar/1.3; +https://github.com/)"
+USER_AGENT = "Mozilla/5.0 (compatible; TCGNewsRadar/1.4; +https://github.com/)"
 
 NAV_WORDS = {
     "home", "news", "events", "products", "cards", "rules", "about", "shop",
@@ -408,9 +408,10 @@ def collect_source(source, summary_cache=None):
 
         time.sleep(0.08)
 
-    # Para um radar de notícias atuais, "data desconhecida" não pode significar
-    # "hoje". Se não conseguimos verificar a data, descartamos a entrada.
-    candidates = [candidate for candidate in candidates if candidate["published"]]
+    # Fontes de notícias exigem data verificada. Arquivos/lore evergreen podem
+    # manter conteúdo sem data, exibido como "Data não informada" na interface.
+    if not source.get("allow_undated", False):
+        candidates = [candidate for candidate in candidates if candidate["published"]]
 
     out = []
     for candidate in candidates:
@@ -427,14 +428,18 @@ def collect_source(source, summary_cache=None):
             "source": source["name"],
             "source_home": source["url"],
             "source_domain": (urlparse(source["url"]).hostname or "").lower(),
-            "official": True,
-            "published_at": candidate["published"],
+            "official": bool(source.get("official", True)),
+            "published_at": candidate["published"] or None,
             "discovered_at": now_iso(),
             "status": "pending",
-            "collector": "official-page",
+            "collector": source.get("collector", "official-page"),
             "source_id": source["id"],
-            "confidence": "high",
-            "date_verified": True,
+            "trust": source.get("trust", "official" if source.get("official", True) else "community"),
+            "confidence": "high" if candidate["published"] else "medium",
+            "date_verified": bool(candidate["published"]),
+            "evergreen": bool(source.get("evergreen", False)),
+            "retention_days": int(source.get("retention_days", 45)),
+            "default_content_types": source.get("default_content_types", []),
         })
     return out
 
@@ -446,7 +451,7 @@ def collect_official_sources(sources, summary_cache=None):
 
     for source in sources:
         try:
-            print(f"[OFFICIAL] {source['name']} / {source.get('language', '?')}")
+            print(f"[SOURCE:{source.get('trust', 'official').upper()}] {source['name']} / {source.get('language', '?')}")
             found = collect_source(source, summary_cache=summary_cache)
             items.extend(found)
             with_summary = sum(bool(item.get("excerpt")) for item in found)
