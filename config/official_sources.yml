@@ -1,0 +1,190 @@
+sources:
+- id: fab-global
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Flesh and Blood Official
+  url: https://fabtcg.com/en/articles/
+  language: en
+  region: global
+  include_path_regex: /articles/
+  max_items: 40
+- id: magic-global-en
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: 'Magic: The Gathering Official'
+  url: https://magic.wizards.com/en/news
+  language: en
+  region: global
+  include_path_regex: /en/news/
+  max_items: 40
+- id: magic-br
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: 'Magic: The Gathering Brasil'
+  url: https://magic.wizards.com/pt-BR
+  language: pt
+  region: br
+  include_path_regex: /pt-BR/news/
+  max_items: 30
+- id: magic-jp
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Magic Japan
+  url: https://mtg-jp.com/
+  language: ja
+  region: jp
+  include_path_regex: /(reading|news|events|products)/
+  max_items: 40
+- id: magic-cn
+  game_id: magic
+  game: 'Magic: The Gathering'
+  name: Magic China
+  url: https://www.cnwizards.com/articles
+  language: zh
+  region: cn
+  include_path_regex: /(article|articles|section|tag)/
+  max_items: 40
+- id: pokemon-global-en
+  game_id: pokemon
+  game: Pokémon TCG
+  name: Pokémon Official
+  url: https://www.pokemon.com/us/pokemon-news?category=trading-card-game
+  language: en
+  region: us
+  include_path_regex: /us/pokemon-news/
+  max_items: 40
+- id: pokemon-br
+  game_id: pokemon
+  game: Pokémon TCG
+  name: Pokémon Brasil
+  url: https://www.pokemon.com/br/noticias
+  language: pt
+  region: br
+  include_path_regex: /br/noticias/
+  max_items: 30
+- id: pokemon-jp
+  game_id: pokemon
+  game: Pokémon TCG
+  name: Pokémon Card Japan
+  url: https://www.pokemon-card.com/info/
+  language: ja
+  region: jp
+  include_path_regex: /info/
+  max_items: 50
+- id: pokemon-cn
+  game_id: pokemon
+  game: Pokémon TCG
+  name: Pokémon China
+  url: https://www.pokemon.cn/topics-tcg/p/1
+  language: zh
+  region: cn
+  include_path_regex: /(topics-tcg|tcg)/
+  max_items: 50
+- id: sorcery-global
+  game_id: sorcery
+  game: 'Sorcery: Contested Realm'
+  name: Sorcery Official
+  url: https://sorcerytcg.com/
+  language: en
+  region: global
+  include_path_regex: /(news|posts|articles)/
+  max_items: 30
+- id: naruto-global
+  game_id: naruto
+  game: Naruto Card Game
+  name: Naruto Card Game Official
+  url: https://www.naruto-cardgame.com/en/
+  language: en
+  region: global
+  include_path_regex: /en/(news|events|products|topics)/
+  max_items: 30
+- id: one-piece-global
+  game_id: one-piece
+  game: One Piece Card Game
+  name: One Piece Card Game Global
+  url: https://en.onepiece-cardgame.com/topics/
+  language: en
+  region: global
+  include_path_regex: /(topics|products|events|news)/
+  max_items: 50
+- id: one-piece-fr
+  game_id: one-piece
+  game: One Piece Card Game
+  name: One Piece Card Game France
+  url: https://fr.onepiece-cardgame.com/topics/
+  language: fr
+  region: fr
+  include_path_regex: /(topics|products|events|news)/
+  max_items: 40
+- id: one-piece-jp
+  game_id: one-piece
+  game: One Piece Card Game
+  name: One Piece Card Game Japan
+  url: https://www.onepiece-cardgame.com/
+  language: ja
+  region: jp
+  include_path_regex: /(products|events|news|topics)/
+  max_items: 40
+- id: one-piece-cn
+  game_id: one-piece
+  game: One Piece Card Game
+  name: One Piece Card Game China
+  url: https://www.onepiece-cardgame.cn/
+  language: zh
+  region: cn
+  include_path_regex: /(products|events|news|topics)/
+  max_items: 40
+- id: swu-global
+  game_id: star-wars-unlimited
+  game: 'Star Wars: Unlimited'
+  name: Star Wars Unlimited Official
+  url: https://starwarsunlimited.com/articles
+  language: en
+  region: global
+  include_path_regex: /articles/
+  max_items: 40
+- id: riftbound-global
+  game_id: riftbound
+  game: Riftbound
+  name: Riftbound Official
+  url: https://playriftbound.com/en-us/news/
+  language: en
+  region: global
+  include_path_regex: /en-us/news/
+  max_items: 40
+- id: digimon-global
+  game_id: digimon
+  game: Digimon Card Game
+  name: Digimon Card Game Official
+  url: https://world.digimoncard.com/
+  language: en
+  region: global
+  include_path_regex: /(news|products|event|rule)/
+  max_items: 50
+- id: yugioh-americas
+  game_id: yugioh
+  game: Yu-Gi-Oh!
+  name: Yu-Gi-Oh! TCG Americas
+  url: https://www.yugioh-card.com/en/news/
+  language: en
+  region: americas
+  include_path_regex: /en/(news|events|products|limited)/
+  max_items: 50
+- id: yugioh-eu
+  game_id: yugioh
+  game: Yu-Gi-Oh!
+  name: Yu-Gi-Oh! Europe
+  url: https://www.yugioh-card.com/eu/category/news/?view=all
+  language: en
+  region: eu
+  include_path_regex: /eu/
+  max_items: 40
+- id: lorcana-global
+  game_id: lorcana
+  game: Disney Lorcana
+  name: Disney Lorcana Official
+  url: https://www.disneylorcana.com/en-US/news
+  language: en
+  region: global
+  include_path_regex: /en-US/news/
+  max_items: 40

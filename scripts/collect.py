@@ -15,10 +15,14 @@ import feedparser
 import yaml
 from bs4 import BeautifulSoup
 
+from collect_official import collect_official_sources
+
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config"
 DATA = ROOT / "data" / "news.json"
 DOCS_DATA = ROOT / "docs" / "data" / "news.json"
+HEALTH = ROOT / "data" / "collector-health.json"
+DOCS_HEALTH = ROOT / "docs" / "data" / "collector-health.json"
 
 MAX_ITEMS_PER_FEED = 15
 RETENTION_DAYS = 45
@@ -146,6 +150,7 @@ def collect_feed(game: dict, locale: dict, query: str, official_domains: dict) -
             "game": game["name"],
             "language": locale["language"],
             "locale": locale["id"],
+            "region": locale["gl"].lower(),
             "title": title,
             "excerpt": excerpt,
             "url": link,
@@ -157,6 +162,7 @@ def collect_feed(game: dict, locale: dict, query: str, official_domains: dict) -
             "discovered_at": now_iso(),
             "status": "pending",
             "collector": "google-news-rss",
+            "confidence": "medium",
         }
         items.append(item)
 
@@ -214,12 +220,14 @@ def main():
     games_cfg = load_yaml(CONFIG / "games.yml")
     locales_cfg = load_yaml(CONFIG / "locales.yml")
     official_cfg = load_yaml(CONFIG / "official_domains.yml")
+    direct_cfg = load_yaml(CONFIG / "official_sources.yml")
 
     games = games_cfg["games"]
     discovery = games_cfg["discovery"]
     locales = locales_cfg["locales"]
     official_domains = official_cfg["official_domains"]
 
+    direct_items, direct_errors = collect_official_sources(direct_cfg["sources"])
     collected = []
 
     for game in games:
@@ -243,11 +251,16 @@ def main():
         time.sleep(REQUEST_PAUSE_SECONDS)
 
     existing = load_existing()
-    items = merge_items(existing.get("items", []), collected)
+    items = merge_items(existing.get("items", []), direct_items + collected)
 
     payload = {
         "generated_at": now_iso(),
         "count": len(items),
+        "collectors": {
+            "official_page_items": len(direct_items),
+            "google_news_items": len(collected),
+            "official_source_errors": len(direct_errors),
+        },
         "items": items,
     }
 
@@ -258,7 +271,23 @@ def main():
     DATA.write_text(serialized + "\n", encoding="utf-8")
     DOCS_DATA.write_text(serialized + "\n", encoding="utf-8")
 
-    print(f"[OK] {len(collected)} entradas lidas; {len(items)} notícias no radar.")
+    health_payload = {
+        "generated_at": now_iso(),
+        "official_sources_configured": len(direct_cfg["sources"]),
+        "official_sources_ok": len(direct_cfg["sources"]) - len(direct_errors),
+        "official_sources_failed": len(direct_errors),
+        "errors": direct_errors,
+    }
+    health_serialized = json.dumps(health_payload, ensure_ascii=False, indent=2)
+    HEALTH.parent.mkdir(parents=True, exist_ok=True)
+    DOCS_HEALTH.parent.mkdir(parents=True, exist_ok=True)
+    HEALTH.write_text(health_serialized + "\n", encoding="utf-8")
+    DOCS_HEALTH.write_text(health_serialized + "\n", encoding="utf-8")
+
+    print(
+        f"[OK] oficiais={len(direct_items)} google={len(collected)} "
+        f"radar={len(items)} erros_oficiais={len(direct_errors)}"
+    )
 
 
 if __name__ == "__main__":
