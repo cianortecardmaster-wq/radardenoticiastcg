@@ -1,0 +1,42 @@
+locales:
+  - id: pt-BR
+    language: pt
+    label: Português
+    hl: pt-BR
+    gl: BR
+    ceid: BR:pt-419
+
+  - id: en-US
+    language: en
+    label: English
+    hl: en-US
+    gl: US
+    ceid: US:en
+
+  - id: es-419
+    language: es
+    label: Español
+    hl: es-419
+    gl: MX
+    ceid: MX:es-419
+
+  - id: fr-FR
+    language: fr
+    label: Français
+    hl: fr
+    gl: FR
+    ceid: FR:fr
+
+  - id: ja-JP
+    language: ja
+    label: 日本語
+    hl: ja
+    gl: JP
+    ceid: JP:ja
+
+  - id: zh-CN
+    language: zh
+    label: 简体中文
+    hl: zh-CN
+    gl: CN
+    ceid: CN:zh-Hans

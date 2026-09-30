@@ -1,0 +1,116 @@
+games:
+  - id: flesh-and-blood
+    name: Flesh and Blood
+    query: '"Flesh and Blood" TCG OR FABTCG'
+    aliases:
+      - Flesh and Blood
+      - FABTCG
+
+  - id: magic
+    name: "Magic: The Gathering"
+    query: '"Magic: The Gathering" OR "MTG" card game'
+    query_overrides:
+      ja: '"マジック：ザ・ギャザリング" OR "Magic: The Gathering"'
+      zh: '"万智牌" OR "Magic: The Gathering"'
+    aliases:
+      - Magic: The Gathering
+      - MTG
+      - 万智牌
+      - マジック：ザ・ギャザリング
+
+  - id: pokemon
+    name: Pokémon TCG
+    query: '"Pokémon TCG" OR "Pokemon TCG" OR "Pokémon Trading Card Game"'
+    query_overrides:
+      ja: '"ポケモンカードゲーム" OR "ポケカ"'
+      zh: '"宝可梦集换式卡牌游戏" OR "宝可梦卡牌"'
+    aliases:
+      - Pokémon TCG
+      - Pokemon TCG
+      - Pokémon Trading Card Game
+      - ポケモンカードゲーム
+      - 宝可梦集换式卡牌游戏
+
+  - id: sorcery
+    name: "Sorcery: Contested Realm"
+    query: '"Sorcery: Contested Realm" OR "Sorcery TCG"'
+    aliases:
+      - Sorcery: Contested Realm
+      - Sorcery TCG
+
+  - id: naruto
+    name: Naruto Card Game
+    query: '"NARUTO CARD GAME" OR "Naruto TCG"'
+    aliases:
+      - NARUTO CARD GAME
+      - Naruto TCG
+
+  - id: one-piece
+    name: One Piece Card Game
+    query: '"ONE PIECE CARD GAME" OR "One Piece TCG"'
+    query_overrides:
+      ja: '"ワンピースカードゲーム" OR "ONE PIECE CARD GAME"'
+    aliases:
+      - ONE PIECE CARD GAME
+      - One Piece TCG
+      - ワンピースカードゲーム
+
+  - id: star-wars-unlimited
+    name: "Star Wars: Unlimited"
+    query: '"Star Wars Unlimited" card game OR "Star Wars: Unlimited"'
+    query_overrides:
+      ja: '"スター・ウォーズ：アンリミテッド" OR "Star Wars Unlimited"'
+    aliases:
+      - Star Wars Unlimited
+      - Star Wars: Unlimited
+
+  - id: riftbound
+    name: Riftbound
+    query: '"Riftbound" TCG OR "Riftbound League of Legends"'
+    aliases:
+      - Riftbound
+      - Riftbound League of Legends
+
+  - id: digimon
+    name: Digimon Card Game
+    query: '"Digimon Card Game" OR "Digimon TCG"'
+    query_overrides:
+      ja: '"デジモンカードゲーム" OR "Digimon Card Game"'
+    aliases:
+      - Digimon Card Game
+      - Digimon TCG
+      - デジモンカードゲーム
+
+  - id: yugioh
+    name: Yu-Gi-Oh!
+    query: '"Yu-Gi-Oh!" TCG OR OCG'
+    query_overrides:
+      ja: '"遊戯王OCG" OR "遊戯王カード"'
+      zh: '"游戏王" OCG OR TCG'
+    aliases:
+      - Yu-Gi-Oh!
+      - Yugioh
+      - 遊戯王
+      - 游戏王
+
+  - id: lorcana
+    name: Disney Lorcana
+    query: '"Disney Lorcana" OR "Lorcana TCG"'
+    query_overrides:
+      ja: '"ディズニー・ロルカナ" OR "Disney Lorcana"'
+      zh: '"迪士尼洛卡纳" OR "Disney Lorcana"'
+    aliases:
+      - Disney Lorcana
+      - Lorcana TCG
+      - 迪士尼洛卡纳
+
+discovery:
+  id: novidades
+  name: Novos TCGs
+  queries:
+    pt: '"novo TCG" OR "novo jogo de cartas colecionáveis"'
+    en: '"new trading card game" OR "new TCG" OR "new collectible card game"'
+    es: '"nuevo TCG" OR "nuevo juego de cartas coleccionables"'
+    fr: '"nouveau TCG" OR "nouveau jeu de cartes à collectionner"'
+    ja: '"新作 トレーディングカードゲーム" OR "新TCG"'
+    zh: '"新 集换式卡牌游戏" OR "新 TCG"'
