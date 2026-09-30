@@ -16,3 +16,19 @@ main{max-width:1380px;margin:0 auto;padding:0 24px 64px}.stats{display:grid;grid
 [hidden]{display:none!important}
 @media(max-width:950px){.media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.media-filters{grid-template-columns:1fr 1fr}.media-filters input{grid-column:1/-1}.media-heading{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.view-tabs{width:100%}.view-tab{flex:1}.media-grid{grid-template-columns:1fr}.media-filters{grid-template-columns:1fr}.media-filters input{grid-column:auto}}
+.media-filters{grid-template-columns:2fr 1fr 1fr 1fr 1.25fr}
+.media-card{min-height:260px}
+.media-recent{border-top:1px solid var(--line);padding-top:11px;margin-top:2px;margin-bottom:12px}
+.media-recent-head{display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--muted);font-size:11px;margin-bottom:8px}
+.media-recent-head strong{font-weight:800;color:#cbd3dc}
+.media-recent-list{display:flex;flex-direction:column;gap:6px}
+.media-recent-item{display:grid;grid-template-columns:72px minmax(0,1fr);gap:9px;align-items:center;padding:6px;border:1px solid transparent;border-radius:8px;color:var(--text);text-decoration:none;background:rgba(255,255,255,.018)}
+.media-recent-item:hover{border-color:var(--line);background:var(--panel-2)}
+.media-recent-item img,.media-thumb-placeholder{width:72px;height:42px;border-radius:6px;object-fit:cover;background:var(--panel-2);border:1px solid var(--line)}
+.media-thumb-placeholder{display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:10px;font-weight:900;letter-spacing:.05em}
+.media-recent-body{min-width:0;display:flex;flex-direction:column;gap:4px}
+.media-recent-title{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:12px;font-weight:750;line-height:1.3}
+.media-recent-meta{font-size:10px;color:var(--muted)}
+@media(max-width:1180px){.media-filters{grid-template-columns:2fr 1fr 1fr}.media-filters #mediaSearchInput{grid-column:1/-1}}
+@media(max-width:950px){.media-filters{grid-template-columns:1fr 1fr}.media-filters #mediaSearchInput{grid-column:1/-1}}
+@media(max-width:560px){.media-filters{grid-template-columns:1fr}.media-filters #mediaSearchInput{grid-column:auto}.media-recent-item{grid-template-columns:82px minmax(0,1fr)}.media-recent-item img,.media-thumb-placeholder{width:82px;height:48px}}

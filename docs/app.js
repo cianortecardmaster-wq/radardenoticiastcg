@@ -16,7 +16,7 @@ const TRUST_LABELS = {
 const PLATFORM_LABELS = { youtube: "YouTube", twitch: "Twitch", podcast: "Podcast" };
 
 let payload = { items: [], generated_at: null };
-let mediaPayload = { sources: [], generated_at: null };
+let mediaPayload = { sources: [], generated_at: null, active_count: 0, content_count: 0, content_ready: false };
 let curation = loadCuration();
 let visibleLimit = PAGE_SIZE;
 let gameMode = { scope: "core", game: "" };
@@ -31,7 +31,7 @@ const els = {
   allGamePills: document.querySelector("#allGamePills"), newsView: document.querySelector("#newsView"),
   mediaView: document.querySelector("#mediaView"), mediaList: document.querySelector("#mediaList"),
   mediaSearch: document.querySelector("#mediaSearchInput"), mediaGame: document.querySelector("#mediaGameFilter"),
-  mediaPlatform: document.querySelector("#mediaPlatformFilter"), mediaLanguage: document.querySelector("#mediaLanguageFilter"), mediaCount: document.querySelector("#mediaCount"),
+  mediaPlatform: document.querySelector("#mediaPlatformFilter"), mediaLanguage: document.querySelector("#mediaLanguageFilter"), mediaActivity: document.querySelector("#mediaActivityFilter"), mediaCount: document.querySelector("#mediaCount"),
 };
 
 function loadCuration() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; } }
@@ -180,26 +180,56 @@ function exportInteresting() {
   const url=URL.createObjectURL(blob); const a=document.createElement("a"); a.href=url; a.download=`tcg-radar-interessantes-${new Date().toISOString().slice(0,10)}.json`; a.click(); URL.revokeObjectURL(url);
 }
 
+function mediaRecentItems(item) {
+  return (item.recent_items || [])
+    .filter(entry => isWithinWindow(entry.published_at))
+    .sort((a,b) => (Date.parse(b.published_at || "") || 0) - (Date.parse(a.published_at || "") || 0));
+}
+
 function mediaFiltered() {
   const q=normalize(els.mediaSearch.value.trim()); const game=els.mediaGame.value; const platform=els.mediaPlatform.value; const language=els.mediaLanguage.value;
+  const activity=els.mediaActivity ? els.mediaActivity.value : "recent";
   return (mediaPayload.sources || []).filter(item => {
+    const recent=mediaRecentItems(item);
     if (game && item.game_id !== game) return false;
     if (platform && item.platform !== platform) return false;
     if (language && item.language !== language) return false;
+    if (activity === "recent" && mediaPayload.content_ready !== false && !recent.length) return false;
     if (q) {
-      const haystack=normalize([item.name,item.platform,item.language,...(item.focus || [])].join(" "));
+      const haystack=normalize([item.name,item.platform,item.language,...(item.focus || []),...recent.flatMap(x=>[x.title,x.author,x.kind])].join(" "));
       if (!haystack.includes(q)) return false;
     }
     return true;
-  }).sort((a,b)=>a.name.localeCompare(b.name,"pt-BR"));
+  }).sort((a,b) => {
+    const aLatest=Date.parse(mediaRecentItems(a)[0]?.published_at || "") || 0;
+    const bLatest=Date.parse(mediaRecentItems(b)[0]?.published_at || "") || 0;
+    return (bLatest-aLatest) || a.name.localeCompare(b.name,"pt-BR");
+  });
+}
+
+function mediaKindLabel(item, source) {
+  if (item.kind === "episode") return "Episódio";
+  if (item.kind === "vod") return "VOD";
+  if (item.content_platform === "youtube" || source.platform === "youtube") return "Vídeo";
+  return "Conteúdo";
 }
 
 function renderMedia() {
   const items=mediaFiltered(); els.mediaList.innerHTML="";
-  els.mediaCount.textContent=`${items.length} de ${(mediaPayload.sources || []).length} fontes`;
-  if (!items.length) { els.mediaList.innerHTML='<div class="empty media-empty">Nenhum canal com esses filtros.</div>'; return; }
+  const allSources=mediaPayload.sources || [];
+  const allRecent=allSources.flatMap(mediaRecentItems);
+  const active=allSources.filter(item=>mediaRecentItems(item).length).length;
+  els.mediaCount.textContent=`${items.length} exibidos · ${active} canais ativos · ${allRecent.length} conteúdos / 7 dias`;
+  if (!items.length) {
+    const msg = mediaPayload.content_ready === false
+      ? "A coleta de vídeos e podcasts ainda não rodou. Execute o workflow para preencher os conteúdos atuais."
+      : "Nenhum canal publicou conteúdo nos últimos 7 dias com esses filtros.";
+    els.mediaList.innerHTML=`<div class="empty media-empty">${msg}</div>`;
+    return;
+  }
   const frag=document.createDocumentFragment();
   for (const item of items) {
+    const recent=mediaRecentItems(item);
     const card=document.createElement("article"); card.className=`media-card platform-${item.platform || "other"}`;
     const top=document.createElement("div"); top.className="media-card-top";
     const platform=document.createElement("span"); platform.className="media-platform"; platform.textContent=PLATFORM_LABELS[item.platform] || item.platform || "Canal";
@@ -209,8 +239,32 @@ function renderMedia() {
     const title=document.createElement("h3"); title.textContent=item.name;
     const focus=document.createElement("div"); focus.className="media-focus"; focus.appendChild(badge(game.textContent,"media-game-badge"));
     for (const tag of item.focus || []) focus.appendChild(badge(tag,"media-tag"));
-    const link=document.createElement("a"); link.className="button media-link"; link.href=item.url; link.target="_blank"; link.rel="noopener noreferrer"; link.textContent=item.platform === "podcast" ? "Abrir podcast" : item.platform === "twitch" ? "Abrir / buscar na Twitch" : "Abrir / buscar no YouTube";
-    card.append(top,title,focus,link); frag.appendChild(card);
+
+    const recentWrap=document.createElement("div"); recentWrap.className="media-recent";
+    const recentHead=document.createElement("div"); recentHead.className="media-recent-head";
+    const recentTitle=document.createElement("strong"); recentTitle.textContent=recent.length ? `${recent.length} publicação${recent.length===1?"":"ões"} nos últimos 7 dias` : "Sem publicação nos últimos 7 dias";
+    recentHead.appendChild(recentTitle); recentWrap.appendChild(recentHead);
+
+    if (recent.length) {
+      const list=document.createElement("div"); list.className="media-recent-list";
+      for (const entry of recent) {
+        const row=document.createElement("a"); row.className="media-recent-item"; row.href=entry.url; row.target="_blank"; row.rel="noopener noreferrer";
+        if (entry.image_url) {
+          const img=document.createElement("img"); img.src=entry.image_url; img.alt=""; img.loading="lazy"; row.appendChild(img);
+        } else {
+          const placeholder=document.createElement("span"); placeholder.className="media-thumb-placeholder"; placeholder.textContent=item.platform === "podcast" ? "POD" : item.platform === "twitch" ? "LIVE" : "▶"; row.appendChild(placeholder);
+        }
+        const body=document.createElement("span"); body.className="media-recent-body";
+        const entryTitle=document.createElement("span"); entryTitle.className="media-recent-title"; entryTitle.textContent=entry.title;
+        const meta=document.createElement("span"); meta.className="media-recent-meta"; meta.textContent=`${mediaKindLabel(entry,item)} · ${fmtDate(entry.published_at)}`;
+        body.append(entryTitle,meta); row.appendChild(body); list.appendChild(row);
+      }
+      recentWrap.appendChild(list);
+    }
+
+    const link=document.createElement("a"); link.className="button media-link"; link.href=item.resolved_url || item.url; link.target="_blank"; link.rel="noopener noreferrer";
+    link.textContent=item.platform === "podcast" ? "Abrir podcast / canal" : item.platform === "twitch" ? "Abrir Twitch" : "Abrir canal";
+    card.append(top,title,focus,recentWrap,link); frag.appendChild(card);
   }
   els.mediaList.appendChild(frag);
 }
@@ -230,13 +284,13 @@ async function fetchJson(url, fallback) {
 async function init() {
   const [news,media]=await Promise.all([
     fetchJson("./data/news.json", {items:[],generated_at:null}),
-    fetchJson("./data/media.json", {sources:[],generated_at:null}),
+    fetchJson("./data/media.json", {sources:[],generated_at:null,content_ready:false}),
   ]);
   payload=news; mediaPayload=media;
   populateOtherGames(); wireGamePills();
   els.generated.textContent=payload.generated_at ? `Atualizado: ${fmtDate(payload.generated_at,true)} · janela: 7 dias · coleta: 3h` : "Ainda não atualizado.";
   [els.search,els.contentType,els.language,els.trust,els.sort,els.state].forEach(el=>el.addEventListener("input",resetAndRender));
-  [els.mediaSearch,els.mediaGame,els.mediaPlatform,els.mediaLanguage].forEach(el=>el.addEventListener("input",renderMedia));
+  [els.mediaSearch,els.mediaGame,els.mediaPlatform,els.mediaLanguage,els.mediaActivity].filter(Boolean).forEach(el=>el.addEventListener("input",renderMedia));
   document.querySelectorAll(".view-tab").forEach(btn=>btn.addEventListener("click",()=>setView(btn.dataset.view)));
   els.export.addEventListener("click",exportInteresting); els.more.addEventListener("click",()=>{visibleLimit+=PAGE_SIZE;render();});
   render(); renderMedia();

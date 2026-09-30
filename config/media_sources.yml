@@ -391,6 +391,7 @@ sources:
   url: https://www.youtube.com/results?search_query=Formato+For+Fun+Flesh+and+Blood
 - name: Man Sant
   platform: twitch
+  twitch_login: mansant
   language: en
   game_id: flesh-and-blood
   focus:
@@ -399,6 +400,7 @@ sources:
   url: https://www.twitch.tv/search?term=Man%20Sant%20Flesh%20and%20Blood
 - name: Pheano
   platform: twitch
+  twitch_login: pheano
   language: en
   game_id: flesh-and-blood
   focus:
@@ -407,6 +409,7 @@ sources:
   url: https://www.twitch.tv/search?term=Pheano%20Flesh%20and%20Blood
 - name: SNEEP
   platform: twitch
+  twitch_login: sneep
   language: en
   game_id: flesh-and-blood
   focus:
@@ -733,6 +736,7 @@ sources:
   url: https://www.youtube.com/results?search_query=MaldHound+MTG
 - name: Magic
   platform: twitch
+  twitch_login: magic
   language: en
   game_id: magic
   focus:
@@ -742,6 +746,7 @@ sources:
   url: https://www.twitch.tv/magic
 - name: Crokeyz
   platform: twitch
+  twitch_login: crokeyz
   language: en
   game_id: magic
   focus:
@@ -751,6 +756,7 @@ sources:
   url: https://www.twitch.tv/search?term=Crokeyz
 - name: NumotTheNummy
   platform: twitch
+  twitch_login: numotthenummy
   language: en
   game_id: magic
   focus:

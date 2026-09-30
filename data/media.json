@@ -1,6 +1,11 @@
 {
-  "generated_at": "2026-09-30T20:06:10.123671+00:00",
+  "generated_at": null,
+  "window_days": 7,
   "count": 94,
+  "active_count": 0,
+  "content_count": 0,
+  "content_ready": false,
+  "errors_count": 0,
   "sources": [
     {
       "name": "DMArmada",
@@ -13,7 +18,12 @@
         "opinião",
         "spoilers"
       ],
-      "url": "https://www.youtube.com/results?search_query=DMArmada+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=DMArmada+Flesh+and+Blood",
+      "id": "bb7b087eefa45054",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=DMArmada+Flesh+and+Blood"
     },
     {
       "name": "TCG TALK",
@@ -25,7 +35,12 @@
         "meta",
         "opinião"
       ],
-      "url": "https://www.youtube.com/results?search_query=TCG+TALK+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=TCG+TALK+Flesh+and+Blood",
+      "id": "bbaa7618326bb5af",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=TCG+TALK+Flesh+and+Blood"
     },
     {
       "name": "Dice Commando",
@@ -38,7 +53,12 @@
         "banimentos",
         "meta"
       ],
-      "url": "https://www.youtube.com/results?search_query=Dice+Commando+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Dice+Commando+Flesh+and+Blood",
+      "id": "b775d28072ee407f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Dice+Commando+Flesh+and+Blood"
     },
     {
       "name": "AggroBlaze96",
@@ -50,7 +70,12 @@
         "Talishar",
         "deck tech"
       ],
-      "url": "https://www.youtube.com/results?search_query=AggroBlaze96+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=AggroBlaze96+Flesh+and+Blood",
+      "id": "ea86975757144878",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=AggroBlaze96+Flesh+and+Blood"
     },
     {
       "name": "Lupinefiasco / Daily FaB",
@@ -62,7 +87,12 @@
         "matchups",
         "decks"
       ],
-      "url": "https://www.youtube.com/results?search_query=Lupinefiasco+Daily+FaB"
+      "url": "https://www.youtube.com/results?search_query=Lupinefiasco+Daily+FaB",
+      "id": "6c2ac7bc558d73b8",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Lupinefiasco+Daily+FaB"
     },
     {
       "name": "The Teklo Foundry",
@@ -74,7 +104,12 @@
         "deck tech",
         "teoria"
       ],
-      "url": "https://www.youtube.com/results?search_query=The+Teklo+Foundry+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=The+Teklo+Foundry+Flesh+and+Blood",
+      "id": "b321e2f6ac2485cd",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=The+Teklo+Foundry+Flesh+and+Blood"
     },
     {
       "name": "Kloo TCG",
@@ -87,7 +122,12 @@
         "especulação",
         "decks"
       ],
-      "url": "https://www.youtube.com/results?search_query=Kloo+TCG+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Kloo+TCG+Flesh+and+Blood",
+      "id": "592e2c7032659640",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Kloo+TCG+Flesh+and+Blood"
     },
     {
       "name": "The World of Rathe",
@@ -100,7 +140,12 @@
         "notícias",
         "opinião"
       ],
-      "url": "https://www.youtube.com/results?search_query=The+World+of+Rathe+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=The+World+of+Rathe+Flesh+and+Blood",
+      "id": "9d989743be50dd57",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=The+World+of+Rathe+Flesh+and+Blood"
     },
     {
       "name": "TCGTed",
@@ -112,7 +157,12 @@
         "notícias",
         "conteúdo geral"
       ],
-      "url": "https://www.youtube.com/results?search_query=TCGTed+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=TCGTed+Flesh+and+Blood",
+      "id": "ef5dd14e73242990",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=TCGTed+Flesh+and+Blood"
     },
     {
       "name": "Three Floating",
@@ -124,7 +174,12 @@
         "decks",
         "competitivo"
       ],
-      "url": "https://www.youtube.com/results?search_query=Three+Floating+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Three+Floating+Flesh+and+Blood",
+      "id": "be52e294c04f1dd1",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Three+Floating+Flesh+and+Blood"
     },
     {
       "name": "AshenWingzTCG",
@@ -136,7 +191,12 @@
         "deck tech",
         "notícias"
       ],
-      "url": "https://www.youtube.com/results?search_query=AshenWingzTCG+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=AshenWingzTCG+Flesh+and+Blood",
+      "id": "07cf737cea28dd95",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=AshenWingzTCG+Flesh+and+Blood"
     },
     {
       "name": "Dozr",
@@ -149,7 +209,12 @@
         "Ranger",
         "Wizard"
       ],
-      "url": "https://www.youtube.com/results?search_query=Dozr+Flesh+and+Blood+TCG"
+      "url": "https://www.youtube.com/results?search_query=Dozr+Flesh+and+Blood+TCG",
+      "id": "c1d69dfa8fe005db",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Dozr+Flesh+and+Blood+TCG"
     },
     {
       "name": "HamMan215",
@@ -160,7 +225,12 @@
         "opinião",
         "discussão"
       ],
-      "url": "https://www.youtube.com/results?search_query=HamMan215+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=HamMan215+Flesh+and+Blood",
+      "id": "f7c20c6196f886c9",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=HamMan215+Flesh+and+Blood"
     },
     {
       "name": "Pheano",
@@ -172,7 +242,12 @@
         "gameplay",
         "análise"
       ],
-      "url": "https://www.youtube.com/results?search_query=Pheano+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Pheano+Flesh+and+Blood",
+      "id": "dd31a32586c1eda8",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Pheano+Flesh+and+Blood"
     },
     {
       "name": "SNEEP",
@@ -184,7 +259,12 @@
         "meta",
         "discussão"
       ],
-      "url": "https://www.youtube.com/results?search_query=SNEEP+Flesh+and+Blood+TCG"
+      "url": "https://www.youtube.com/results?search_query=SNEEP+Flesh+and+Blood+TCG",
+      "id": "9bded0b76a55939b",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=SNEEP+Flesh+and+Blood+TCG"
     },
     {
       "name": "Man Sant",
@@ -196,7 +276,12 @@
         "eventos",
         "gameplay"
       ],
-      "url": "https://www.youtube.com/results?search_query=Man+Sant+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Man+Sant+Flesh+and+Blood",
+      "id": "82be4e333da80b24",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Man+Sant+Flesh+and+Blood"
     },
     {
       "name": "Loro",
@@ -207,7 +292,12 @@
         "gameplay",
         "Classic Constructed"
       ],
-      "url": "https://www.youtube.com/results?search_query=Loro+Flesh+and+Blood+TCG"
+      "url": "https://www.youtube.com/results?search_query=Loro+Flesh+and+Blood+TCG",
+      "id": "d67f07761612bb01",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Loro+Flesh+and+Blood+TCG"
     },
     {
       "name": "Rage of Blasmophet",
@@ -218,7 +308,12 @@
         "opinião",
         "análise"
       ],
-      "url": "https://www.youtube.com/results?search_query=Rage+of+Blasmophet"
+      "url": "https://www.youtube.com/results?search_query=Rage+of+Blasmophet",
+      "id": "0de1c221803b2f3d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Rage+of+Blasmophet"
     },
     {
       "name": "Dues of the Golden Sands",
@@ -229,7 +324,12 @@
         "deck tech",
         "competitivo"
       ],
-      "url": "https://www.youtube.com/results?search_query=Dues+of+the+Golden+Sands+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Dues+of+the+Golden+Sands+Flesh+and+Blood",
+      "id": "dbc698f4ffc4a5a6",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Dues+of+the+Golden+Sands+Flesh+and+Blood"
     },
     {
       "name": "Red Zone Rogue",
@@ -241,7 +341,12 @@
         "produtos",
         "notícias"
       ],
-      "url": "https://www.youtube.com/results?search_query=Red+Zone+Rogue+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Red+Zone+Rogue+Flesh+and+Blood",
+      "id": "5885be46bc304d1f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Red+Zone+Rogue+Flesh+and+Blood"
     },
     {
       "name": "Sloopdoop",
@@ -253,7 +358,12 @@
         "humor",
         "notícias"
       ],
-      "url": "https://www.youtube.com/results?search_query=Sloopdoop+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Sloopdoop+Flesh+and+Blood",
+      "id": "02c40ab9691519c5",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Sloopdoop+Flesh+and+Blood"
     },
     {
       "name": "Push the Point",
@@ -265,7 +375,12 @@
         "entrevistas",
         "deck tech"
       ],
-      "url": "https://www.youtube.com/results?search_query=Push+the+Point+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Push+the+Point+Flesh+and+Blood",
+      "id": "7ae6e4e6ffe728d6",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Push+the+Point+Flesh+and+Blood"
     },
     {
       "name": "Funk",
@@ -275,7 +390,12 @@
       "focus": [
         "competitivo"
       ],
-      "url": "https://www.youtube.com/results?search_query=Funk+Flesh+and+Blood+TCG"
+      "url": "https://www.youtube.com/results?search_query=Funk+Flesh+and+Blood+TCG",
+      "id": "155bf92e368b525b",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Funk+Flesh+and+Blood+TCG"
     },
     {
       "name": "Spark of Genius",
@@ -288,7 +408,12 @@
         "mercado",
         "entrevistas"
       ],
-      "url": "https://www.youtube.com/results?search_query=Spark+of+Genius+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Spark+of+Genius+Flesh+and+Blood",
+      "id": "4829be30276802d7",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Spark+of+Genius+Flesh+and+Blood"
     },
     {
       "name": "Card Advantage",
@@ -300,7 +425,12 @@
         "estratégia",
         "artigos"
       ],
-      "url": "https://www.youtube.com/results?search_query=Card+Advantage+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Card+Advantage+Flesh+and+Blood",
+      "id": "bb1a8e905ba6f060",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Card+Advantage+Flesh+and+Blood"
     },
     {
       "name": "Block Out Party",
@@ -311,7 +441,12 @@
         "gameplay competitivo",
         "regras avançadas"
       ],
-      "url": "https://www.youtube.com/results?search_query=Block+Out+Party+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Block+Out+Party+Flesh+and+Blood",
+      "id": "31c3007ed38ea2d9",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Block+Out+Party+Flesh+and+Blood"
     },
     {
       "name": "Sin FABTCG",
@@ -323,7 +458,12 @@
         "lore",
         "gameplay"
       ],
-      "url": "https://www.youtube.com/results?search_query=Sin+FABTCG"
+      "url": "https://www.youtube.com/results?search_query=Sin+FABTCG",
+      "id": "cf9e8d0629e54a58",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Sin+FABTCG"
     },
     {
       "name": "FAB Unofficial",
@@ -336,7 +476,12 @@
         "guias",
         "especulação"
       ],
-      "url": "https://www.youtube.com/results?search_query=FAB+Unofficial+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=FAB+Unofficial+Flesh+and+Blood",
+      "id": "691adddc92d07acf",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=FAB+Unofficial+Flesh+and+Blood"
     },
     {
       "name": "Chants & Daggers",
@@ -347,7 +492,12 @@
         "competitivo",
         "gameplay"
       ],
-      "url": "https://www.youtube.com/results?search_query=Chants+and+Daggers+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Chants+and+Daggers+Flesh+and+Blood",
+      "id": "4f60fbed78f883f3",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Chants+and+Daggers+Flesh+and+Blood"
     },
     {
       "name": "Waning Moon Gaming",
@@ -358,7 +508,12 @@
         "Wizard",
         "deck tech"
       ],
-      "url": "https://www.youtube.com/results?search_query=Waning+Moon+Gaming+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Waning+Moon+Gaming+Flesh+and+Blood",
+      "id": "9c9565a3061c86d4",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Waning+Moon+Gaming+Flesh+and+Blood"
     },
     {
       "name": "The Table Pit",
@@ -369,7 +524,12 @@
         "casual",
         "Ultimate Pit Fight"
       ],
-      "url": "https://www.youtube.com/results?search_query=The+Table+Pit+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=The+Table+Pit+Flesh+and+Blood",
+      "id": "77e94a1eeb1e3d80",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=The+Table+Pit+Flesh+and+Blood"
     },
     {
       "name": "FaBrika",
@@ -379,7 +539,12 @@
       "focus": [
         "gameplay"
       ],
-      "url": "https://www.youtube.com/results?search_query=FaBrika+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=FaBrika+Flesh+and+Blood",
+      "id": "a164d2870c7dcf41",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=FaBrika+Flesh+and+Blood"
     },
     {
       "name": "Savage Lands News",
@@ -390,7 +555,12 @@
         "notícias",
         "editorial"
       ],
-      "url": "https://www.youtube.com/results?search_query=Savage+Lands+News+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Savage+Lands+News+Flesh+and+Blood",
+      "id": "3c3bbd72067de19b",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Savage+Lands+News+Flesh+and+Blood"
     },
     {
       "name": "Flesh and Bloodbrothers",
@@ -402,7 +572,12 @@
         "gameplay",
         "produtos"
       ],
-      "url": "https://www.youtube.com/results?search_query=Flesh+and+Bloodbrothers"
+      "url": "https://www.youtube.com/results?search_query=Flesh+and+Bloodbrothers",
+      "id": "c1261d786b374302",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Flesh+and+Bloodbrothers"
     },
     {
       "name": "Cthulhy TCG",
@@ -413,7 +588,12 @@
         "decks",
         "heróis"
       ],
-      "url": "https://www.youtube.com/results?search_query=Cthulhy+TCG+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Cthulhy+TCG+Flesh+and+Blood",
+      "id": "7a0a20e93b35960d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Cthulhy+TCG+Flesh+and+Blood"
     },
     {
       "name": "FABLorian",
@@ -424,7 +604,12 @@
         "lore",
         "worldbuilding"
       ],
-      "url": "https://www.youtube.com/results?search_query=FABLorian+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=FABLorian+Flesh+and+Blood",
+      "id": "dce893b74ab06e94",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=FABLorian+Flesh+and+Blood"
     },
     {
       "name": "playset-seho",
@@ -436,7 +621,12 @@
         "produtos",
         "dados"
       ],
-      "url": "https://www.youtube.com/results?search_query=playset-seho+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=playset-seho+Flesh+and+Blood",
+      "id": "b0dd70ca46241b1a",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=playset-seho+Flesh+and+Blood"
     },
     {
       "name": "Goblin Reserve",
@@ -447,7 +637,12 @@
         "gameplay",
         "produtos"
       ],
-      "url": "https://www.youtube.com/results?search_query=Goblin+Reserve+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Goblin+Reserve+Flesh+and+Blood",
+      "id": "ced4a8eb881d7f0f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Goblin+Reserve+Flesh+and+Blood"
     },
     {
       "name": "Bronson",
@@ -458,7 +653,12 @@
         "comunidade",
         "gameplay"
       ],
-      "url": "https://www.youtube.com/results?search_query=Bronson+Flesh+and+Blood+TCG"
+      "url": "https://www.youtube.com/results?search_query=Bronson+Flesh+and+Blood+TCG",
+      "id": "c8b655fb179f8b5d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Bronson+Flesh+and+Blood+TCG"
     },
     {
       "name": "The Salt Collector",
@@ -469,7 +669,12 @@
         "decks alternativos",
         "heróis"
       ],
-      "url": "https://www.youtube.com/results?search_query=The+Salt+Collector+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=The+Salt+Collector+Flesh+and+Blood",
+      "id": "369b0eb8a9f91571",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=The+Salt+Collector+Flesh+and+Blood"
     },
     {
       "name": "Thistle Tavern",
@@ -480,7 +685,12 @@
         "produtos",
         "mercado"
       ],
-      "url": "https://www.youtube.com/results?search_query=Thistle+Tavern+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Thistle+Tavern+Flesh+and+Blood",
+      "id": "cdbed991ed310538",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Thistle+Tavern+Flesh+and+Blood"
     },
     {
       "name": "Crak N' FaB!",
@@ -491,7 +701,12 @@
         "cena local",
         "gameplay"
       ],
-      "url": "https://www.youtube.com/results?search_query=Crak+N+FaB+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Crak+N+FaB+Flesh+and+Blood",
+      "id": "a778f9015ac51476",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Crak+N+FaB+Flesh+and+Blood"
     },
     {
       "name": "Flesh And Bunny",
@@ -502,7 +717,12 @@
         "casual",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=Flesh+And+Bunny+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Flesh+And+Bunny+Flesh+and+Blood",
+      "id": "f9d0371fc5b829cb",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Flesh+And+Bunny+Flesh+and+Blood"
     },
     {
       "name": "DeadSummer Art",
@@ -514,7 +734,12 @@
         "Rathe",
         "worldbuilding"
       ],
-      "url": "https://www.youtube.com/results?search_query=DeadSummer+Art+Flesh+and+Blood+lore"
+      "url": "https://www.youtube.com/results?search_query=DeadSummer+Art+Flesh+and+Blood+lore",
+      "id": "1b3a8bb753003b16",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=DeadSummer+Art+Flesh+and+Blood+lore"
     },
     {
       "name": "Formato For Fun",
@@ -525,40 +750,63 @@
         "lore",
         "conteúdo em português"
       ],
-      "url": "https://www.youtube.com/results?search_query=Formato+For+Fun+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Formato+For+Fun+Flesh+and+Blood",
+      "id": "c16bc511700f45dc",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Formato+For+Fun+Flesh+and+Blood"
     },
     {
       "name": "Man Sant",
       "platform": "twitch",
+      "twitch_login": "mansant",
       "language": "en",
       "game_id": "flesh-and-blood",
       "focus": [
         "stream",
         "gameplay"
       ],
-      "url": "https://www.twitch.tv/search?term=Man%20Sant%20Flesh%20and%20Blood"
+      "url": "https://www.twitch.tv/search?term=Man%20Sant%20Flesh%20and%20Blood",
+      "id": "603367f4b4f35d74",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.twitch.tv/search?term=Man%20Sant%20Flesh%20and%20Blood"
     },
     {
       "name": "Pheano",
       "platform": "twitch",
+      "twitch_login": "pheano",
       "language": "en",
       "game_id": "flesh-and-blood",
       "focus": [
         "stream",
         "competitivo"
       ],
-      "url": "https://www.twitch.tv/search?term=Pheano%20Flesh%20and%20Blood"
+      "url": "https://www.twitch.tv/search?term=Pheano%20Flesh%20and%20Blood",
+      "id": "873314309f24f42c",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.twitch.tv/search?term=Pheano%20Flesh%20and%20Blood"
     },
     {
       "name": "SNEEP",
       "platform": "twitch",
+      "twitch_login": "sneep",
       "language": "en",
       "game_id": "flesh-and-blood",
       "focus": [
         "stream",
         "competitivo"
       ],
-      "url": "https://www.twitch.tv/search?term=SNEEP%20Flesh%20and%20Blood"
+      "url": "https://www.twitch.tv/search?term=SNEEP%20Flesh%20and%20Blood",
+      "id": "e1f39fd711f7471d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.twitch.tv/search?term=SNEEP%20Flesh%20and%20Blood"
     },
     {
       "name": "Arsenal Pass",
@@ -571,7 +819,12 @@
         "deckbuilding",
         "competitivo"
       ],
-      "url": "https://arsenalpassfab.podbean.com/"
+      "url": "https://arsenalpassfab.podbean.com/",
+      "id": "05a45d494620e32d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://arsenalpassfab.podbean.com/"
     },
     {
       "name": "On the Bauble",
@@ -582,7 +835,12 @@
         "Draft",
         "Limited"
       ],
-      "url": "https://podcasts.apple.com/br/podcast/on-the-bauble-flesh-and-blood-podcast/id1663413943"
+      "url": "https://podcasts.apple.com/br/podcast/on-the-bauble-flesh-and-blood-podcast/id1663413943",
+      "id": "94c061b0401ceae9",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://podcasts.apple.com/br/podcast/on-the-bauble-flesh-and-blood-podcast/id1663413943"
     },
     {
       "name": "Runaways / Rantaways",
@@ -594,7 +852,12 @@
         "torneios",
         "opinião"
       ],
-      "url": "https://tcgrunaways.podbean.com/"
+      "url": "https://tcgrunaways.podbean.com/",
+      "id": "f4033e0fb136d1f9",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://tcgrunaways.podbean.com/"
     },
     {
       "name": "Fresh and Buds",
@@ -606,7 +869,12 @@
         "torneios",
         "spoilers"
       ],
-      "url": "https://podcasts.apple.com/us/podcast/fresh-and-buds/id1586034048"
+      "url": "https://podcasts.apple.com/us/podcast/fresh-and-buds/id1586034048",
+      "id": "b9a7ac35a5b63ea4",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://podcasts.apple.com/us/podcast/fresh-and-buds/id1586034048"
     },
     {
       "name": "M-n-R Cast",
@@ -617,7 +885,12 @@
         "competitivo",
         "estratégia"
       ],
-      "url": "https://www.youtube.com/results?search_query=M-n-R+Cast+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=M-n-R+Cast+Flesh+and+Blood",
+      "id": "057674591dcd7c7f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=M-n-R+Cast+Flesh+and+Blood"
     },
     {
       "name": "Pitch It To Me",
@@ -630,7 +903,12 @@
         "classes",
         "Limited"
       ],
-      "url": "https://podcasts.apple.com/us/podcast/pitch-it-to-me-podcast/id1695399192"
+      "url": "https://podcasts.apple.com/us/podcast/pitch-it-to-me-podcast/id1695399192",
+      "id": "8e7554f55b6afa69",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://podcasts.apple.com/us/podcast/pitch-it-to-me-podcast/id1695399192"
     },
     {
       "name": "Attack Action Podcast",
@@ -642,7 +920,12 @@
         "lore",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=Attack+Action+Podcast+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Attack+Action+Podcast+Flesh+and+Blood",
+      "id": "3bb9ba2e3b3c5ea8",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Attack+Action+Podcast+Flesh+and+Blood"
     },
     {
       "name": "Instant Speed",
@@ -654,7 +937,12 @@
         "entrevistas",
         "competitivo"
       ],
-      "url": "https://www.youtube.com/results?search_query=Instant+Speed+Flesh+and+Blood+podcast"
+      "url": "https://www.youtube.com/results?search_query=Instant+Speed+Flesh+and+Blood+podcast",
+      "id": "1b980260c8b6c058",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Instant+Speed+Flesh+and+Blood+podcast"
     },
     {
       "name": "Common Language Podcast",
@@ -666,7 +954,12 @@
         "opinião",
         "estratégia"
       ],
-      "url": "https://www.youtube.com/results?search_query=Common+Language+Podcast+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Common+Language+Podcast+Flesh+and+Blood",
+      "id": "a464633cf7c7a203",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Common+Language+Podcast+Flesh+and+Blood"
     },
     {
       "name": "Flesh and Pod",
@@ -678,7 +971,12 @@
         "opinião",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=Flesh+and+Pod+podcast"
+      "url": "https://www.youtube.com/results?search_query=Flesh+and+Pod+podcast",
+      "id": "ef5c03c1b168007c",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Flesh+and+Pod+podcast"
     },
     {
       "name": "Cardboard & Beyond",
@@ -690,7 +988,12 @@
         "comunidade",
         "Flesh and Blood"
       ],
-      "url": "https://www.youtube.com/results?search_query=Cardboard+and+Beyond+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Cardboard+and+Beyond+Flesh+and+Blood",
+      "id": "7a3b05d4837a7836",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Cardboard+and+Beyond+Flesh+and+Blood"
     },
     {
       "name": "Living Legends Podcast",
@@ -702,7 +1005,12 @@
         "opinião",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=Living+Legends+Podcast+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Living+Legends+Podcast+Flesh+and+Blood",
+      "id": "56021035d7d0a808",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Living+Legends+Podcast+Flesh+and+Blood"
     },
     {
       "name": "Three Vibing",
@@ -713,7 +1021,12 @@
         "comunidade",
         "opinião"
       ],
-      "url": "https://www.youtube.com/results?search_query=Three+Vibing+Flesh+and+Blood"
+      "url": "https://www.youtube.com/results?search_query=Three+Vibing+Flesh+and+Blood",
+      "id": "cd2c4524bc656a9e",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Three+Vibing+Flesh+and+Blood"
     },
     {
       "name": "Tolarian Community College",
@@ -727,7 +1040,12 @@
         "produtos",
         "humor"
       ],
-      "url": "https://www.youtube.com/results?search_query=Tolarian+Community+College+Magic"
+      "url": "https://www.youtube.com/results?search_query=Tolarian+Community+College+Magic",
+      "id": "de481889b70eb67d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Tolarian+Community+College+Magic"
     },
     {
       "name": "MTGGoldfish",
@@ -740,7 +1058,12 @@
         "notícias",
         "brews"
       ],
-      "url": "https://www.youtube.com/results?search_query=MTGGoldfish"
+      "url": "https://www.youtube.com/results?search_query=MTGGoldfish",
+      "id": "66ae196b350357f0",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=MTGGoldfish"
     },
     {
       "name": "The Command Zone",
@@ -753,7 +1076,12 @@
         "deck tech",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=The+Command+Zone+MTG"
+      "url": "https://www.youtube.com/results?search_query=The+Command+Zone+MTG",
+      "id": "a39c0c40bc7afe58",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=The+Command+Zone+MTG"
     },
     {
       "name": "EDHREC",
@@ -766,7 +1094,12 @@
         "dados",
         "opinião"
       ],
-      "url": "https://www.youtube.com/results?search_query=EDHREC+Magic"
+      "url": "https://www.youtube.com/results?search_query=EDHREC+Magic",
+      "id": "a94e9601eeb81088",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=EDHREC+Magic"
     },
     {
       "name": "LoadingReadyRun MTG",
@@ -779,7 +1112,12 @@
         "draft",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=LoadingReadyRun+MTG"
+      "url": "https://www.youtube.com/results?search_query=LoadingReadyRun+MTG",
+      "id": "cc8cdf460c6f92ec",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=LoadingReadyRun+MTG"
     },
     {
       "name": "Cardmarket Magic",
@@ -792,7 +1130,12 @@
         "humor",
         "competitivo"
       ],
-      "url": "https://www.youtube.com/results?search_query=Cardmarket+Magic"
+      "url": "https://www.youtube.com/results?search_query=Cardmarket+Magic",
+      "id": "78148b748c0a6427",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Cardmarket+Magic"
     },
     {
       "name": "Play to Win",
@@ -804,7 +1147,12 @@
         "gameplay",
         "deck tech"
       ],
-      "url": "https://www.youtube.com/results?search_query=Play+to+Win+MTG"
+      "url": "https://www.youtube.com/results?search_query=Play+to+Win+MTG",
+      "id": "0cf116a927d383e5",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Play+to+Win+MTG"
     },
     {
       "name": "Playing With Power MTG",
@@ -816,7 +1164,12 @@
         "gameplay",
         "jogadas"
       ],
-      "url": "https://www.youtube.com/results?search_query=Playing+With+Power+MTG"
+      "url": "https://www.youtube.com/results?search_query=Playing+With+Power+MTG",
+      "id": "40be0db8f85aa40b",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Playing+With+Power+MTG"
     },
     {
       "name": "Commander at Home",
@@ -828,7 +1181,12 @@
         "gameplay",
         "entretenimento"
       ],
-      "url": "https://www.youtube.com/results?search_query=Commander+at+Home+MTG"
+      "url": "https://www.youtube.com/results?search_query=Commander+at+Home+MTG",
+      "id": "34e6907606e064b2",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Commander+at+Home+MTG"
     },
     {
       "name": "Elder Dragon Hijinks",
@@ -840,7 +1198,12 @@
         "gameplay",
         "humor"
       ],
-      "url": "https://www.youtube.com/results?search_query=Elder+Dragon+Hijinks"
+      "url": "https://www.youtube.com/results?search_query=Elder+Dragon+Hijinks",
+      "id": "8df225f6759efda0",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Elder+Dragon+Hijinks"
     },
     {
       "name": "Rhystic Studies",
@@ -853,7 +1216,12 @@
         "lore",
         "ensaios"
       ],
-      "url": "https://www.youtube.com/results?search_query=Rhystic+Studies+Magic"
+      "url": "https://www.youtube.com/results?search_query=Rhystic+Studies+Magic",
+      "id": "5097a37243d66036",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Rhystic+Studies+Magic"
     },
     {
       "name": "Spice8Rack",
@@ -866,7 +1234,12 @@
         "humor",
         "ensaios"
       ],
-      "url": "https://www.youtube.com/results?search_query=Spice8Rack+Magic"
+      "url": "https://www.youtube.com/results?search_query=Spice8Rack+Magic",
+      "id": "0e6dd713c898888c",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Spice8Rack+Magic"
     },
     {
       "name": "PleasantKenobi",
@@ -879,7 +1252,12 @@
         "notícias",
         "gameplay"
       ],
-      "url": "https://www.youtube.com/results?search_query=PleasantKenobi+MTG"
+      "url": "https://www.youtube.com/results?search_query=PleasantKenobi+MTG",
+      "id": "22cd150f8aa4f04d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=PleasantKenobi+MTG"
     },
     {
       "name": "Nitpicking Nerds",
@@ -892,7 +1270,12 @@
         "decks",
         "listas"
       ],
-      "url": "https://www.youtube.com/results?search_query=Nitpicking+Nerds"
+      "url": "https://www.youtube.com/results?search_query=Nitpicking+Nerds",
+      "id": "d3c4f0b772ee6bf5",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Nitpicking+Nerds"
     },
     {
       "name": "The Spike Feeders",
@@ -905,7 +1288,12 @@
         "gameplay",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=The+Spike+Feeders+MTG"
+      "url": "https://www.youtube.com/results?search_query=The+Spike+Feeders+MTG",
+      "id": "20e030dce3d60bb7",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=The+Spike+Feeders+MTG"
     },
     {
       "name": "CovertGoBlue",
@@ -917,7 +1305,12 @@
         "gameplay",
         "decks"
       ],
-      "url": "https://www.youtube.com/results?search_query=CovertGoBlue+MTG"
+      "url": "https://www.youtube.com/results?search_query=CovertGoBlue+MTG",
+      "id": "14ac6604e72e7306",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=CovertGoBlue+MTG"
     },
     {
       "name": "Crokeyz",
@@ -929,7 +1322,12 @@
         "gameplay",
         "competitivo"
       ],
-      "url": "https://www.youtube.com/results?search_query=Crokeyz+MTG"
+      "url": "https://www.youtube.com/results?search_query=Crokeyz+MTG",
+      "id": "43de6d0fb1b7dc27",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Crokeyz+MTG"
     },
     {
       "name": "NumotTheNummy",
@@ -941,7 +1339,12 @@
         "draft",
         "gameplay"
       ],
-      "url": "https://www.youtube.com/results?search_query=NumotTheNummy+MTG"
+      "url": "https://www.youtube.com/results?search_query=NumotTheNummy+MTG",
+      "id": "bd6a7ea63319c48f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=NumotTheNummy+MTG"
     },
     {
       "name": "MTGRemy",
@@ -953,7 +1356,12 @@
         "memes",
         "humor"
       ],
-      "url": "https://www.youtube.com/results?search_query=MTGRemy"
+      "url": "https://www.youtube.com/results?search_query=MTGRemy",
+      "id": "5cb2f12576a68c32",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=MTGRemy"
     },
     {
       "name": "Magic The Noah",
@@ -965,7 +1373,12 @@
         "brincadeiras",
         "gameplay alternativo"
       ],
-      "url": "https://www.youtube.com/results?search_query=Magic+The+Noah+MTG"
+      "url": "https://www.youtube.com/results?search_query=Magic+The+Noah+MTG",
+      "id": "f84f08dead19d65d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Magic+The+Noah+MTG"
     },
     {
       "name": "MaldHound",
@@ -978,11 +1391,17 @@
         "memes",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=MaldHound+MTG"
+      "url": "https://www.youtube.com/results?search_query=MaldHound+MTG",
+      "id": "c432eee2b1b51916",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=MaldHound+MTG"
     },
     {
       "name": "Magic",
       "platform": "twitch",
+      "twitch_login": "magic",
       "language": "en",
       "game_id": "magic",
       "focus": [
@@ -990,11 +1409,17 @@
         "eventos",
         "gameplay"
       ],
-      "url": "https://www.twitch.tv/magic"
+      "url": "https://www.twitch.tv/magic",
+      "id": "f35fb0f0f3a64fd5",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.twitch.tv/magic"
     },
     {
       "name": "Crokeyz",
       "platform": "twitch",
+      "twitch_login": "crokeyz",
       "language": "en",
       "game_id": "magic",
       "focus": [
@@ -1002,11 +1427,17 @@
         "gameplay",
         "competitivo"
       ],
-      "url": "https://www.twitch.tv/search?term=Crokeyz"
+      "url": "https://www.twitch.tv/search?term=Crokeyz",
+      "id": "2faec142f970957f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.twitch.tv/search?term=Crokeyz"
     },
     {
       "name": "NumotTheNummy",
       "platform": "twitch",
+      "twitch_login": "numotthenummy",
       "language": "en",
       "game_id": "magic",
       "focus": [
@@ -1014,7 +1445,12 @@
         "draft",
         "gameplay"
       ],
-      "url": "https://www.twitch.tv/search?term=NumotTheNummy"
+      "url": "https://www.twitch.tv/search?term=NumotTheNummy",
+      "id": "a05c1205abd181d3",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.twitch.tv/search?term=NumotTheNummy"
     },
     {
       "name": "Limited Resources",
@@ -1026,7 +1462,12 @@
         "draft",
         "estratégia"
       ],
-      "url": "https://www.youtube.com/results?search_query=Limited+Resources+podcast+MTG"
+      "url": "https://www.youtube.com/results?search_query=Limited+Resources+podcast+MTG",
+      "id": "831471ef31a52aa0",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Limited+Resources+podcast+MTG"
     },
     {
       "name": "Lords of Limited",
@@ -1038,7 +1479,12 @@
         "draft",
         "estratégia"
       ],
-      "url": "https://www.youtube.com/results?search_query=Lords+of+Limited+podcast"
+      "url": "https://www.youtube.com/results?search_query=Lords+of+Limited+podcast",
+      "id": "676551fb82670039",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Lords+of+Limited+podcast"
     },
     {
       "name": "Drive to Work",
@@ -1050,7 +1496,12 @@
         "história",
         "bastidores"
       ],
-      "url": "https://www.youtube.com/results?search_query=Drive+to+Work+Mark+Rosewater"
+      "url": "https://www.youtube.com/results?search_query=Drive+to+Work+Mark+Rosewater",
+      "id": "df9ad76b89bdd102",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Drive+to+Work+Mark+Rosewater"
     },
     {
       "name": "MTGGoldfish Podcast",
@@ -1063,7 +1514,12 @@
         "mercado",
         "decks"
       ],
-      "url": "https://www.youtube.com/results?search_query=MTGGoldfish+Podcast"
+      "url": "https://www.youtube.com/results?search_query=MTGGoldfish+Podcast",
+      "id": "7ecd972721980b54",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=MTGGoldfish+Podcast"
     },
     {
       "name": "The Command Zone Podcast",
@@ -1075,7 +1531,12 @@
         "deckbuilding",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=Command+Zone+Podcast"
+      "url": "https://www.youtube.com/results?search_query=Command+Zone+Podcast",
+      "id": "a7db3077224be2ad",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Command+Zone+Podcast"
     },
     {
       "name": "EDHRECast",
@@ -1087,7 +1548,12 @@
         "dados",
         "deckbuilding"
       ],
-      "url": "https://www.youtube.com/results?search_query=EDHRECast"
+      "url": "https://www.youtube.com/results?search_query=EDHRECast",
+      "id": "61d27419ad5b2a5a",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=EDHRECast"
     },
     {
       "name": "Lucky Paper Radio",
@@ -1099,7 +1565,12 @@
         "design",
         "comunidade"
       ],
-      "url": "https://www.youtube.com/results?search_query=Lucky+Paper+Radio+MTG"
+      "url": "https://www.youtube.com/results?search_query=Lucky+Paper+Radio+MTG",
+      "id": "ef4092363caba4b2",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Lucky+Paper+Radio+MTG"
     },
     {
       "name": "The Dive Down",
@@ -1111,7 +1582,12 @@
         "Pioneer",
         "competitivo"
       ],
-      "url": "https://www.youtube.com/results?search_query=The+Dive+Down+MTG+Podcast"
+      "url": "https://www.youtube.com/results?search_query=The+Dive+Down+MTG+Podcast",
+      "id": "dd592b7502ab6b9a",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=The+Dive+Down+MTG+Podcast"
     },
     {
       "name": "Faithless Brewing",
@@ -1124,7 +1600,12 @@
         "Pioneer",
         "deckbuilding"
       ],
-      "url": "https://www.youtube.com/results?search_query=Faithless+Brewing+MTG"
+      "url": "https://www.youtube.com/results?search_query=Faithless+Brewing+MTG",
+      "id": "4b61f36c1c12b89d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null,
+      "resolved_url": "https://www.youtube.com/results?search_query=Faithless+Brewing+MTG"
     }
   ]
 }
