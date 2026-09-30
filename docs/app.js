@@ -1,5 +1,6 @@
-const STORAGE_KEY = "tcg-radar-curation-v2";
+const STORAGE_KEY = "tcg-radar-curation-v3";
 const PAGE_SIZE = 50;
+const DISPLAY_DAYS = 7;
 const CORE_GAMES = new Set(["flesh-and-blood", "pokemon", "magic"]);
 
 const TYPE_LABELS = {
@@ -11,8 +12,10 @@ const TRUST_LABELS = {
   official: "OFICIAL", media: "IMPRENSA", community: "COMUNIDADE",
   rumor: "RUMOR", archive: "ARQUIVO", market: "MERCADO",
 };
+const PLATFORM_LABELS = { youtube: "YouTube", twitch: "Twitch", podcast: "Podcast" };
 
 let payload = { items: [], generated_at: null };
+let mediaPayload = { sources: [], generated_at: null };
 let curation = loadCuration();
 let visibleLimit = PAGE_SIZE;
 let gameMode = { scope: "core", game: "" };
@@ -24,7 +27,10 @@ const els = {
   state: document.querySelector("#stateFilter"), stats: document.querySelector("#stats"),
   generated: document.querySelector("#generatedAt"), visible: document.querySelector("#visibleCount"),
   export: document.querySelector("#exportButton"), more: document.querySelector("#showMoreButton"),
-  allGamePills: document.querySelector("#allGamePills"),
+  allGamePills: document.querySelector("#allGamePills"), newsView: document.querySelector("#newsView"),
+  mediaView: document.querySelector("#mediaView"), mediaList: document.querySelector("#mediaList"),
+  mediaSearch: document.querySelector("#mediaSearchInput"), mediaPlatform: document.querySelector("#mediaPlatformFilter"),
+  mediaLanguage: document.querySelector("#mediaLanguageFilter"), mediaCount: document.querySelector("#mediaCount"),
 };
 
 function loadCuration() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; } }
@@ -32,10 +38,12 @@ function saveCuration() { localStorage.setItem(STORAGE_KEY, JSON.stringify(curat
 function stateOf(id) { return curation[id] || "pending"; }
 function setState(id, state) { if (state === "pending") delete curation[id]; else curation[id] = state; saveCuration(); render(); }
 
-function fmtDate(value) {
+function fmtDate(value, withTime = false) {
   if (!value) return "Data não informada";
-  try { return new Intl.DateTimeFormat("pt-BR", { dateStyle: "short" }).format(new Date(value)); }
-  catch { return value; }
+  try {
+    const options = withTime ? { dateStyle: "short", timeStyle: "short" } : { dateStyle: "short" };
+    return new Intl.DateTimeFormat("pt-BR", options).format(new Date(value));
+  } catch { return value; }
 }
 function normalize(value) { return (value || "").toLocaleLowerCase(); }
 function compact(value) { return (value || "").replace(/\s+/g, " ").trim(); }
@@ -43,6 +51,15 @@ function trimText(value, max = 620) {
   const text = compact(value); if (text.length <= max) return text;
   const cut = text.slice(0, max); const lastSpace = cut.lastIndexOf(" ");
   return `${cut.slice(0, lastSpace > 400 ? lastSpace : max).trim()}…`;
+}
+function isWithinWindow(value) {
+  if (!value) return false;
+  const stamp = Date.parse(value);
+  if (!Number.isFinite(stamp)) return false;
+  const now = Date.now();
+  const oldest = now - DISPLAY_DAYS * 24 * 60 * 60 * 1000;
+  const futureTolerance = now + 6 * 60 * 60 * 1000;
+  return stamp >= oldest && stamp <= futureTolerance;
 }
 
 function cleanSummary(item) {
@@ -68,10 +85,12 @@ function contentTypesFor(item) {
   return found.length ? found : ["news"];
 }
 
+function recentItems() { return payload.items.filter(item => isWithinWindow(item.published_at)); }
+
 function filteredItems() {
   const q = normalize(els.search.value.trim()); const language = els.language.value;
   const state = els.state.value; const type = els.contentType.value; const trust = els.trust.value;
-  return payload.items.filter(item => {
+  return recentItems().filter(item => {
     const itemState = stateOf(item.id);
     if (gameMode.game && item.game_id !== gameMode.game) return false;
     if (!gameMode.game && gameMode.scope === "core" && !CORE_GAMES.has(item.game_id)) return false;
@@ -84,18 +103,19 @@ function filteredItems() {
       if (!haystack.includes(q)) return false;
     }
     return true;
-  }).sort((a,b) => (Date.parse(b.published_at || b.discovered_at || "") || 0) - (Date.parse(a.published_at || a.discovered_at || "") || 0));
+  }).sort((a,b) => (Date.parse(b.published_at || "") || 0) - (Date.parse(a.published_at || "") || 0));
 }
 
 function badge(text, className="") { const span=document.createElement("span"); span.className=`badge ${className}`.trim(); span.textContent=text; return span; }
 
 function renderStats() {
-  const visibleBase = payload.items.filter(x => !gameMode.game ? (gameMode.scope !== "core" || CORE_GAMES.has(x.game_id)) : x.game_id === gameMode.game);
-  const interesting = payload.items.filter(x => stateOf(x.id)==="interesting").length;
+  const base = recentItems();
+  const visibleBase = base.filter(x => !gameMode.game ? (gameMode.scope !== "core" || CORE_GAMES.has(x.game_id)) : x.game_id === gameMode.game);
+  const interesting = base.filter(x => stateOf(x.id)==="interesting").length;
   const official = visibleBase.filter(x => x.official).length;
   const loreStrategy = visibleBase.filter(x => contentTypesFor(x).some(t => ["lore","deck","combo","speculation","curiosity"].includes(t))).length;
   els.stats.innerHTML = `
-    <div class="stat"><strong>${visibleBase.length}</strong><span>conteúdos nesta visão</span></div>
+    <div class="stat"><strong>${visibleBase.length}</strong><span>conteúdos dos últimos 7 dias</span></div>
     <div class="stat"><strong>${official}</strong><span>fontes oficiais</span></div>
     <div class="stat"><strong>${loreStrategy}</strong><span>lore, decks, combos e ideias</span></div>
     <div class="stat"><strong>${interesting}</strong><span>marcados como interessantes</span></div>`;
@@ -105,7 +125,7 @@ function render() {
   renderStats(); const allFiltered=filteredItems(); const items=allFiltered.slice(0,visibleLimit);
   els.visible.textContent = allFiltered.length > items.length ? `Mostrando ${items.length} de ${allFiltered.length} conteúdo(s)` : `${allFiltered.length} conteúdo(s)`;
   els.more.hidden = items.length >= allFiltered.length; els.list.innerHTML="";
-  if (!items.length) { els.list.innerHTML='<div class="empty">Nenhum conteúdo com esses filtros.</div>'; return; }
+  if (!items.length) { els.list.innerHTML='<div class="empty">Nenhum conteúdo publicado nos últimos 7 dias com esses filtros.</div>'; return; }
   const fragment=document.createDocumentFragment();
   for (const item of items) {
     const node=els.template.content.cloneNode(true); const article=node.querySelector(".news-item");
@@ -119,7 +139,7 @@ function render() {
     time.textContent=fmtDate(item.published_at); time.dateTime=item.published_at || "";
     title.textContent=compact(item.title); title.href=item.url; summary.textContent=cleanSummary(item);
     source.textContent=`Fonte: ${item.source || "não identificada"}`;
-    const details=[item.region,item.collector === "official-page" ? "coleta oficial" : item.collector === "independent-page" ? "portal direto" : "agregador"].filter(Boolean).join(" · ");
+    const details=[item.region,item.collector === "official-page" ? "coleta oficial" : item.collector === "independent-page" ? "portal direto" : item.collector === "independent-search" ? "busca por fonte" : "agregador"].filter(Boolean).join(" · ");
     origin.textContent=details ? ` · ${details}` : ""; open.href=item.url;
     interesting.classList.toggle("active",current==="interesting"); ignore.classList.toggle("active",current==="ignored");
     interesting.addEventListener("click",()=>setState(item.id,current==="interesting"?"pending":"interesting"));
@@ -129,7 +149,7 @@ function render() {
 }
 
 function populateOtherGames() {
-  const games=[...new Map(payload.items.map(x=>[x.game_id,x.game])).entries()].filter(([id])=>!CORE_GAMES.has(id)).sort((a,b)=>a[1].localeCompare(b[1],"pt-BR"));
+  const games=[...new Map(recentItems().map(x=>[x.game_id,x.game])).entries()].filter(([id])=>!CORE_GAMES.has(id)).sort((a,b)=>a[1].localeCompare(b[1],"pt-BR"));
   for (const [id,name] of games) { const btn=document.createElement("button"); btn.className="game-pill"; btn.dataset.game=id; btn.textContent=name; els.allGamePills.appendChild(btn); }
 }
 function setGameSelection(button) {
@@ -140,18 +160,68 @@ function wireGamePills() { document.querySelectorAll(".game-pill").forEach(btn=>
 function resetAndRender() { visibleLimit=PAGE_SIZE; render(); }
 
 function exportInteresting() {
-  const items=payload.items.filter(x=>stateOf(x.id)==="interesting");
-  const blob=new Blob([JSON.stringify({exported_at:new Date().toISOString(),count:items.length,items},null,2)],{type:"application/json;charset=utf-8"});
+  const items=recentItems().filter(x=>stateOf(x.id)==="interesting");
+  const blob=new Blob([JSON.stringify({exported_at:new Date().toISOString(),window_days:DISPLAY_DAYS,count:items.length,items},null,2)],{type:"application/json;charset=utf-8"});
   const url=URL.createObjectURL(blob); const a=document.createElement("a"); a.href=url; a.download=`tcg-radar-interessantes-${new Date().toISOString().slice(0,10)}.json`; a.click(); URL.revokeObjectURL(url);
 }
 
+function mediaFiltered() {
+  const q=normalize(els.mediaSearch.value.trim()); const platform=els.mediaPlatform.value; const language=els.mediaLanguage.value;
+  return (mediaPayload.sources || []).filter(item => {
+    if (platform && item.platform !== platform) return false;
+    if (language && item.language !== language) return false;
+    if (q) {
+      const haystack=normalize([item.name,item.platform,item.language,...(item.focus || [])].join(" "));
+      if (!haystack.includes(q)) return false;
+    }
+    return true;
+  }).sort((a,b)=>a.name.localeCompare(b.name,"pt-BR"));
+}
+
+function renderMedia() {
+  const items=mediaFiltered(); els.mediaList.innerHTML="";
+  els.mediaCount.textContent=`${items.length} de ${(mediaPayload.sources || []).length} fontes`;
+  if (!items.length) { els.mediaList.innerHTML='<div class="empty media-empty">Nenhum canal com esses filtros.</div>'; return; }
+  const frag=document.createDocumentFragment();
+  for (const item of items) {
+    const card=document.createElement("article"); card.className=`media-card platform-${item.platform || "other"}`;
+    const top=document.createElement("div"); top.className="media-card-top";
+    const platform=document.createElement("span"); platform.className="media-platform"; platform.textContent=PLATFORM_LABELS[item.platform] || item.platform || "Canal";
+    const lang=document.createElement("span"); lang.className="media-lang"; lang.textContent=(item.language || "?").toUpperCase();
+    top.append(platform,lang);
+    const title=document.createElement("h3"); title.textContent=item.name;
+    const focus=document.createElement("div"); focus.className="media-focus";
+    for (const tag of item.focus || []) focus.appendChild(badge(tag,"media-tag"));
+    const link=document.createElement("a"); link.className="button media-link"; link.href=item.url; link.target="_blank"; link.rel="noopener noreferrer"; link.textContent=item.platform === "podcast" ? "Abrir podcast" : item.platform === "twitch" ? "Abrir / buscar na Twitch" : "Abrir / buscar no YouTube";
+    card.append(top,title,focus,link); frag.appendChild(card);
+  }
+  els.mediaList.appendChild(frag);
+}
+
+function setView(view) {
+  const media=view === "media";
+  els.newsView.hidden=media; els.mediaView.hidden=!media; els.export.hidden=media;
+  document.querySelectorAll(".view-tab").forEach(btn=>btn.classList.toggle("active",btn.dataset.view===view));
+  if (media) renderMedia();
+}
+
+async function fetchJson(url, fallback) {
+  try { const res=await fetch(url,{cache:"no-store"}); if(!res.ok) throw new Error(`HTTP ${res.status}`); return await res.json(); }
+  catch { return fallback; }
+}
+
 async function init() {
-  try {
-    const res=await fetch("./data/news.json",{cache:"no-store"}); if(!res.ok) throw new Error(`HTTP ${res.status}`); payload=await res.json();
-    populateOtherGames(); wireGamePills();
-    els.generated.textContent=payload.generated_at ? `Atualizado: ${fmtDate(payload.generated_at)}` : "Ainda não atualizado.";
-    [els.search,els.contentType,els.language,els.trust,els.state].forEach(el=>el.addEventListener("input",resetAndRender));
-    els.export.addEventListener("click",exportInteresting); els.more.addEventListener("click",()=>{visibleLimit+=PAGE_SIZE;render();}); render();
-  } catch(err) { els.list.innerHTML=`<div class="empty">Não foi possível carregar o radar: ${err.message}</div>`; }
+  const [news,media]=await Promise.all([
+    fetchJson("./data/news.json", {items:[],generated_at:null}),
+    fetchJson("./data/media.json", {sources:[],generated_at:null}),
+  ]);
+  payload=news; mediaPayload=media;
+  populateOtherGames(); wireGamePills();
+  els.generated.textContent=payload.generated_at ? `Atualizado: ${fmtDate(payload.generated_at,true)} · janela: 7 dias · coleta: 3h` : "Ainda não atualizado.";
+  [els.search,els.contentType,els.language,els.trust,els.state].forEach(el=>el.addEventListener("input",resetAndRender));
+  [els.mediaSearch,els.mediaPlatform,els.mediaLanguage].forEach(el=>el.addEventListener("input",renderMedia));
+  document.querySelectorAll(".view-tab").forEach(btn=>btn.addEventListener("click",()=>setView(btn.dataset.view)));
+  els.export.addEventListener("click",exportInteresting); els.more.addEventListener("click",()=>{visibleLimit+=PAGE_SIZE;render();});
+  render(); renderMedia();
 }
 init();

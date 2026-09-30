@@ -23,10 +23,13 @@ DATA = ROOT / "data" / "news.json"
 DOCS_DATA = ROOT / "docs" / "data" / "news.json"
 HEALTH = ROOT / "data" / "collector-health.json"
 DOCS_HEALTH = ROOT / "docs" / "data" / "collector-health.json"
+MEDIA_DATA = ROOT / "data" / "media.json"
+DOCS_MEDIA_DATA = ROOT / "docs" / "data" / "media.json"
 
 MAX_ITEMS_PER_FEED = 15
-RETENTION_DAYS = 45
+RETENTION_DAYS = 7
 REQUEST_PAUSE_SECONDS = 0.08
+FUTURE_TOLERANCE_HOURS = 6
 
 
 def load_yaml(path: Path):
@@ -90,7 +93,7 @@ def parse_entry_date(entry) -> str | None:
     dt = datetime(*parsed[:6], tzinfo=timezone.utc)
 
     # Não aceite datas muito no futuro.
-    if dt > datetime.now(timezone.utc) + timedelta(days=2):
+    if dt > datetime.now(timezone.utc) + timedelta(hours=FUTURE_TOLERANCE_HOURS):
         return None
 
     return dt.isoformat()
@@ -335,16 +338,16 @@ def merge_items(existing_items: list[dict], new_items: list[dict]) -> list[dict]
             exact_index[key] = item["id"]
 
     now = datetime.now(timezone.utc)
-    future_limit = now + timedelta(days=2)
+    future_limit = now + timedelta(hours=FUTURE_TOLERANCE_HOURS)
 
     kept = []
     for item in by_id.values():
         raw_date = item.get("published_at")
 
-        # Conteúdo evergreen pode ser útil mesmo sem data estruturada.
+        # O radar de novidades só exibe conteúdo com data de publicação verificável.
+        # Fontes evergreen continuam configuradas como referência, mas não entram
+        # na lista recente se não houver uma data confiável.
         if not raw_date:
-            if item.get("evergreen"):
-                kept.append(enrich_item(item))
             continue
 
         try:
@@ -356,7 +359,10 @@ def merge_items(existing_items: list[dict], new_items: list[dict]) -> list[dict]
         except Exception:
             continue
 
-        retention = int(item.get("retention_days") or RETENTION_DAYS)
+        # A vitrine é deliberadamente curta: somente publicações dos últimos 7 dias.
+        # Valores maiores em fontes antigas servem apenas como metadado histórico e
+        # não podem fazer conteúdo velho reaparecer como novidade.
+        retention = min(int(item.get("retention_days") or RETENTION_DAYS), RETENTION_DAYS)
         cutoff = now - timedelta(days=retention)
         if cutoff <= dt <= future_limit:
             kept.append(enrich_item(item))
@@ -368,7 +374,28 @@ def merge_items(existing_items: list[dict], new_items: list[dict]) -> list[dict]
     return kept
 
 
+
+def write_media_catalog():
+    path = CONFIG / "media_sources.yml"
+    if not path.exists():
+        return
+    cfg = load_yaml(path) or {}
+    sources = cfg.get("sources", [])
+    payload = {
+        "generated_at": now_iso(),
+        "count": len(sources),
+        "sources": sources,
+    }
+    serialized = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    MEDIA_DATA.parent.mkdir(parents=True, exist_ok=True)
+    DOCS_MEDIA_DATA.parent.mkdir(parents=True, exist_ok=True)
+    MEDIA_DATA.write_text(serialized, encoding="utf-8")
+    DOCS_MEDIA_DATA.write_text(serialized, encoding="utf-8")
+
+
 def main():
+    write_media_catalog()
+
     games_cfg = load_yaml(CONFIG / "games.yml")
     locales_cfg = load_yaml(CONFIG / "locales.yml")
     official_cfg = load_yaml(CONFIG / "official_domains.yml")

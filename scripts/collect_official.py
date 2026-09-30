@@ -56,7 +56,7 @@ def _valid_date(dt):
         return None
     # Uma notícia pode ser coletada com atraso, mas a data de publicação não deve
     # estar semanas no futuro. Isso evita confundir data de lançamento citada no texto.
-    if dt > datetime.now(timezone.utc) + timedelta(days=2):
+    if dt > datetime.now(timezone.utc) + timedelta(hours=6):
         return None
     return dt.isoformat()
 

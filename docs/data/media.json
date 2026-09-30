@@ -1,0 +1,719 @@
+{
+  "generated_at": "2026-09-30T19:20:00+00:00",
+  "count": 61,
+  "sources": [
+    {
+      "name": "DMArmada",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "notícias",
+        "meta",
+        "opinião",
+        "spoilers"
+      ],
+      "url": "https://www.youtube.com/results?search_query=DMArmada+Flesh+and+Blood"
+    },
+    {
+      "name": "TCG TALK",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "notícias",
+        "meta",
+        "opinião"
+      ],
+      "url": "https://www.youtube.com/results?search_query=TCG+TALK+Flesh+and+Blood"
+    },
+    {
+      "name": "Dice Commando",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "notícias",
+        "regras",
+        "banimentos",
+        "meta"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Dice+Commando+Flesh+and+Blood"
+    },
+    {
+      "name": "AggroBlaze96",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "competitivo",
+        "Talishar",
+        "deck tech"
+      ],
+      "url": "https://www.youtube.com/results?search_query=AggroBlaze96+Flesh+and+Blood"
+    },
+    {
+      "name": "Lupinefiasco / Daily FaB",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "gameplay",
+        "matchups",
+        "decks"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Lupinefiasco+Daily+FaB"
+    },
+    {
+      "name": "The Teklo Foundry",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "estratégia",
+        "deck tech",
+        "teoria"
+      ],
+      "url": "https://www.youtube.com/results?search_query=The+Teklo+Foundry+Flesh+and+Blood"
+    },
+    {
+      "name": "Kloo TCG",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "notícias",
+        "spoilers",
+        "especulação",
+        "decks"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Kloo+TCG+Flesh+and+Blood"
+    },
+    {
+      "name": "The World of Rathe",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "decks",
+        "mercado",
+        "notícias",
+        "opinião"
+      ],
+      "url": "https://www.youtube.com/results?search_query=The+World+of+Rathe+Flesh+and+Blood"
+    },
+    {
+      "name": "TCGTed",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "mercado",
+        "notícias",
+        "conteúdo geral"
+      ],
+      "url": "https://www.youtube.com/results?search_query=TCGTed+Flesh+and+Blood"
+    },
+    {
+      "name": "Three Floating",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "gameplay",
+        "decks",
+        "competitivo"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Three+Floating+Flesh+and+Blood"
+    },
+    {
+      "name": "AshenWingzTCG",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "Silver Age",
+        "deck tech",
+        "notícias"
+      ],
+      "url": "https://www.youtube.com/results?search_query=AshenWingzTCG+Flesh+and+Blood"
+    },
+    {
+      "name": "Dozr",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "theorycraft",
+        "Illusionist",
+        "Ranger",
+        "Wizard"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Dozr+Flesh+and+Blood+TCG"
+    },
+    {
+      "name": "HamMan215",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "opinião",
+        "discussão"
+      ],
+      "url": "https://www.youtube.com/results?search_query=HamMan215+Flesh+and+Blood"
+    },
+    {
+      "name": "Pheano",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "competitivo",
+        "gameplay",
+        "análise"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Pheano+Flesh+and+Blood"
+    },
+    {
+      "name": "SNEEP",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "competitivo",
+        "meta",
+        "discussão"
+      ],
+      "url": "https://www.youtube.com/results?search_query=SNEEP+Flesh+and+Blood+TCG"
+    },
+    {
+      "name": "Man Sant",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "streams",
+        "eventos",
+        "gameplay"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Man+Sant+Flesh+and+Blood"
+    },
+    {
+      "name": "Loro",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "gameplay",
+        "Classic Constructed"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Loro+Flesh+and+Blood+TCG"
+    },
+    {
+      "name": "Rage of Blasmophet",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "opinião",
+        "análise"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Rage+of+Blasmophet"
+    },
+    {
+      "name": "Dues of the Golden Sands",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "deck tech",
+        "competitivo"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Dues+of+the+Golden+Sands+Flesh+and+Blood"
+    },
+    {
+      "name": "Red Zone Rogue",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "colecionismo",
+        "produtos",
+        "notícias"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Red+Zone+Rogue+Flesh+and+Blood"
+    },
+    {
+      "name": "Sloopdoop",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "opinião",
+        "humor",
+        "notícias"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Sloopdoop+Flesh+and+Blood"
+    },
+    {
+      "name": "Push the Point",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "competitivo",
+        "entrevistas",
+        "deck tech"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Push+the+Point+Flesh+and+Blood"
+    },
+    {
+      "name": "Funk",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "competitivo"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Funk+Flesh+and+Blood+TCG"
+    },
+    {
+      "name": "Spark of Genius",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "gameplay",
+        "meta",
+        "mercado",
+        "entrevistas"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Spark+of+Genius+Flesh+and+Blood"
+    },
+    {
+      "name": "Card Advantage",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "educacional",
+        "estratégia",
+        "artigos"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Card+Advantage+Flesh+and+Blood"
+    },
+    {
+      "name": "Block Out Party",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "gameplay competitivo",
+        "regras avançadas"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Block+Out+Party+Flesh+and+Blood"
+    },
+    {
+      "name": "Sin FABTCG",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "notícias",
+        "lore",
+        "gameplay"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Sin+FABTCG"
+    },
+    {
+      "name": "FAB Unofficial",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "deck tech",
+        "entrevistas",
+        "guias",
+        "especulação"
+      ],
+      "url": "https://www.youtube.com/results?search_query=FAB+Unofficial+Flesh+and+Blood"
+    },
+    {
+      "name": "Chants & Daggers",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "competitivo",
+        "gameplay"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Chants+and+Daggers+Flesh+and+Blood"
+    },
+    {
+      "name": "Waning Moon Gaming",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "Wizard",
+        "deck tech"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Waning+Moon+Gaming+Flesh+and+Blood"
+    },
+    {
+      "name": "The Table Pit",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "casual",
+        "Ultimate Pit Fight"
+      ],
+      "url": "https://www.youtube.com/results?search_query=The+Table+Pit+Flesh+and+Blood"
+    },
+    {
+      "name": "FaBrika",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "gameplay"
+      ],
+      "url": "https://www.youtube.com/results?search_query=FaBrika+Flesh+and+Blood"
+    },
+    {
+      "name": "Savage Lands News",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "notícias",
+        "editorial"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Savage+Lands+News+Flesh+and+Blood"
+    },
+    {
+      "name": "Flesh and Bloodbrothers",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "deck tech",
+        "gameplay",
+        "produtos"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Flesh+and+Bloodbrothers"
+    },
+    {
+      "name": "Cthulhy TCG",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "decks",
+        "heróis"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Cthulhy+TCG+Flesh+and+Blood"
+    },
+    {
+      "name": "FABLorian",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "lore",
+        "worldbuilding"
+      ],
+      "url": "https://www.youtube.com/results?search_query=FABLorian+Flesh+and+Blood"
+    },
+    {
+      "name": "playset-seho",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "mercado",
+        "produtos",
+        "dados"
+      ],
+      "url": "https://www.youtube.com/results?search_query=playset-seho+Flesh+and+Blood"
+    },
+    {
+      "name": "Goblin Reserve",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "gameplay",
+        "produtos"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Goblin+Reserve+Flesh+and+Blood"
+    },
+    {
+      "name": "Bronson",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "comunidade",
+        "gameplay"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Bronson+Flesh+and+Blood+TCG"
+    },
+    {
+      "name": "The Salt Collector",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "decks alternativos",
+        "heróis"
+      ],
+      "url": "https://www.youtube.com/results?search_query=The+Salt+Collector+Flesh+and+Blood"
+    },
+    {
+      "name": "Thistle Tavern",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "produtos",
+        "mercado"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Thistle+Tavern+Flesh+and+Blood"
+    },
+    {
+      "name": "Crak N' FaB!",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "cena local",
+        "gameplay"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Crak+N+FaB+Flesh+and+Blood"
+    },
+    {
+      "name": "Flesh And Bunny",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "casual",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Flesh+And+Bunny+Flesh+and+Blood"
+    },
+    {
+      "name": "DeadSummer Art",
+      "platform": "youtube",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "lore",
+        "Rathe",
+        "worldbuilding"
+      ],
+      "url": "https://www.youtube.com/results?search_query=DeadSummer+Art+Flesh+and+Blood+lore"
+    },
+    {
+      "name": "Formato For Fun",
+      "platform": "youtube",
+      "language": "pt",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "lore",
+        "conteúdo em português"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Formato+For+Fun+Flesh+and+Blood"
+    },
+    {
+      "name": "Man Sant",
+      "platform": "twitch",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "stream",
+        "gameplay"
+      ],
+      "url": "https://www.twitch.tv/search?term=Man%20Sant%20Flesh%20and%20Blood"
+    },
+    {
+      "name": "Pheano",
+      "platform": "twitch",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "stream",
+        "competitivo"
+      ],
+      "url": "https://www.twitch.tv/search?term=Pheano%20Flesh%20and%20Blood"
+    },
+    {
+      "name": "SNEEP",
+      "platform": "twitch",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "stream",
+        "competitivo"
+      ],
+      "url": "https://www.twitch.tv/search?term=SNEEP%20Flesh%20and%20Blood"
+    },
+    {
+      "name": "Arsenal Pass",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "estratégia",
+        "meta",
+        "deckbuilding",
+        "competitivo"
+      ],
+      "url": "https://arsenalpassfab.podbean.com/"
+    },
+    {
+      "name": "On the Bauble",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "Draft",
+        "Limited"
+      ],
+      "url": "https://podcasts.apple.com/br/podcast/on-the-bauble-flesh-and-blood-podcast/id1663413943"
+    },
+    {
+      "name": "Runaways / Rantaways",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "competitivo",
+        "torneios",
+        "opinião"
+      ],
+      "url": "https://tcgrunaways.podbean.com/"
+    },
+    {
+      "name": "Fresh and Buds",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "estratégia",
+        "torneios",
+        "spoilers"
+      ],
+      "url": "https://podcasts.apple.com/us/podcast/fresh-and-buds/id1586034048"
+    },
+    {
+      "name": "M-n-R Cast",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "competitivo",
+        "estratégia"
+      ],
+      "url": "https://www.youtube.com/results?search_query=M-n-R+Cast+Flesh+and+Blood"
+    },
+    {
+      "name": "Pitch It To Me",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "design",
+        "sequencing",
+        "classes",
+        "Limited"
+      ],
+      "url": "https://podcasts.apple.com/us/podcast/pitch-it-to-me-podcast/id1695399192"
+    },
+    {
+      "name": "Attack Action Podcast",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "estratégia",
+        "lore",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Attack+Action+Podcast+Flesh+and+Blood"
+    },
+    {
+      "name": "Instant Speed",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "notícias",
+        "entrevistas",
+        "competitivo"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Instant+Speed+Flesh+and+Blood+podcast"
+    },
+    {
+      "name": "Common Language Podcast",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "comunidade",
+        "opinião",
+        "estratégia"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Common+Language+Podcast+Flesh+and+Blood"
+    },
+    {
+      "name": "Flesh and Pod",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "notícias",
+        "opinião",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Flesh+and+Pod+podcast"
+    },
+    {
+      "name": "Cardboard & Beyond",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "TCG",
+        "comunidade",
+        "Flesh and Blood"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Cardboard+and+Beyond+Flesh+and+Blood"
+    },
+    {
+      "name": "Living Legends Podcast",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "meta",
+        "opinião",
+        "comunidade"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Living+Legends+Podcast+Flesh+and+Blood"
+    },
+    {
+      "name": "Three Vibing",
+      "platform": "podcast",
+      "language": "en",
+      "game_id": "flesh-and-blood",
+      "focus": [
+        "comunidade",
+        "opinião"
+      ],
+      "url": "https://www.youtube.com/results?search_query=Three+Vibing+Flesh+and+Blood"
+    }
+  ]
+}

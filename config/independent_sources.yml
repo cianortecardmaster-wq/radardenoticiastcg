@@ -9,8 +9,8 @@ sources:
   trust: media
   games:
   - '*'
-  query: 'site:tcgplayer.com/content (TCG OR "trading card game" OR "Flesh and Blood" OR "Magic: The Gathering" OR "Pokemon TCG" OR Lorcana OR
-    Riftbound OR "One Piece Card Game")'
+  query: 'site:tcgplayer.com/content (TCG OR "trading card game" OR "Flesh and Blood" OR "Magic: The Gathering" OR "Pokemon
+    TCG" OR Lorcana OR Riftbound OR "One Piece Card Game")'
   max_items: 25
 - id: card-gamer
   mode: search
@@ -376,3 +376,328 @@ sources:
   query: site:mushureport.com Lorcana
   max_items: 30
   retention_days: 365
+- id: tcgplayer-fab
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: TCGplayer — Flesh and Blood
+  domain: tcgplayer.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - flesh-and-blood
+  query: site:tcgplayer.com/content/flesh-and-blood "Flesh and Blood"
+  max_items: 35
+  retention_days: 7
+- id: card-gamer-fab
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Card Gamer — Flesh and Blood
+  domain: cardgamer.com
+  language: en
+  locale: en-US
+  region: global
+  trust: media
+  games:
+  - flesh-and-blood
+  query: site:cardgamer.com/games/tcgs/flesh-and-blood "Flesh and Blood"
+  max_items: 30
+  retention_days: 7
+- id: fabrec-articles
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: FABREC
+  domain: fabrec.gg
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:fabrec.gg/articles Flesh Blood
+  max_items: 30
+  retention_days: 7
+- id: fab-bazaar
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: FaB Bazaar
+  url: https://fabbazaar.app/
+  language: en
+  region: global
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /articles/
+  max_items: 35
+  detail_fetch_limit: 20
+  retention_days: 7
+  default_content_types:
+  - deck
+- id: fab-insights
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: FaB Insights
+  url: https://www.fabinsights.net/
+  language: en
+  region: global
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /20\d{2}/
+  max_items: 35
+  detail_fetch_limit: 20
+  retention_days: 7
+  default_content_types:
+  - meta
+- id: fablazing
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Fablazing
+  domain: fablazing.com
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:fablazing.com Flesh Blood
+  max_items: 25
+  retention_days: 7
+  default_content_types:
+  - meta
+- id: fabtcgmeta
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: FaB TCG Meta
+  domain: fabtcgmeta.com
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:fabtcgmeta.com Flesh Blood
+  max_items: 25
+  retention_days: 7
+  default_content_types:
+  - meta
+- id: fabrary
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: FaBrary
+  domain: fabrary.net
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:fabrary.net Flesh Blood deck
+  max_items: 30
+  retention_days: 7
+  default_content_types:
+  - deck
+- id: pitchstack
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Pitchstack
+  domain: pitchstack.gg
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:pitchstack.gg Flesh Blood news deck
+  max_items: 30
+  retention_days: 7
+- id: fabstreams
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: FAB Streams
+  domain: fabstreams.com
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:fabstreams.com Flesh Blood
+  max_items: 25
+  retention_days: 7
+  default_content_types:
+  - meta
+- id: fabled-brazil
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Fabled Brazil
+  url: https://www.fabled.com.br/
+  language: pt
+  region: br
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /(?!$).+
+  max_items: 30
+  detail_fetch_limit: 20
+  retention_days: 7
+  default_content_types:
+  - deck
+  - meta
+- id: cianorte-card-masters
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Cianorte Card Masters
+  domain: cianortecardmasters.com.br
+  language: pt
+  locale: pt-BR
+  region: br
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:cianortecardmasters.com.br "Flesh and Blood"
+  max_items: 30
+  retention_days: 7
+- id: metafy-fab
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Metafy — Flesh and Blood
+  domain: metafy.gg
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:metafy.gg Flesh Blood guide primer
+  max_items: 25
+  retention_days: 7
+  default_content_types:
+  - deck
+  - meta
+- id: reddit-fab
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Reddit — r/FleshandBloodTCG
+  domain: reddit.com
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:reddit.com/r/FleshandBloodTCG "Flesh and Blood"
+  max_items: 40
+  retention_days: 7
+- id: fab-cube
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: The Fab Cube
+  url: https://fleshcube.com/
+  language: en
+  region: global
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /(updates|about|blog|news)/
+  max_items: 20
+  detail_fetch_limit: 10
+  retention_days: 7
+  default_content_types:
+  - curiosity
+- id: rathe-adventures
+  mode: page
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: The Rathe Adventures / FaB PvE
+  url: https://fabpve.com/
+  language: en
+  region: global
+  trust: community
+  official: false
+  collector: independent-page
+  include_path_regex: /(?!$).+
+  max_items: 25
+  detail_fetch_limit: 12
+  retention_days: 7
+  default_content_types:
+  - lore
+  - curiosity
+- id: tower-number-nine
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Tower Number Nine
+  domain: towernumbernine.com
+  language: en
+  locale: en-US
+  region: global
+  trust: archive
+  games:
+  - flesh-and-blood
+  query: site:towernumbernine.com/blog "Flesh and Blood"
+  max_items: 20
+  retention_days: 7
+- id: bcw-fab
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: BCW Supplies Blog — Flesh and Blood
+  domain: bcwsupplies.com
+  language: en
+  locale: en-US
+  region: us
+  trust: archive
+  games:
+  - flesh-and-blood
+  query: site:bcwsupplies.com/blog "Flesh and Blood"
+  max_items: 20
+  retention_days: 7
+- id: legendary-stories-search
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: Legendary Stories — novidades
+  domain: legendarystories.net
+  language: en
+  locale: en-US
+  region: global
+  trust: community
+  games:
+  - flesh-and-blood
+  query: site:legendarystories.net Flesh Blood lore
+  max_items: 25
+  retention_days: 7
+  default_content_types:
+  - lore
+- id: rathe-times-recent
+  mode: search
+  game_id: flesh-and-blood
+  game: Flesh and Blood
+  name: The Rathe Times — arquivo recente
+  domain: rathetimes.com
+  language: en
+  locale: en-US
+  region: global
+  trust: archive
+  games:
+  - flesh-and-blood
+  query: site:rathetimes.com "Flesh and Blood"
+  max_items: 25
+  retention_days: 7
