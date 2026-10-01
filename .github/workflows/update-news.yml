@@ -33,7 +33,7 @@ jobs:
       - name: Salvar atualização
         shell: bash
         run: |
-          if git diff --quiet -- data/news.json docs/data/news.json data/collector-health.json docs/data/collector-health.json data/media.json docs/data/media.json; then
+          if git diff --quiet -- data/news.json docs/data/news.json data/collector-health.json docs/data/collector-health.json data/media.json docs/data/media.json data/people.json docs/data/people.json; then
             echo "Nenhuma mudança encontrada."
             exit 0
           fi
@@ -47,6 +47,8 @@ jobs:
           git add docs/data/collector-health.json
           git add data/media.json
           git add docs/data/media.json
+          git add data/people.json
+          git add docs/data/people.json
 
           git commit -m "chore: atualizar radar de notícias"
           git push
