@@ -13,10 +13,19 @@ const TRUST_LABELS = {
   official: "OFICIAL", media: "IMPRENSA", community: "COMUNIDADE",
   rumor: "RUMOR", archive: "ARQUIVO", market: "MERCADO",
 };
-const PLATFORM_LABELS = { youtube: "YouTube", twitch: "Twitch", podcast: "Podcast" };
+const PLATFORM_LABELS = {
+  youtube:"YouTube", twitch:"Twitch", podcast:"Podcast", artstation:"ArtStation",
+  instagram:"Instagram", x:"X", bluesky:"Bluesky", behance:"Behance", cara:"Cara",
+  metafy:"Metafy", patreon:"Patreon", tcgplayer:"TCGplayer", website:"Site / Linktree",
+  linkedin:"LinkedIn", facebook:"Facebook", tiktok:"TikTok", discord:"Discord",
+  vgen:"VGen", inprnt:"InPrnt", pinterest:"Pinterest", pixiv:"Pixiv", weibo:"Weibo",
+  bilibili:"Bilibili", xiaohongshu:"Xiaohongshu", vk:"VK", deviantart:"DeviantArt"
+};
 
 let payload = { items: [], generated_at: null };
 let mediaPayload = { sources: [], generated_at: null, active_count: 0, content_count: 0, content_ready: false };
+let peoplePayload = { people: [], generated_at: null, active_count: 0, content_count: 0, content_ready: false };
+let peopleMode = "artdev";
 let curation = loadCuration();
 let visibleLimit = PAGE_SIZE;
 let gameMode = { scope: "core", game: "" };
@@ -32,6 +41,12 @@ const els = {
   mediaView: document.querySelector("#mediaView"), mediaList: document.querySelector("#mediaList"),
   mediaSearch: document.querySelector("#mediaSearchInput"), mediaGame: document.querySelector("#mediaGameFilter"),
   mediaPlatform: document.querySelector("#mediaPlatformFilter"), mediaLanguage: document.querySelector("#mediaLanguageFilter"), mediaActivity: document.querySelector("#mediaActivityFilter"), mediaCount: document.querySelector("#mediaCount"),
+  peopleView: document.querySelector("#peopleView"), peopleList: document.querySelector("#peopleList"),
+  peopleSearch: document.querySelector("#peopleSearchInput"), peopleGame: document.querySelector("#peopleGameFilter"),
+  peopleRole: document.querySelector("#peopleRoleFilter"), peoplePlatform: document.querySelector("#peoplePlatformFilter"),
+  peopleActivity: document.querySelector("#peopleActivityFilter"), peopleCount: document.querySelector("#peopleCount"),
+  peopleEyebrow: document.querySelector("#peopleEyebrow"), peopleTitle: document.querySelector("#peopleTitle"),
+  peopleDescription: document.querySelector("#peopleDescription"),
 };
 
 function loadCuration() { try { return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {}; } catch { return {}; } }
@@ -269,11 +284,186 @@ function renderMedia() {
   els.mediaList.appendChild(frag);
 }
 
+
+function gameLabel(game) {
+  if (game === "magic") return "MAGIC";
+  if (game === "flesh-and-blood") return "FAB";
+  if (game === "pokemon") return "POKÉMON";
+  return (game || "").toUpperCase();
+}
+
+function peopleRecentItems(item) {
+  return (item.recent_items || [])
+    .filter(entry => isWithinWindow(entry.published_at))
+    .sort((a,b) => (Date.parse(b.published_at || "") || 0) - (Date.parse(a.published_at || "") || 0));
+}
+
+function configurePeopleView(mode) {
+  peopleMode=mode;
+  const artdev=mode === "artdev";
+  els.peopleEyebrow.textContent=artdev ? "FLESH AND BLOOD" : "FLESH AND BLOOD + MAGIC";
+  els.peopleTitle.textContent=artdev ? "Artistas & desenvolvedores" : "Pro players";
+  els.peopleDescription.textContent=artdev
+    ? "Perfis públicos, portfólios e publicações recentes de artistas, diretores e desenvolvedores ligados a Flesh and Blood."
+    : "Jogadores de alto nível com produção pública: vídeos, podcasts, streams, artigos, guias, Patreon e Metafy.";
+
+  const previous=els.peopleRole.value;
+  const roles=artdev
+    ? [["","Todas as funções"],["artista","Artistas"],["desenvolv","Desenvolvimento / LSS"],["direção","Direção criativa"]]
+    : [["","Todas as funções"],["pro player","Pro players"],["autor","Autores / guias"],["podcast","Podcasts"],["youtube","YouTube / Twitch"],["coach","Coaching"]];
+  els.peopleRole.innerHTML="";
+  for (const [value,label] of roles) {
+    const option=document.createElement("option"); option.value=value; option.textContent=label; els.peopleRole.appendChild(option);
+  }
+  if ([...els.peopleRole.options].some(o=>o.value===previous)) els.peopleRole.value=previous;
+}
+
+function peopleFiltered() {
+  const category=peopleMode === "artdev" ? "artist-developer" : "pro-player";
+  const q=normalize(els.peopleSearch.value.trim());
+  const game=els.peopleGame.value;
+  const role=normalize(els.peopleRole.value);
+  const platform=els.peoplePlatform.value;
+  const activity=els.peopleActivity.value;
+
+  return (peoplePayload.people || []).filter(item => {
+    if (item.category !== category) return false;
+    const recent=peopleRecentItems(item);
+    const profiles=item.profiles || [];
+    if (game && !(item.games || []).includes(game)) return false;
+    if (role && !normalize((item.roles || []).join(" ")).includes(role) && !normalize(item.description || "").includes(role)) return false;
+    if (platform) {
+      const hasProfile=profiles.some(p=>p.platform===platform);
+      const hasRecent=recent.some(entry=>(entry.content_platform || entry.source_platform)===platform);
+      if (!hasProfile && !hasRecent) return false;
+    }
+    if (activity === "recent" && peoplePayload.content_ready !== false && !recent.length) return false;
+    if (q) {
+      const haystack=normalize([
+        item.name,item.description,...(item.roles || []),...(item.games || []),
+        ...profiles.flatMap(p=>[p.label,p.platform]),
+        ...recent.flatMap(entry=>[entry.title,entry.author,entry.kind,entry.source_name,entry.content_platform])
+      ].join(" "));
+      if (!haystack.includes(q)) return false;
+    }
+    return true;
+  }).sort((a,b) => {
+    const aLatest=Date.parse(peopleRecentItems(a)[0]?.published_at || "") || 0;
+    const bLatest=Date.parse(peopleRecentItems(b)[0]?.published_at || "") || 0;
+    return (bLatest-aLatest) || a.name.localeCompare(b.name,"pt-BR");
+  });
+}
+
+function personRecentKindLabel(entry) {
+  if (entry.kind === "artwork" || entry.content_platform === "artstation") return "Arte";
+  if (entry.kind === "episode") return "Episódio";
+  if (entry.kind === "vod") return "VOD";
+  if (entry.content_platform === "youtube") return "Vídeo";
+  return "Conteúdo";
+}
+
+function renderPeople() {
+  const items=peopleFiltered();
+  els.peopleList.innerHTML="";
+  const category=peopleMode === "artdev" ? "artist-developer" : "pro-player";
+  const all=(peoplePayload.people || []).filter(item=>item.category===category);
+  const active=all.filter(item=>peopleRecentItems(item).length).length;
+  const recentCount=all.reduce((sum,item)=>sum+peopleRecentItems(item).length,0);
+  els.peopleCount.textContent=`${items.length} exibidos · ${active} com conteúdo recente · ${recentCount} conteúdos / 7 dias`;
+
+  if (!items.length) {
+    const msg=peoplePayload.content_ready === false
+      ? "O diretório está pronto, mas a primeira coleta de conteúdo ainda não rodou."
+      : "Nenhum perfil corresponde aos filtros selecionados.";
+    els.peopleList.innerHTML=`<div class="empty media-empty">${msg}</div>`;
+    return;
+  }
+
+  const frag=document.createDocumentFragment();
+  for (const item of items) {
+    const recent=peopleRecentItems(item);
+    const card=document.createElement("article"); card.className="media-card people-card";
+
+    const top=document.createElement("div"); top.className="media-card-top";
+    const kind=document.createElement("span"); kind.className="media-platform";
+    kind.textContent=peopleMode === "artdev" ? ((item.roles || []).some(r=>normalize(r).includes("desenvolv")) ? "ARTISTA / DESENVOLVIMENTO" : "ARTISTA") : "PRO PLAYER";
+    const activity=document.createElement("span"); activity.className="media-lang";
+    activity.textContent=recent.length ? `${recent.length} RECENTE${recent.length===1?"":"S"}` : "PERFIL";
+    top.append(kind,activity);
+
+    const title=document.createElement("h3"); title.textContent=item.name;
+    const focus=document.createElement("div"); focus.className="media-focus";
+    for (const game of item.games || []) focus.appendChild(badge(gameLabel(game),"media-game-badge"));
+    for (const roleName of (item.roles || []).slice(0,3)) focus.appendChild(badge(roleName,"media-tag"));
+
+    if (item.description) {
+      const desc=document.createElement("p"); desc.className="people-description"; desc.textContent=item.description;
+      card.append(top,title,focus,desc);
+    } else {
+      card.append(top,title,focus);
+    }
+
+    const profiles=item.profiles || [];
+    if (profiles.length) {
+      const links=document.createElement("div"); links.className="people-links";
+      for (const profile of profiles) {
+        const a=document.createElement("a"); a.className=`people-link profile-${profile.platform || "other"}`;
+        a.href=profile.url; a.target="_blank"; a.rel="noopener noreferrer";
+        a.textContent=profile.label || PLATFORM_LABELS[profile.platform] || profile.platform;
+        links.appendChild(a);
+      }
+      card.appendChild(links);
+    } else {
+      const noProfiles=document.createElement("p"); noProfiles.className="people-no-profiles";
+      noProfiles.textContent="Nenhum perfil público confirmado no diretório.";
+      card.appendChild(noProfiles);
+    }
+
+    const recentWrap=document.createElement("div"); recentWrap.className="media-recent";
+    const recentHead=document.createElement("div"); recentHead.className="media-recent-head";
+    const recentTitle=document.createElement("strong");
+    recentTitle.textContent=recent.length ? `${recent.length} publicação${recent.length===1?"":"ões"} coletada${recent.length===1?"":"s"} nos últimos 7 dias` : "Sem conteúdo coletável nos últimos 7 dias";
+    recentHead.appendChild(recentTitle); recentWrap.appendChild(recentHead);
+
+    if (recent.length) {
+      const list=document.createElement("div"); list.className="media-recent-list";
+      for (const entry of recent) {
+        const row=document.createElement("a"); row.className="media-recent-item"; row.href=entry.url; row.target="_blank"; row.rel="noopener noreferrer";
+        if (entry.image_url) {
+          const img=document.createElement("img"); img.src=entry.image_url; img.alt=""; img.loading="lazy"; row.appendChild(img);
+        } else {
+          const placeholder=document.createElement("span"); placeholder.className="media-thumb-placeholder";
+          placeholder.textContent=entry.content_platform === "artstation" ? "ART" : entry.content_platform === "twitch" ? "LIVE" : entry.kind === "episode" ? "POD" : "▶";
+          row.appendChild(placeholder);
+        }
+        const body=document.createElement("span"); body.className="media-recent-body";
+        const entryTitle=document.createElement("span"); entryTitle.className="media-recent-title"; entryTitle.textContent=entry.title;
+        const meta=document.createElement("span"); meta.className="media-recent-meta";
+        const source=PLATFORM_LABELS[entry.content_platform || entry.source_platform] || entry.source_name || "";
+        meta.textContent=[personRecentKindLabel(entry),source,fmtDate(entry.published_at)].filter(Boolean).join(" · ");
+        body.append(entryTitle,meta); row.appendChild(body); list.appendChild(row);
+      }
+      recentWrap.appendChild(list);
+    }
+    card.appendChild(recentWrap);
+    frag.appendChild(card);
+  }
+  els.peopleList.appendChild(frag);
+}
+
 function setView(view) {
   const media=view === "media";
-  els.newsView.hidden=media; els.mediaView.hidden=!media; els.export.hidden=media;
+  const people=view === "artdev" || view === "proplayers";
+  els.newsView.hidden=media || people;
+  els.mediaView.hidden=!media;
+  els.peopleView.hidden=!people;
+  els.export.hidden=media || people;
   document.querySelectorAll(".view-tab").forEach(btn=>btn.classList.toggle("active",btn.dataset.view===view));
   if (media) renderMedia();
+  if (people) {
+    configurePeopleView(view);
+    renderPeople();
+  }
 }
 
 async function fetchJson(url, fallback) {
@@ -282,17 +472,19 @@ async function fetchJson(url, fallback) {
 }
 
 async function init() {
-  const [news,media]=await Promise.all([
+  const [news,media,people]=await Promise.all([
     fetchJson("./data/news.json", {items:[],generated_at:null}),
     fetchJson("./data/media.json", {sources:[],generated_at:null,content_ready:false}),
+    fetchJson("./data/people.json", {people:[],generated_at:null,content_ready:false}),
   ]);
-  payload=news; mediaPayload=media;
-  populateOtherGames(); wireGamePills();
+  payload=news; mediaPayload=media; peoplePayload=people;
+  populateOtherGames(); wireGamePills(); configurePeopleView("artdev");
   els.generated.textContent=payload.generated_at ? `Atualizado: ${fmtDate(payload.generated_at,true)} · janela: 7 dias · coleta: 3h` : "Ainda não atualizado.";
   [els.search,els.contentType,els.language,els.trust,els.sort,els.state].forEach(el=>el.addEventListener("input",resetAndRender));
   [els.mediaSearch,els.mediaGame,els.mediaPlatform,els.mediaLanguage,els.mediaActivity].filter(Boolean).forEach(el=>el.addEventListener("input",renderMedia));
+  [els.peopleSearch,els.peopleGame,els.peopleRole,els.peoplePlatform,els.peopleActivity].filter(Boolean).forEach(el=>el.addEventListener("input",renderPeople));
   document.querySelectorAll(".view-tab").forEach(btn=>btn.addEventListener("click",()=>setView(btn.dataset.view)));
   els.export.addEventListener("click",exportInteresting); els.more.addEventListener("click",()=>{visibleLimit+=PAGE_SIZE;render();});
-  render(); renderMedia();
+  render(); renderMedia(); renderPeople();
 }
 init();

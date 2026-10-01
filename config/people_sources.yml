@@ -1,0 +1,1343 @@
+people:
+- name: Aaron Curtis
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Alan Hale
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Development Contribution — Round the Table
+  profiles: []
+  content_sources: []
+- name: Alex Norvill
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Development Contribution — Round the Table
+  profiles: []
+  content_sources: []
+- name: Alexis Susani
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://alexis-susani.artstation.com/
+  content_sources:
+  - name: Alexis Susani
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://alexis-susani.artstation.com/
+- name: Aluísio Cervelle
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://aluisiocsantos.artstation.com/
+  - platform: behance
+    label: Behance
+    url: https://www.behance.net/cervellesantos
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/aluisiocsantos/
+  - platform: linkedin
+    label: LinkedIn
+    url: https://br.linkedin.com/in/aluisiosantos
+  - platform: website
+    label: Site / Linktree
+    url: https://aluisiocsantos.com/
+  content_sources:
+  - name: Aluísio Cervelle
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://aluisiocsantos.artstation.com/
+- name: Anthony Balmes
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Arif Wijaya
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://arifwijaya.artstation.com/
+  content_sources:
+  - name: Arif Wijaya
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://arifwijaya.artstation.com/
+- name: Bryan Gottlieb
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Senior Game Designer / Lead Developer; Product Design
+  profiles:
+  - platform: x
+    label: X
+    url: https://x.com/BryanGFaB
+  content_sources: []
+- name: Calum Gittins
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Chris Gehring
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Lead/Product Development; Product Engineering
+  profiles: []
+  content_sources: []
+- name: Chris Pearce
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Booster Draft Development
+  profiles: []
+  content_sources: []
+- name: Daria Khlebnikova
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://savagehenry.artstation.com/
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/silentbob90/
+  content_sources:
+  - name: Daria Khlebnikova
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://savagehenry.artstation.com/
+- name: David Greig
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Development Contribution / Manufacturing
+  profiles: []
+  content_sources: []
+- name: Eilene Cherie
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://eilenecherie.artstation.com/
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/eilenecw/
+  content_sources:
+  - name: Eilene Cherie
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://eilenecherie.artstation.com/
+- name: Enmoire
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: instagram
+    label: Instagram
+    url: https://instagram.com/enmoire
+  - platform: x
+    label: X
+    url: https://x.com/enmoire
+  - platform: discord
+    label: Discord
+    url: https://discord.com/invite/y47t8fB39z
+  - platform: vgen
+    label: VGen
+    url: https://vgen.co/enmoire
+  - platform: patreon
+    label: Patreon / Ko-Fi
+    url: https://www.patreon.com/enmoire
+  - platform: website
+    label: Site / Linktree
+    url: https://enmoire.com/
+  content_sources: []
+- name: Federico Musetti
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/fedemusettiart
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/federicomusettiart/
+  - platform: facebook
+    label: Facebook
+    url: https://www.facebook.com/federicomusettiart
+  - platform: pinterest
+    label: Pinterest
+    url: https://linktr.ee/federicomusettiart
+  - platform: linkedin
+    label: LinkedIn
+    url: https://linktr.ee/federicomusettiart
+  - platform: website
+    label: Site / Linktree
+    url: https://linktr.ee/federicomusettiart
+  content_sources:
+  - name: Federico Musetti
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://www.artstation.com/fedemusettiart
+- name: Galih M
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://krotz.artstation.com/
+  content_sources:
+  - name: Galih M
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://krotz.artstation.com/
+- name: Harry Wyatt
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Concept Design; Asset Rendering
+  profiles: []
+  content_sources: []
+- name: Henrique Lindner
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  - Desenvolvimento / direção criativa
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://lindnr.artstation.com/
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/lindnr/
+  - platform: inprnt
+    label: InPrnt
+    url: https://www.inprnt.com/gallery/lindnr/
+  content_sources:
+  - name: Henrique Lindner
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://lindnr.artstation.com/
+  description: Assistant Art Director; Asset Rendering; Foiling
+- name: Iain Kenderdine
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Development Contribution — Round the Table
+  profiles: []
+  content_sources: []
+- name: Isuardi Therianto
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/search?sort_by=relevance&query=Isuardi%20Therianto
+  content_sources: []
+- name: Jacob Pearson
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: James White
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Criador; Vision Design; Product Design; Development
+  profiles:
+  - platform: x
+    label: X
+    url: https://x.com/james_white
+  content_sources: []
+- name: Janelle Gottlieb
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Development Contribution — Round the Table
+  profiles: []
+  content_sources: []
+- name: Jason Chung
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Jason Lai
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Jessada Sutthi
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://jessada.artstation.com/
+  content_sources:
+  - name: Jessada Sutthi
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://jessada.artstation.com/
+- name: Jessketchin
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Concept Design; Asset Rendering; Packaging
+  profiles: []
+  content_sources: []
+- name: Joshua Scott
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Rules / Syntax / Policy
+  profiles: []
+  content_sources: []
+- name: João G. Santos
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://jguilherme08.artstation.com/
+  content_sources:
+  - name: João G. Santos
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://jguilherme08.artstation.com/
+- name: Justin Gottlieb
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Development Contribution — Round the Table
+  profiles: []
+  content_sources: []
+- name: Kanadekana
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: instagram
+    label: Instagram
+    url: https://instagram.com/kanadekana
+  - platform: x
+    label: X
+    url: https://twitter.com/kanadekana08
+  - platform: facebook
+    label: Facebook
+    url: https://www.facebook.com/kanadekana08/
+  - platform: discord
+    label: Discord
+    url: https://discord.com/invite/UzRzuj5Ty2
+  - platform: website
+    label: Site / Linktree
+    url: https://kanadekana.com/
+  content_sources: []
+- name: Karol Ruszkiewicz
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Senior Game Developer; Product Design
+  profiles:
+  - platform: x
+    label: X
+    url: https://x.com/LSS_Karol
+  - platform: linkedin
+    label: LinkedIn
+    url: https://nz.linkedin.com/in/karol-ruszkiewicz-26936276
+  content_sources: []
+- name: Kevin Kim
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Kevin Sidharta
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/kevin_sidharta
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/sidharta_kevin/
+  - platform: x
+    label: X
+    url: https://x.com/sidh_kev
+  content_sources:
+  - name: Kevin Sidharta
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://www.artstation.com/kevin_sidharta
+- name: Kieran McEntegart
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Kimberly Pantoni
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://k_ptn.artstation.com/
+  content_sources:
+  - name: Kimberly Pantoni
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://k_ptn.artstation.com/
+- name: Lius Lasahido
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://lasahido.artstation.com/
+  content_sources:
+  - name: Lius Lasahido
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://lasahido.artstation.com/
+- name: Livia Prima
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://dopaprime.artstation.com/
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/dopaprime/
+  content_sources:
+  - name: Livia Prima
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://dopaprime.artstation.com/
+- name: Lizhe Liang
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://lizhelart.artstation.com/
+  content_sources:
+  - name: Lizhe Liang
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://lizhelart.artstation.com/
+- name: Maerel Hibadita
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://innervalue.artstation.com/
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/innervalue/
+  content_sources:
+  - name: Maerel Hibadita
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://innervalue.artstation.com/
+- name: Mario Wibisono
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/mario_wibisono
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/wibisonomario/
+  content_sources:
+  - name: Mario Wibisono
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://www.artstation.com/mario_wibisono
+- name: Mariusz Gandzel
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/mariusz
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/gandzelmariusz
+  - platform: website
+    label: Site / Linktree
+    url: https://mariuszgandzel.carbonmade.com/
+  content_sources:
+  - name: Mariusz Gandzel
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://www.artstation.com/mariusz
+- name: Mark Poole
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/markpooleartist/
+  - platform: x
+    label: X
+    url: https://x.com/markpooleartist
+  - platform: website
+    label: Site / Linktree
+    url: https://markpoole.com/
+  content_sources: []
+- name: Mateusz Wiśniewski
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://mateusz_wisniewski.artstation.com/
+  content_sources:
+  - name: Mateusz Wiśniewski
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://mateusz_wisniewski.artstation.com/
+- name: MJ Fetesio
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  - Desenvolvimento / direção criativa
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/mjfetesio
+  content_sources:
+  - name: MJ Fetesio
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://www.artstation.com/mjfetesio
+  description: Concept Lead; Concept Design; Asset Rendering
+- name: Nathaniel Himawan
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/ninesicks
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/ninesicks/
+  - platform: x
+    label: X
+    url: https://x.com/ninesicks
+  - platform: website
+    label: Site / Linktree
+    url: https://linktr.ee/ninesicks
+  content_sources:
+  - name: Nathaniel Himawan
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://www.artstation.com/ninesicks
+- name: Newsun Zeng
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Niccolo Paqueo
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Rules / Syntax
+  profiles: []
+  content_sources: []
+- name: Nikolay Moskvin
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/artist/nik_moskvin
+  - platform: behance
+    label: Behance
+    url: https://www.behance.net/nimphoenixad48
+  content_sources: []
+- name: Orson CaptainSass
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/mrcaptain
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/captainsass_art/
+  - platform: linkedin
+    label: LinkedIn
+    url: https://fr.linkedin.com/in/orson-captainsass-bab08817b
+  - platform: website
+    label: Site / Linktree
+    url: https://captainsass.art/
+  content_sources:
+  - name: Orson CaptainSass
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://www.artstation.com/mrcaptain
+- name: Othon Nikolaidis
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/artwork/xJ1g64
+  content_sources: []
+- name: Reza Afshar
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://rezaafshar.artstation.com/
+  - platform: behance
+    label: Behance
+    url: https://www.behance.net/reza-afshar/
+  - platform: instagram
+    label: Instagram
+    url: https://instagram.com/rezaa_afsharr
+  - platform: x
+    label: X
+    url: https://twitter.com/rezaafsharr
+  - platform: linkedin
+    label: LinkedIn
+    url: https://linktr.ee/rezaafsharr
+  - platform: youtube
+    label: YouTube
+    url: https://youtube.com/@rezaafsharr
+  - platform: website
+    label: Site / Linktree
+    url: https://linktr.ee/rezaafsharr
+  content_sources:
+  - name: Reza Afshar
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://rezaafshar.artstation.com/
+  - name: Reza Afshar
+    platform: youtube
+    language: en
+    game_id: flesh-and-blood
+    url: https://youtube.com/@rezaafsharr
+    youtube_search_fallback: false
+- name: Riordan Delmiro
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://riordan.artstation.com/
+  - platform: cara
+    label: Cara
+    url: https://cara.app/riordan
+  content_sources:
+  - name: Riordan Delmiro
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://riordan.artstation.com/
+- name: Robbie Wen
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Creative Director; Art Director; Production
+  profiles: []
+  content_sources: []
+- name: Rohan Khanna
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Sam Yang
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  - Desenvolvimento / direção criativa
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://samyang.artstation.com/
+  content_sources:
+  - name: Sam Yang
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://samyang.artstation.com/
+  description: Art Director; Concept Design; Character Design
+- name: Sasha Markovic
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development / contribuição
+  profiles:
+  - platform: x
+    label: X
+    url: https://x.com/markovictory
+  content_sources: []
+- name: Satriasa
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://satriasa.artstation.com/
+  content_sources:
+  - name: Satriasa
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://satriasa.artstation.com/
+- name: Simon Dominic
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://simondominic.artstation.com/
+  content_sources:
+  - name: Simon Dominic
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://simondominic.artstation.com/
+- name: Tom Ebersweiler
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Development Contribution — Round the Table
+  profiles: []
+  content_sources: []
+- name: Tom Penny
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Tomasz Jedruszek
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://www.artstation.com/morano
+  - platform: behance
+    label: Behance
+    url: https://www.behance.net/Morano
+  content_sources:
+  - name: Tomasz Jedruszek
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://www.artstation.com/morano
+- name: Uhyoung Choi
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Desenvolvedor / equipe LSS
+  description: Game Development
+  profiles: []
+  content_sources: []
+- name: Widya Wang
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://corbenyx.artstation.com/
+  content_sources:
+  - name: Widya Wang
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://corbenyx.artstation.com/
+- name: Wisnu Tan
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://wisnutan.artstation.com/
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/wisnutan/
+  content_sources:
+  - name: Wisnu Tan
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://wisnutan.artstation.com/
+- name: Yiian Kho
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://yiian.artstation.com/
+  content_sources:
+  - name: Yiian Kho
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://yiian.artstation.com/
+- name: Yugin Maffioli
+  category: artist-developer
+  games:
+  - flesh-and-blood
+  roles:
+  - Artista
+  profiles:
+  - platform: artstation
+    label: ArtStation
+    url: https://yuginmaffioli.artstation.com/
+  content_sources:
+  - name: Yugin Maffioli
+    platform: artstation
+    language: en
+    game_id: flesh-and-blood
+    url: https://yuginmaffioli.artstation.com/
+- name: Andrea Mengucci
+  category: pro-player
+  games:
+  - magic
+  roles:
+  - Pro player
+  - YouTube / Twitch
+  description: Campeão de grande evento e criador diário; gameplay competitivo e Magic em papel.
+  profiles:
+  - platform: youtube
+    label: YouTube — VEEDEO
+    url: https://www.youtube.com/andreamengucci
+  - platform: youtube
+    label: YouTube — Mengu's Workshop
+    url: https://www.youtube.com/@MengusWorkshop
+  - platform: twitch
+    label: Twitch
+    url: https://www.twitch.tv/andreamengucci
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/mengu09/
+  - platform: x
+    label: X
+    url: https://x.com/Mengu09
+  content_sources:
+  - name: Andrea Mengucci VEEDEO
+    platform: youtube
+    language: en
+    game_id: magic
+    url: https://www.youtube.com/andreamengucci
+    youtube_search_fallback: false
+  - name: Mengu's Workshop
+    platform: youtube
+    language: en
+    game_id: magic
+    url: https://www.youtube.com/@MengusWorkshop
+    youtube_search_fallback: false
+  - name: Andrea Mengucci
+    platform: twitch
+    twitch_login: andreamengucci
+    language: en
+    game_id: magic
+    url: https://www.twitch.tv/andreamengucci
+- name: Brodie Spurlock
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Criador
+  description: Calling Champion; conteúdo competitivo em várias plataformas.
+  profiles:
+  - platform: website
+    label: Linktree
+    url: https://linktr.ee/brodieloman
+  content_sources: []
+- name: Evan Herndon
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Autor / coach
+  description: Campeão de Pro Tour e Nationals; publica guias competitivos.
+  profiles:
+  - platform: metafy
+    label: Metafy
+    url: https://metafy.gg/@card-gamer/guides
+  content_sources: []
+- name: Frank Karsten
+  category: pro-player
+  games:
+  - magic
+  roles:
+  - Pro player
+  - Autor / análise
+  description: Hall of Fame; conhecido por análise matemática, metagame e construção de decks.
+  profiles:
+  - platform: tcgplayer
+    label: TCGplayer
+    url: https://www.tcgplayer.com/content/author/Frank-Karsten/7f203152-211a-478d-8fee-464c2aeca2cd/
+  content_sources: []
+- name: Gabriel Nassif / Yellowhat
+  category: pro-player
+  games:
+  - magic
+  roles:
+  - Pro player
+  - Streamer / autor
+  description: Hall of Fame e bicampeão de Pro Tour; drafts, decks e análise.
+  profiles:
+  - platform: tcgplayer
+    label: TCGplayer
+    url: https://www.tcgplayer.com/content/author/gabriel-nassif
+  - platform: twitch
+    label: Twitch — Yellowhat
+    url: https://www.twitch.tv/yellowhat
+  content_sources:
+  - name: Yellowhat
+    platform: twitch
+    twitch_login: yellowhat
+    language: en
+    game_id: magic
+    url: https://www.twitch.tv/yellowhat
+- name: Hayden Dale
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Podcast / estratégia
+  description: Calling e Australian National Champion; co-host do Arsenal Pass.
+  profiles:
+  - platform: youtube
+    label: YouTube — Arsenal Pass
+    url: https://www.youtube.com/channel/UClhUUppHaVDBUOJHXL-a0EQ
+  media_refs:
+  - Arsenal Pass
+  content_sources: []
+- name: Jacob Clements
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Autor / coach
+  description: Campeão de múltiplos Callings e vencedor de Pro Tour; publica guias competitivos.
+  profiles:
+  - platform: metafy
+    label: Metafy
+    url: https://metafy.gg/@jacobclements/guides
+  content_sources: []
+- name: Jim Davis
+  category: pro-player
+  games:
+  - magic
+  roles:
+  - Pro player
+  - Criador diário
+  description: Jogador profissional e criador em tempo integral; vídeos, Twitch, artigos e séries de draft.
+  profiles:
+  - platform: website
+    label: Site
+    url: https://www.jimdavismtg.com/
+  - platform: youtube
+    label: YouTube
+    url: https://www.youtube.com/@JimDavisMTG
+  - platform: twitch
+    label: Twitch
+    url: https://www.twitch.tv/jimdavismtg
+  - platform: x
+    label: X
+    url: https://x.com/JimDavisMTG
+  - platform: bluesky
+    label: Bluesky
+    url: https://bsky.app/profile/jimdavismtg.com
+  - platform: instagram
+    label: Instagram
+    url: https://www.instagram.com/jimdavismtg/
+  - platform: tiktok
+    label: TikTok
+    url: https://www.tiktok.com/@jimdavismtg
+  content_sources:
+  - name: Jim Davis MTG
+    platform: youtube
+    language: en
+    game_id: magic
+    url: https://www.youtube.com/@JimDavisMTG
+    youtube_search_fallback: false
+  - name: Jim Davis MTG
+    platform: twitch
+    twitch_login: jimdavismtg
+    language: en
+    game_id: magic
+    url: https://www.twitch.tv/jimdavismtg
+- name: Luis Scott-Vargas / LSV
+  category: pro-player
+  games:
+  - magic
+  roles:
+  - Pro player
+  - Podcast / streamer
+  description: Hall of Fame e Pro Tour Champion; Limited, draft e análise.
+  profiles:
+  - platform: twitch
+    label: Twitch
+    url: https://www.twitch.tv/lsv
+  - platform: website
+    label: Limited Resources
+    url: https://lrcast.com/
+  media_refs:
+  - Limited Resources
+  content_sources:
+  - name: LSV
+    platform: twitch
+    twitch_login: lsv
+    language: en
+    game_id: magic
+    url: https://www.twitch.tv/lsv
+- name: Michael Hamilton
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - World Champion
+  - Podcast
+  description: World Champion e campeão de grandes eventos; co-host do M-n-R Cast.
+  profiles: []
+  media_refs:
+  - M-n-R Cast
+  content_sources: []
+- name: Nick Butcher
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Coach
+  description: National Champion e Calling Champion; conteúdo competitivo e coaching.
+  profiles:
+  - platform: metafy
+    label: Metafy / FaBSchool
+    url: https://www.fabboards.com/metafy
+  content_sources: []
+- name: Pablo Pintor
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Criador
+  description: Campeão de Pro Tour e múltiplos grandes eventos; estratégia, deck techs e sideboard.
+  profiles:
+  - platform: patreon
+    label: Patreon
+    url: https://www.patreon.com/FleshandBloodwithPablo/about
+  content_sources: []
+- name: Pankaj Bhojwani
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Podcast / estratégia
+  description: Battle Hardened Champion e Calling Top 8; co-host do Arsenal Pass.
+  profiles:
+  - platform: youtube
+    label: YouTube — Arsenal Pass
+    url: https://www.youtube.com/channel/UClhUUppHaVDBUOJHXL-a0EQ
+  media_refs:
+  - Arsenal Pass
+  content_sources: []
+- name: Reid Duke
+  category: pro-player
+  games:
+  - magic
+  roles:
+  - Pro player
+  - Autor
+  description: Hall of Fame e Pro Tour Champion; artigos de estratégia frequentes.
+  profiles:
+  - platform: tcgplayer
+    label: TCGplayer
+    url: https://www.tcgplayer.com/content/author/Reid-Duke/47bfea32-8786-4bc1-ac34-1f7851d99532
+  content_sources: []
+- name: Seth Manfield
+  category: pro-player
+  games:
+  - magic
+  roles:
+  - Pro player
+  - Autor
+  description: World Champion e campeão de grandes eventos; grande acervo de conteúdo competitivo.
+  profiles:
+  - platform: tcgplayer
+    label: TCGplayer
+    url: https://www.tcgplayer.com/content/author/Seth%20Manfield/decks
+  content_sources: []
+- name: Simon Nielsen
+  category: pro-player
+  games:
+  - flesh-and-blood
+  - magic
+  roles:
+  - Pro player
+  - Autor
+  description: Competidor de elite em Magic e vencedor de grande evento em FAB; escreve sobre os dois jogos.
+  profiles:
+  - platform: website
+    label: Artigos — Ultimate Guard
+    url: https://ultimateguard.com/en/blog/author/Simon%20Nielsen%2B32
+  content_sources: []
+- name: Tariq Patel
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Autor
+  description: US National Champion; grande acervo de artigos e vídeos estratégicos.
+  profiles:
+  - platform: tcgplayer
+    label: Artigos — TCGplayer
+    url: https://www.tcgplayer.com/content/author/tariq-patel
+  content_sources: []
+- name: Yuki Lee Bender
+  category: pro-player
+  games:
+  - flesh-and-blood
+  roles:
+  - Pro player
+  - Podcast / estratégia
+  description: National e Calling Champion; Limited e estratégia competitiva.
+  profiles:
+  - platform: patreon
+    label: Patreon — On the Bauble
+    url: https://www.patreon.com/OntheBauble/about
+  - platform: bluesky
+    label: Bluesky
+    url: https://bsky.app/profile/yukileebender.bsky.social
+  - platform: youtube
+    label: YouTube — On the Bauble
+    url: https://www.youtube.com/channel/UCbL31UhmLFhY6Tl-BPeN62g
+  media_refs:
+  - On the Bauble
+  content_sources: []

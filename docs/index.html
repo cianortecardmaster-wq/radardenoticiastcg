@@ -21,6 +21,8 @@
     <nav class="view-tabs" aria-label="Seções do radar">
       <button class="view-tab active" data-view="news">Radar de conteúdo</button>
       <button class="view-tab" data-view="media">Canais & podcasts</button>
+      <button class="view-tab" data-view="artdev">Artistas & desenvolvedores</button>
+      <button class="view-tab" data-view="proplayers">Pro players</button>
     </nav>
 
     <div id="newsView">
@@ -155,6 +157,50 @@
       </div>
 
       <div id="mediaList" class="media-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="peopleView" class="people-view" hidden>
+      <div class="media-heading">
+        <div>
+          <p id="peopleEyebrow" class="eyebrow">FLESH AND BLOOD</p>
+          <h2 id="peopleTitle">Artistas & desenvolvedores</h2>
+          <p id="peopleDescription">Perfis públicos, portfólios e publicações recentes de quem cria a arte e desenvolve Flesh and Blood.</p>
+        </div>
+        <span id="peopleCount" class="media-count"></span>
+      </div>
+
+      <div class="people-filters">
+        <input id="peopleSearchInput" type="search" placeholder="Buscar pessoa, função, rede ou assunto…">
+        <select id="peopleGameFilter">
+          <option value="">Todos os jogos</option>
+          <option value="flesh-and-blood">Flesh and Blood</option>
+          <option value="magic">Magic: The Gathering</option>
+        </select>
+        <select id="peopleRoleFilter">
+          <option value="">Todas as funções</option>
+        </select>
+        <select id="peoplePlatformFilter">
+          <option value="">Todas as plataformas</option>
+          <option value="artstation">ArtStation</option>
+          <option value="behance">Behance</option>
+          <option value="instagram">Instagram</option>
+          <option value="x">X / Twitter</option>
+          <option value="bluesky">Bluesky</option>
+          <option value="youtube">YouTube</option>
+          <option value="twitch">Twitch</option>
+          <option value="podcast">Podcast</option>
+          <option value="metafy">Metafy</option>
+          <option value="patreon">Patreon / Ko-Fi</option>
+          <option value="tcgplayer">TCGplayer</option>
+          <option value="website">Site / Linktree</option>
+        </select>
+        <select id="peopleActivityFilter">
+          <option value="all">Todos os perfis</option>
+          <option value="recent">Com conteúdo coletado nos últimos 7 dias</option>
+        </select>
+      </div>
+
+      <div id="peopleList" class="people-grid" aria-live="polite"></div>
     </section>
   </main>
 

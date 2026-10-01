@@ -27,6 +27,8 @@ HEALTH = ROOT / "data" / "collector-health.json"
 DOCS_HEALTH = ROOT / "docs" / "data" / "collector-health.json"
 MEDIA_DATA = ROOT / "data" / "media.json"
 DOCS_MEDIA_DATA = ROOT / "docs" / "data" / "media.json"
+PEOPLE_DATA = ROOT / "data" / "people.json"
+DOCS_PEOPLE_DATA = ROOT / "docs" / "data" / "people.json"
 
 MAX_ITEMS_PER_FEED = 15
 MAX_MEDIA_ITEMS_PER_SOURCE = 12
@@ -581,6 +583,23 @@ def load_existing_media() -> dict:
         return {"generated_at": None, "count": 0, "sources": []}
 
 
+def load_existing_people() -> dict:
+    if not PEOPLE_DATA.exists():
+        return {"generated_at": None, "count": 0, "people": []}
+    try:
+        return json.loads(PEOPLE_DATA.read_text(encoding="utf-8"))
+    except Exception:
+        return {"generated_at": None, "count": 0, "people": []}
+
+
+def person_id(person: dict) -> str:
+    seed = "|".join([
+        str(person.get("category", "")),
+        str(person.get("name", "")),
+    ])
+    return hashlib.sha1(seed.encode("utf-8")).hexdigest()[:16]
+
+
 def within_recent_window(value: str | None, days: int = RETENTION_DAYS) -> bool:
     if not value:
         return False
@@ -718,6 +737,9 @@ def resolve_youtube_channel(source: dict, previous: dict | None = None) -> tuple
         except Exception:
             pass
 
+    if direct_url and source.get("youtube_search_fallback") is False:
+        return None, None, direct_url
+
     query = youtube_search_query(source)
     search_url = "https://www.youtube.com/results?" + urlencode({"search_query": query, "hl": "en"})
     response = requests.get(search_url, headers={"User-Agent": "Mozilla/5.0 TCG-Radar/1.0", "Accept-Language": "en-US,en;q=0.8"}, timeout=20)
@@ -815,6 +837,93 @@ def feed_entry_thumbnail(entry) -> str:
     if isinstance(image, dict) and image.get("href"):
         return str(image["href"])
     return ""
+
+
+def artstation_username_from_url(url: str) -> str | None:
+    try:
+        parsed = urlparse(url)
+        host = (parsed.hostname or "").lower()
+        path = parsed.path.strip("/")
+        if host.endswith(".artstation.com") and host not in {"www.artstation.com", "artstation.com"}:
+            username = host.split(".")[0]
+            return username or None
+        if host in {"www.artstation.com", "artstation.com"} and path:
+            first = path.split("/")[0]
+            if first not in {"artwork", "projects", "search", "marketplace", "artist"}:
+                return first
+    except Exception:
+        return None
+    return None
+
+
+def collect_artstation_recent_items(source: dict, source_id: str) -> list[dict]:
+    username = source.get("artstation_username") or artstation_username_from_url(str(source.get("url") or ""))
+    if not username:
+        return []
+    api_url = f"https://www.artstation.com/users/{username}/projects.json"
+    response = requests.get(
+        api_url,
+        params={"page": 1, "album_id": "all"},
+        headers={"User-Agent": "Mozilla/5.0 TCG-Radar/1.0", "Accept": "application/json"},
+        timeout=20,
+    )
+    response.raise_for_status()
+    payload = response.json()
+    projects = payload.get("data") if isinstance(payload, dict) else payload
+    if not isinstance(projects, list):
+        return []
+
+    items = []
+    for project in projects[:40]:
+        if not isinstance(project, dict):
+            continue
+        title = normalize_space(str(project.get("title") or ""))
+        url = normalize_space(str(project.get("permalink") or project.get("url") or ""))
+        if not url and project.get("hash_id"):
+            url = f"https://www.artstation.com/artwork/{project['hash_id']}"
+        raw_date = project.get("published_at") or project.get("created_at") or project.get("updated_at")
+        if not title or not url or not raw_date:
+            continue
+        try:
+            dt = datetime.fromisoformat(str(raw_date).replace("Z", "+00:00"))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            else:
+                dt = dt.astimezone(timezone.utc)
+            published_at = dt.isoformat()
+        except Exception:
+            continue
+        if not within_recent_window(published_at):
+            continue
+
+        cover = project.get("cover") or {}
+        image_url = ""
+        if isinstance(cover, dict):
+            image_url = str(
+                cover.get("small_square_url")
+                or cover.get("thumb_url")
+                or cover.get("medium_image_url")
+                or cover.get("image_url")
+                or ""
+            )
+        if not image_url:
+            image_url = str(project.get("cover_url") or project.get("image_url") or "")
+
+        items.append({
+            "id": media_item_id(source_id, url, title),
+            "title": title,
+            "url": url,
+            "published_at": published_at,
+            "image_url": image_url,
+            "kind": "artwork",
+            "content_platform": "artstation",
+            "author": source.get("name", "") or username,
+        })
+        if len(items) >= MAX_MEDIA_ITEMS_PER_SOURCE:
+            break
+
+    items.sort(key=lambda item: item["published_at"], reverse=True)
+    return items
 
 
 def collect_feed_recent_items(feed_url: str, source: dict, source_id: str, kind: str, content_platform: str) -> list[dict]:
@@ -1041,6 +1150,9 @@ def collect_media_source(source: dict, previous: dict | None = None) -> tuple[di
             result["recent_items"] = recent
             if channel_url:
                 result["resolved_url"] = channel_url
+        elif platform == "artstation":
+            result["recent_items"] = collect_artstation_recent_items(source, source_id)
+            result["resolved_url"] = source.get("url")
         else:
             result["recent_items"] = []
     except Exception as exc:
@@ -1121,8 +1233,128 @@ def write_media_catalog() -> dict:
     }
 
 
+def write_people_catalog() -> dict:
+    path = CONFIG / "people_sources.yml"
+    if not path.exists():
+        return {"configured": 0, "active": 0, "items": 0, "errors": []}
+
+    cfg = load_yaml(path) or {}
+    people = cfg.get("people", [])
+    media_payload = load_existing_media()
+    media_by_name = {
+        str(source.get("name", "")).strip().lower(): source
+        for source in media_payload.get("sources", [])
+        if source.get("name")
+    }
+
+    previous_payload = load_existing_people()
+    previous_people = {
+        item.get("id") or person_id(item): item
+        for item in previous_payload.get("people", [])
+    }
+
+    enriched_people = []
+    errors = []
+
+    for index, person in enumerate(people, start=1):
+        pid = person_id(person)
+        print(f"[PEOPLE {index}/{len(people)}] {person.get('name')} / {person.get('category')}")
+        result = dict(person)
+        result["id"] = pid
+        recent_items = []
+        source_states = []
+
+        for ref in person.get("media_refs", []) or []:
+            media = media_by_name.get(str(ref).strip().lower())
+            if not media:
+                continue
+            for item in media.get("recent_items", []) or []:
+                copied = dict(item)
+                copied.setdefault("source_name", media.get("name", ""))
+                copied.setdefault("source_platform", media.get("platform", ""))
+                recent_items.append(copied)
+
+        previous_person = previous_people.get(pid) or {}
+        previous_sources = {
+            item.get("id") or media_source_id(item): item
+            for item in previous_person.get("content_sources", []) or []
+        }
+        for source in person.get("content_sources", []) or []:
+            sid = media_source_id(source)
+            enriched, error = collect_media_source(source, previous_sources.get(sid))
+            source_states.append(enriched)
+            for item in enriched.get("recent_items", []) or []:
+                copied = dict(item)
+                copied.setdefault("source_name", enriched.get("name", ""))
+                copied.setdefault("source_platform", enriched.get("platform", ""))
+                recent_items.append(copied)
+            if error:
+                errors.append({
+                    "person_id": pid,
+                    "person": person.get("name"),
+                    "source_id": sid,
+                    "source": source.get("name"),
+                    "platform": source.get("platform"),
+                    "error": error,
+                })
+            time.sleep(REQUEST_PAUSE_SECONDS)
+
+        deduped = {}
+        for item in recent_items:
+            key = item.get("url") or item.get("id")
+            if not key or not within_recent_window(item.get("published_at")):
+                continue
+            old = deduped.get(key)
+            if not old or (item.get("published_at") or "") > (old.get("published_at") or ""):
+                deduped[key] = item
+
+        recent = sorted(deduped.values(), key=lambda item: item.get("published_at") or "", reverse=True)
+        result["recent_items"] = recent[:24]
+        result["recent_count"] = len(result["recent_items"])
+        result["latest_published_at"] = result["recent_items"][0]["published_at"] if result["recent_items"] else None
+        result["content_sources"] = source_states
+        enriched_people.append(result)
+
+    enriched_people.sort(
+        key=lambda item: (
+            item.get("latest_published_at") or "",
+            item.get("name") or "",
+        ),
+        reverse=True,
+    )
+    total_items = sum(len(item.get("recent_items") or []) for item in enriched_people)
+    active_people = sum(1 for item in enriched_people if item.get("recent_items"))
+    artdev_count = sum(1 for item in enriched_people if item.get("category") == "artist-developer")
+    pro_count = sum(1 for item in enriched_people if item.get("category") == "pro-player")
+
+    payload = {
+        "generated_at": now_iso(),
+        "window_days": RETENTION_DAYS,
+        "count": len(enriched_people),
+        "artist_developer_count": artdev_count,
+        "pro_player_count": pro_count,
+        "active_count": active_people,
+        "content_count": total_items,
+        "content_ready": True,
+        "errors_count": len(errors),
+        "people": enriched_people,
+    }
+    serialized = json.dumps(payload, ensure_ascii=False, indent=2) + "\n"
+    PEOPLE_DATA.parent.mkdir(parents=True, exist_ok=True)
+    DOCS_PEOPLE_DATA.parent.mkdir(parents=True, exist_ok=True)
+    PEOPLE_DATA.write_text(serialized, encoding="utf-8")
+    DOCS_PEOPLE_DATA.write_text(serialized, encoding="utf-8")
+    return {
+        "configured": len(enriched_people),
+        "active": active_people,
+        "items": total_items,
+        "errors": errors,
+    }
+
+
 def main():
     media_stats = write_media_catalog()
+    people_stats = write_people_catalog()
 
     games_cfg = load_yaml(CONFIG / "games.yml")
     locales_cfg = load_yaml(CONFIG / "locales.yml")
@@ -1264,7 +1496,11 @@ def main():
         "media_sources_active_7d": media_stats.get("active", 0),
         "media_items_7d": media_stats.get("items", 0),
         "media_sources_failed": len(media_stats.get("errors", [])),
-        "errors": direct_errors + independent_errors + media_stats.get("errors", []),
+        "people_configured": people_stats.get("configured", 0),
+        "people_active_7d": people_stats.get("active", 0),
+        "people_items_7d": people_stats.get("items", 0),
+        "people_sources_failed": len(people_stats.get("errors", [])),
+        "errors": direct_errors + independent_errors + media_stats.get("errors", []) + people_stats.get("errors", []),
     }
     health_serialized = json.dumps(health_payload, ensure_ascii=False, indent=2)
     HEALTH.parent.mkdir(parents=True, exist_ok=True)
@@ -1276,7 +1512,8 @@ def main():
         f"[OK] oficiais={len(direct_items)} independentes={len(independent_items)} "
         f"google={len(collected)} radar={len(items)} "
         f"mídia_7d={media_stats.get('items', 0)} "
-        f"erros={len(direct_errors) + len(independent_errors) + len(media_stats.get('errors', []))}"
+        f"pessoas_7d={people_stats.get('items', 0)} "
+        f"erros={len(direct_errors) + len(independent_errors) + len(media_stats.get('errors', [])) + len(people_stats.get('errors', []))}"
     )
 
 

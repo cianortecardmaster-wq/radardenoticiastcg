@@ -1,0 +1,2613 @@
+{
+  "generated_at": "2026-10-01T18:37:56.081489+00:00",
+  "window_days": 7,
+  "count": 86,
+  "artist_developer_count": 68,
+  "pro_player_count": 18,
+  "active_count": 2,
+  "content_count": 2,
+  "content_ready": false,
+  "errors_count": 0,
+  "people": [
+    {
+      "name": "Pankaj Bhojwani",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Podcast / estratégia"
+      ],
+      "description": "Battle Hardened Champion e Calling Top 8; co-host do Arsenal Pass.",
+      "profiles": [
+        {
+          "platform": "youtube",
+          "label": "YouTube — Arsenal Pass",
+          "url": "https://www.youtube.com/channel/UClhUUppHaVDBUOJHXL-a0EQ"
+        }
+      ],
+      "media_refs": [
+        "Arsenal Pass"
+      ],
+      "content_sources": [],
+      "id": "11293eeb51fa3612",
+      "recent_items": [
+        {
+          "id": "2ab2bcc7e3b824456a26",
+          "title": "Arsenal Pass EP284 - Boltyn, Cindra, Levia and Other Top Deck Discussion!",
+          "url": "https://arsenalpassfab.podbean.com/e/arsenal-pass-ep284-boltyn-cindra-levia-and-other-top-deck-discussion/",
+          "published_at": "2026-09-25T11:59:47+00:00",
+          "image_url": "",
+          "kind": "episode",
+          "content_platform": "podcast",
+          "author": "arsenalpassfab",
+          "excerpt": "It is a new look Classic Constructed meta in front of us. With Usurp the Shadow Throne now legal for constructed play, which heroes look poised to rise to the top? Will it be the new kids on the block in Viserai and Malice? Has Levia gotten enough to finally Usurp the rest?! But wait, some familiar faces, Boltyn, Cindra along with the incumbent in Oscilio ha",
+          "source_name": "Arsenal Pass",
+          "source_platform": "podcast"
+        }
+      ],
+      "recent_count": 1,
+      "latest_published_at": "2026-09-25T11:59:47+00:00"
+    },
+    {
+      "name": "Hayden Dale",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Podcast / estratégia"
+      ],
+      "description": "Calling e Australian National Champion; co-host do Arsenal Pass.",
+      "profiles": [
+        {
+          "platform": "youtube",
+          "label": "YouTube — Arsenal Pass",
+          "url": "https://www.youtube.com/channel/UClhUUppHaVDBUOJHXL-a0EQ"
+        }
+      ],
+      "media_refs": [
+        "Arsenal Pass"
+      ],
+      "content_sources": [],
+      "id": "27faab492275c619",
+      "recent_items": [
+        {
+          "id": "2ab2bcc7e3b824456a26",
+          "title": "Arsenal Pass EP284 - Boltyn, Cindra, Levia and Other Top Deck Discussion!",
+          "url": "https://arsenalpassfab.podbean.com/e/arsenal-pass-ep284-boltyn-cindra-levia-and-other-top-deck-discussion/",
+          "published_at": "2026-09-25T11:59:47+00:00",
+          "image_url": "",
+          "kind": "episode",
+          "content_platform": "podcast",
+          "author": "arsenalpassfab",
+          "excerpt": "It is a new look Classic Constructed meta in front of us. With Usurp the Shadow Throne now legal for constructed play, which heroes look poised to rise to the top? Will it be the new kids on the block in Viserai and Malice? Has Levia gotten enough to finally Usurp the rest?! But wait, some familiar faces, Boltyn, Cindra along with the incumbent in Oscilio ha",
+          "source_name": "Arsenal Pass",
+          "source_platform": "podcast"
+        }
+      ],
+      "recent_count": 1,
+      "latest_published_at": "2026-09-25T11:59:47+00:00"
+    },
+    {
+      "name": "Yuki Lee Bender",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Podcast / estratégia"
+      ],
+      "description": "National e Calling Champion; Limited e estratégia competitiva.",
+      "profiles": [
+        {
+          "platform": "patreon",
+          "label": "Patreon — On the Bauble",
+          "url": "https://www.patreon.com/OntheBauble/about"
+        },
+        {
+          "platform": "bluesky",
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/yukileebender.bsky.social"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube — On the Bauble",
+          "url": "https://www.youtube.com/channel/UCbL31UhmLFhY6Tl-BPeN62g"
+        }
+      ],
+      "media_refs": [
+        "On the Bauble"
+      ],
+      "content_sources": [],
+      "id": "a956dbc0101b4450",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Yugin Maffioli",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://yuginmaffioli.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Yugin Maffioli",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://yuginmaffioli.artstation.com/",
+          "id": "e59eb2442642af3f",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "128d2ad22cc1e4ee",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Yiian Kho",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://yiian.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Yiian Kho",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://yiian.artstation.com/",
+          "id": "04b0c3059826bc55",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "7b4ff9341536c10c",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Wisnu Tan",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://wisnutan.artstation.com/"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/wisnutan/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Wisnu Tan",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://wisnutan.artstation.com/",
+          "id": "d8672361aa948656",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "1076299d3291f7e2",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Widya Wang",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://corbenyx.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Widya Wang",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://corbenyx.artstation.com/",
+          "id": "9483b28f5e77cdde",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "da866c8066dcead4",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Uhyoung Choi",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "dc3c1b56122a3c98",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Tomasz Jedruszek",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/morano"
+        },
+        {
+          "platform": "behance",
+          "label": "Behance",
+          "url": "https://www.behance.net/Morano"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Tomasz Jedruszek",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/morano",
+          "id": "49c9e176ceb6824c",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "df10f966d470f045",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Tom Penny",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "70dd3939b9f23782",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Tom Ebersweiler",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Development Contribution — Round the Table",
+      "profiles": [],
+      "content_sources": [],
+      "id": "759e996d3247dbbc",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Tariq Patel",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Autor"
+      ],
+      "description": "US National Champion; grande acervo de artigos e vídeos estratégicos.",
+      "profiles": [
+        {
+          "platform": "tcgplayer",
+          "label": "Artigos — TCGplayer",
+          "url": "https://www.tcgplayer.com/content/author/tariq-patel"
+        }
+      ],
+      "content_sources": [],
+      "id": "e14e387babe2639c",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Simon Nielsen",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood",
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "Autor"
+      ],
+      "description": "Competidor de elite em Magic e vencedor de grande evento em FAB; escreve sobre os dois jogos.",
+      "profiles": [
+        {
+          "platform": "website",
+          "label": "Artigos — Ultimate Guard",
+          "url": "https://ultimateguard.com/en/blog/author/Simon%20Nielsen%2B32"
+        }
+      ],
+      "content_sources": [],
+      "id": "39ea1b23de57ac3a",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Simon Dominic",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://simondominic.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Simon Dominic",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://simondominic.artstation.com/",
+          "id": "e2f5ed1564770040",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "4a8dfe98c677816c",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Seth Manfield",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "Autor"
+      ],
+      "description": "World Champion e campeão de grandes eventos; grande acervo de conteúdo competitivo.",
+      "profiles": [
+        {
+          "platform": "tcgplayer",
+          "label": "TCGplayer",
+          "url": "https://www.tcgplayer.com/content/author/Seth%20Manfield/decks"
+        }
+      ],
+      "content_sources": [],
+      "id": "47bdae1a501863fa",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Satriasa",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://satriasa.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Satriasa",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://satriasa.artstation.com/",
+          "id": "6b957fa69602ee96",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "bc43c56a39651f95",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Sasha Markovic",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development / contribuição",
+      "profiles": [
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/markovictory"
+        }
+      ],
+      "content_sources": [],
+      "id": "a179230ffbbbf49e",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Sam Yang",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista",
+        "Desenvolvimento / direção criativa"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://samyang.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Sam Yang",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://samyang.artstation.com/",
+          "id": "73f8663301c3471f",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "description": "Art Director; Concept Design; Character Design",
+      "id": "f99f015954949496",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Rohan Khanna",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "a6d0f753624cbaf5",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Robbie Wen",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Creative Director; Art Director; Production",
+      "profiles": [],
+      "content_sources": [],
+      "id": "a719ba49e77185d5",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Riordan Delmiro",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://riordan.artstation.com/"
+        },
+        {
+          "platform": "cara",
+          "label": "Cara",
+          "url": "https://cara.app/riordan"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Riordan Delmiro",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://riordan.artstation.com/",
+          "id": "06b6de0c14e1e2d9",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "a9653f57257c1f1d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Reza Afshar",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://rezaafshar.artstation.com/"
+        },
+        {
+          "platform": "behance",
+          "label": "Behance",
+          "url": "https://www.behance.net/reza-afshar/"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://instagram.com/rezaa_afsharr"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://twitter.com/rezaafsharr"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://linktr.ee/rezaafsharr"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "url": "https://youtube.com/@rezaafsharr"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://linktr.ee/rezaafsharr"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Reza Afshar",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://rezaafshar.artstation.com/",
+          "id": "20955e06edd78ba9",
+          "recent_items": [],
+          "recent_count": 0
+        },
+        {
+          "name": "Reza Afshar",
+          "platform": "youtube",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://youtube.com/@rezaafsharr",
+          "youtube_search_fallback": false,
+          "id": "4db0ca75580bf43c",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "7f50840e5a45ed76",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Reid Duke",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "Autor"
+      ],
+      "description": "Hall of Fame e Pro Tour Champion; artigos de estratégia frequentes.",
+      "profiles": [
+        {
+          "platform": "tcgplayer",
+          "label": "TCGplayer",
+          "url": "https://www.tcgplayer.com/content/author/Reid-Duke/47bfea32-8786-4bc1-ac34-1f7851d99532"
+        }
+      ],
+      "content_sources": [],
+      "id": "5ebe510c85fb12da",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Pablo Pintor",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Criador"
+      ],
+      "description": "Campeão de Pro Tour e múltiplos grandes eventos; estratégia, deck techs e sideboard.",
+      "profiles": [
+        {
+          "platform": "patreon",
+          "label": "Patreon",
+          "url": "https://www.patreon.com/FleshandBloodwithPablo/about"
+        }
+      ],
+      "content_sources": [],
+      "id": "5486065ff74a0f65",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Othon Nikolaidis",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/artwork/xJ1g64"
+        }
+      ],
+      "content_sources": [],
+      "id": "8e61c8ea91a03b5d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Orson CaptainSass",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/mrcaptain"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/captainsass_art/"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://fr.linkedin.com/in/orson-captainsass-bab08817b"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://captainsass.art/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Orson CaptainSass",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/mrcaptain",
+          "id": "13e37397dcd73586",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "322314d5ef8e2230",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Nikolay Moskvin",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/artist/nik_moskvin"
+        },
+        {
+          "platform": "behance",
+          "label": "Behance",
+          "url": "https://www.behance.net/nimphoenixad48"
+        }
+      ],
+      "content_sources": [],
+      "id": "10d2f6d5b17ecaca",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Nick Butcher",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Coach"
+      ],
+      "description": "National Champion e Calling Champion; conteúdo competitivo e coaching.",
+      "profiles": [
+        {
+          "platform": "metafy",
+          "label": "Metafy / FaBSchool",
+          "url": "https://www.fabboards.com/metafy"
+        }
+      ],
+      "content_sources": [],
+      "id": "7da488f038a92c8f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Niccolo Paqueo",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Rules / Syntax",
+      "profiles": [],
+      "content_sources": [],
+      "id": "7a625fe28be9ca21",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Newsun Zeng",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "72e0c6407ddbb761",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Nathaniel Himawan",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/ninesicks"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/ninesicks/"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/ninesicks"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://linktr.ee/ninesicks"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Nathaniel Himawan",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/ninesicks",
+          "id": "93ab4c9338a7eedf",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "2dcddad3348fa171",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Michael Hamilton",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "World Champion",
+        "Podcast"
+      ],
+      "description": "World Champion e campeão de grandes eventos; co-host do M-n-R Cast.",
+      "profiles": [],
+      "media_refs": [
+        "M-n-R Cast"
+      ],
+      "content_sources": [],
+      "id": "15bcc29e0ef2b331",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Mateusz Wiśniewski",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://mateusz_wisniewski.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Mateusz Wiśniewski",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://mateusz_wisniewski.artstation.com/",
+          "id": "6f4719dcb89f11d3",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "7bd711558b14c800",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Mark Poole",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/markpooleartist/"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/markpooleartist"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://markpoole.com/"
+        }
+      ],
+      "content_sources": [],
+      "id": "072ff162d6b47e45",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Mariusz Gandzel",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/mariusz"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/gandzelmariusz"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://mariuszgandzel.carbonmade.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Mariusz Gandzel",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/mariusz",
+          "id": "936bb3a5ba9068eb",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "5a016f059cfdd462",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Mario Wibisono",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/mario_wibisono"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/wibisonomario/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Mario Wibisono",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/mario_wibisono",
+          "id": "1260517571477846",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "0c0364fb249ebbc4",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Maerel Hibadita",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://innervalue.artstation.com/"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/innervalue/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Maerel Hibadita",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://innervalue.artstation.com/",
+          "id": "ec4333813799bc87",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "7cfac5db33f3192e",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "MJ Fetesio",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista",
+        "Desenvolvimento / direção criativa"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/mjfetesio"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "MJ Fetesio",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/mjfetesio",
+          "id": "9bfa1845086db410",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "description": "Concept Lead; Concept Design; Asset Rendering",
+      "id": "709f42d9d59c364e",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Luis Scott-Vargas / LSV",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "Podcast / streamer"
+      ],
+      "description": "Hall of Fame e Pro Tour Champion; Limited, draft e análise.",
+      "profiles": [
+        {
+          "platform": "twitch",
+          "label": "Twitch",
+          "url": "https://www.twitch.tv/lsv"
+        },
+        {
+          "platform": "website",
+          "label": "Limited Resources",
+          "url": "https://lrcast.com/"
+        }
+      ],
+      "media_refs": [
+        "Limited Resources"
+      ],
+      "content_sources": [
+        {
+          "name": "LSV",
+          "platform": "twitch",
+          "twitch_login": "lsv",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.twitch.tv/lsv",
+          "id": "9c36b3a13040cb13",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "9ec3c08445c17c04",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Lizhe Liang",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://lizhelart.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Lizhe Liang",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://lizhelart.artstation.com/",
+          "id": "27c2542215355004",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "bc809c7dd79be426",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Livia Prima",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://dopaprime.artstation.com/"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/dopaprime/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Livia Prima",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://dopaprime.artstation.com/",
+          "id": "6309278ba135097d",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "a4b3e2be840d4951",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Lius Lasahido",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://lasahido.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Lius Lasahido",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://lasahido.artstation.com/",
+          "id": "f81cc7d641f5d713",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "27ac40c4ff120004",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Kimberly Pantoni",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://k_ptn.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Kimberly Pantoni",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://k_ptn.artstation.com/",
+          "id": "a8d4dca5d86787c9",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "53338079a0ab5d42",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Kieran McEntegart",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "f71ce332b9231930",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Kevin Sidharta",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/kevin_sidharta"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/sidharta_kevin/"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/sidh_kev"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Kevin Sidharta",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/kevin_sidharta",
+          "id": "bf798db6840ed944",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "a09bbe0339230526",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Kevin Kim",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "8e3e7b9649497016",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Karol Ruszkiewicz",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Senior Game Developer; Product Design",
+      "profiles": [
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/LSS_Karol"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://nz.linkedin.com/in/karol-ruszkiewicz-26936276"
+        }
+      ],
+      "content_sources": [],
+      "id": "c4df185dff222c2b",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Kanadekana",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://instagram.com/kanadekana"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://twitter.com/kanadekana08"
+        },
+        {
+          "platform": "facebook",
+          "label": "Facebook",
+          "url": "https://www.facebook.com/kanadekana08/"
+        },
+        {
+          "platform": "discord",
+          "label": "Discord",
+          "url": "https://discord.com/invite/UzRzuj5Ty2"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://kanadekana.com/"
+        }
+      ],
+      "content_sources": [],
+      "id": "c59cc8ff6487f1e1",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Justin Gottlieb",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Development Contribution — Round the Table",
+      "profiles": [],
+      "content_sources": [],
+      "id": "77e41fd0510b5529",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "João G. Santos",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://jguilherme08.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "João G. Santos",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://jguilherme08.artstation.com/",
+          "id": "a139a80ecc09b443",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "25e87c07aed19ec3",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Joshua Scott",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Rules / Syntax / Policy",
+      "profiles": [],
+      "content_sources": [],
+      "id": "fc0cb2421d2abab0",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Jim Davis",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "Criador diário"
+      ],
+      "description": "Jogador profissional e criador em tempo integral; vídeos, Twitch, artigos e séries de draft.",
+      "profiles": [
+        {
+          "platform": "website",
+          "label": "Site",
+          "url": "https://www.jimdavismtg.com/"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@JimDavisMTG"
+        },
+        {
+          "platform": "twitch",
+          "label": "Twitch",
+          "url": "https://www.twitch.tv/jimdavismtg"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/JimDavisMTG"
+        },
+        {
+          "platform": "bluesky",
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/jimdavismtg.com"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/jimdavismtg/"
+        },
+        {
+          "platform": "tiktok",
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@jimdavismtg"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Jim Davis MTG",
+          "platform": "youtube",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.youtube.com/@JimDavisMTG",
+          "youtube_search_fallback": false,
+          "id": "3ca7e44ab2d804cb",
+          "recent_items": [],
+          "recent_count": 0
+        },
+        {
+          "name": "Jim Davis MTG",
+          "platform": "twitch",
+          "twitch_login": "jimdavismtg",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.twitch.tv/jimdavismtg",
+          "id": "30290ddbff005188",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "bb0f2f7699cc48ef",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Jessketchin",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Concept Design; Asset Rendering; Packaging",
+      "profiles": [],
+      "content_sources": [],
+      "id": "95cf7a14ec3aeb18",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Jessada Sutthi",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://jessada.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Jessada Sutthi",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://jessada.artstation.com/",
+          "id": "347f719df76d9bc5",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "1c56bde044c2f34d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Jason Lai",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "1ef601ca91c2fb8d",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Jason Chung",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "bc151df6b0fbbb80",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Janelle Gottlieb",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Development Contribution — Round the Table",
+      "profiles": [],
+      "content_sources": [],
+      "id": "9bcc4049d8795875",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "James White",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Criador; Vision Design; Product Design; Development",
+      "profiles": [
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/james_white"
+        }
+      ],
+      "content_sources": [],
+      "id": "6a21a0cc82f05f33",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Jacob Pearson",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "6a8db33074403470",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Jacob Clements",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Autor / coach"
+      ],
+      "description": "Campeão de múltiplos Callings e vencedor de Pro Tour; publica guias competitivos.",
+      "profiles": [
+        {
+          "platform": "metafy",
+          "label": "Metafy",
+          "url": "https://metafy.gg/@jacobclements/guides"
+        }
+      ],
+      "content_sources": [],
+      "id": "04af4641dd725235",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Isuardi Therianto",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/search?sort_by=relevance&query=Isuardi%20Therianto"
+        }
+      ],
+      "content_sources": [],
+      "id": "8ff36604d350b142",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Iain Kenderdine",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Development Contribution — Round the Table",
+      "profiles": [],
+      "content_sources": [],
+      "id": "91714d1d85d7b870",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Henrique Lindner",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista",
+        "Desenvolvimento / direção criativa"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://lindnr.artstation.com/"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/lindnr/"
+        },
+        {
+          "platform": "inprnt",
+          "label": "InPrnt",
+          "url": "https://www.inprnt.com/gallery/lindnr/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Henrique Lindner",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://lindnr.artstation.com/",
+          "id": "23f278d7050e13b0",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "description": "Assistant Art Director; Asset Rendering; Foiling",
+      "id": "2dd8aee210c262e2",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Harry Wyatt",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Concept Design; Asset Rendering",
+      "profiles": [],
+      "content_sources": [],
+      "id": "8eaba7f0ce7f17b4",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Galih M",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://krotz.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Galih M",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://krotz.artstation.com/",
+          "id": "fea91eb02c7098f8",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "e242c816b16f75be",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Gabriel Nassif / Yellowhat",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "Streamer / autor"
+      ],
+      "description": "Hall of Fame e bicampeão de Pro Tour; drafts, decks e análise.",
+      "profiles": [
+        {
+          "platform": "tcgplayer",
+          "label": "TCGplayer",
+          "url": "https://www.tcgplayer.com/content/author/gabriel-nassif"
+        },
+        {
+          "platform": "twitch",
+          "label": "Twitch — Yellowhat",
+          "url": "https://www.twitch.tv/yellowhat"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Yellowhat",
+          "platform": "twitch",
+          "twitch_login": "yellowhat",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.twitch.tv/yellowhat",
+          "id": "730413fc26c07ed3",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "76db79ac2b14abb5",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Frank Karsten",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "Autor / análise"
+      ],
+      "description": "Hall of Fame; conhecido por análise matemática, metagame e construção de decks.",
+      "profiles": [
+        {
+          "platform": "tcgplayer",
+          "label": "TCGplayer",
+          "url": "https://www.tcgplayer.com/content/author/Frank-Karsten/7f203152-211a-478d-8fee-464c2aeca2cd/"
+        }
+      ],
+      "content_sources": [],
+      "id": "9dc9bd687604191f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Federico Musetti",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/fedemusettiart"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/federicomusettiart/"
+        },
+        {
+          "platform": "facebook",
+          "label": "Facebook",
+          "url": "https://www.facebook.com/federicomusettiart"
+        },
+        {
+          "platform": "pinterest",
+          "label": "Pinterest",
+          "url": "https://linktr.ee/federicomusettiart"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://linktr.ee/federicomusettiart"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://linktr.ee/federicomusettiart"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Federico Musetti",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/fedemusettiart",
+          "id": "c756cbdf24a4560f",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "5e5395aee83820d1",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Evan Herndon",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Autor / coach"
+      ],
+      "description": "Campeão de Pro Tour e Nationals; publica guias competitivos.",
+      "profiles": [
+        {
+          "platform": "metafy",
+          "label": "Metafy",
+          "url": "https://metafy.gg/@card-gamer/guides"
+        }
+      ],
+      "content_sources": [],
+      "id": "38aab7db59b65ed2",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Enmoire",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://instagram.com/enmoire"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/enmoire"
+        },
+        {
+          "platform": "discord",
+          "label": "Discord",
+          "url": "https://discord.com/invite/y47t8fB39z"
+        },
+        {
+          "platform": "vgen",
+          "label": "VGen",
+          "url": "https://vgen.co/enmoire"
+        },
+        {
+          "platform": "patreon",
+          "label": "Patreon / Ko-Fi",
+          "url": "https://www.patreon.com/enmoire"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://enmoire.com/"
+        }
+      ],
+      "content_sources": [],
+      "id": "83a328dafe81fb09",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Eilene Cherie",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://eilenecherie.artstation.com/"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/eilenecw/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Eilene Cherie",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://eilenecherie.artstation.com/",
+          "id": "e79374ce24665a2e",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "6a626da53089d714",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "David Greig",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Development Contribution / Manufacturing",
+      "profiles": [],
+      "content_sources": [],
+      "id": "c04440fa661516e2",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Daria Khlebnikova",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://savagehenry.artstation.com/"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/silentbob90/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Daria Khlebnikova",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://savagehenry.artstation.com/",
+          "id": "995b69226ce0c049",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "feac0a933d522a3e",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Chris Pearce",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Booster Draft Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "68f13d2203cbf0b9",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Chris Gehring",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Lead/Product Development; Product Engineering",
+      "profiles": [],
+      "content_sources": [],
+      "id": "553474a1979253e5",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Calum Gittins",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "3c27a6793c779318",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Bryan Gottlieb",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Senior Game Designer / Lead Developer; Product Design",
+      "profiles": [
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/BryanGFaB"
+        }
+      ],
+      "content_sources": [],
+      "id": "31765c0e7b3757ea",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Brodie Spurlock",
+      "category": "pro-player",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Pro player",
+        "Criador"
+      ],
+      "description": "Calling Champion; conteúdo competitivo em várias plataformas.",
+      "profiles": [
+        {
+          "platform": "website",
+          "label": "Linktree",
+          "url": "https://linktr.ee/brodieloman"
+        }
+      ],
+      "content_sources": [],
+      "id": "0231ac2567ffe492",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Arif Wijaya",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://arifwijaya.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Arif Wijaya",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://arifwijaya.artstation.com/",
+          "id": "a2ca589ff5d23589",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "146d79d6940e050c",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Anthony Balmes",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "7f4b4e006b9a33fe",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Andrea Mengucci",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "YouTube / Twitch"
+      ],
+      "description": "Campeão de grande evento e criador diário; gameplay competitivo e Magic em papel.",
+      "profiles": [
+        {
+          "platform": "youtube",
+          "label": "YouTube — VEEDEO",
+          "url": "https://www.youtube.com/andreamengucci"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube — Mengu's Workshop",
+          "url": "https://www.youtube.com/@MengusWorkshop"
+        },
+        {
+          "platform": "twitch",
+          "label": "Twitch",
+          "url": "https://www.twitch.tv/andreamengucci"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/mengu09/"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/Mengu09"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Andrea Mengucci VEEDEO",
+          "platform": "youtube",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.youtube.com/andreamengucci",
+          "youtube_search_fallback": false,
+          "id": "5b879535bc0174c9",
+          "recent_items": [],
+          "recent_count": 0
+        },
+        {
+          "name": "Mengu's Workshop",
+          "platform": "youtube",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.youtube.com/@MengusWorkshop",
+          "youtube_search_fallback": false,
+          "id": "d6d52298457dd5dd",
+          "recent_items": [],
+          "recent_count": 0
+        },
+        {
+          "name": "Andrea Mengucci",
+          "platform": "twitch",
+          "twitch_login": "andreamengucci",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.twitch.tv/andreamengucci",
+          "id": "5339172b5454719e",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "aebc613c27e321f2",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Aluísio Cervelle",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://aluisiocsantos.artstation.com/"
+        },
+        {
+          "platform": "behance",
+          "label": "Behance",
+          "url": "https://www.behance.net/cervellesantos"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/aluisiocsantos/"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://br.linkedin.com/in/aluisiosantos"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://aluisiocsantos.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Aluísio Cervelle",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://aluisiocsantos.artstation.com/",
+          "id": "ac26b661e34084d0",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "91eafdc06a23f9fc",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Alexis Susani",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://alexis-susani.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Alexis Susani",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://alexis-susani.artstation.com/",
+          "id": "5d13e225cd5c2a43",
+          "recent_items": [],
+          "recent_count": 0
+        }
+      ],
+      "id": "568a2788f1185757",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Alex Norvill",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Development Contribution — Round the Table",
+      "profiles": [],
+      "content_sources": [],
+      "id": "9a7b290d696d006f",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Alan Hale",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Development Contribution — Round the Table",
+      "profiles": [],
+      "content_sources": [],
+      "id": "123faec18f1f47e2",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    },
+    {
+      "name": "Aaron Curtis",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Desenvolvedor / equipe LSS"
+      ],
+      "description": "Game Development",
+      "profiles": [],
+      "content_sources": [],
+      "id": "4fad79a878b501e1",
+      "recent_items": [],
+      "recent_count": 0,
+      "latest_published_at": null
+    }
+  ]
+}

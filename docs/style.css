@@ -32,3 +32,21 @@ main{max-width:1380px;margin:0 auto;padding:0 24px 64px}.stats{display:grid;grid
 @media(max-width:1180px){.media-filters{grid-template-columns:2fr 1fr 1fr}.media-filters #mediaSearchInput{grid-column:1/-1}}
 @media(max-width:950px){.media-filters{grid-template-columns:1fr 1fr}.media-filters #mediaSearchInput{grid-column:1/-1}}
 @media(max-width:560px){.media-filters{grid-template-columns:1fr}.media-filters #mediaSearchInput{grid-column:auto}.media-recent-item{grid-template-columns:82px minmax(0,1fr)}.media-recent-item img,.media-thumb-placeholder{width:82px;height:48px}}
+
+
+.people-view{padding-top:8px}
+.people-filters{display:grid;grid-template-columns:2fr 1fr 1.15fr 1.1fr 1.35fr;gap:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px;margin-bottom:14px}
+.people-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.people-card{min-height:280px}
+.people-card .media-platform{color:#f0abfc}
+.people-description{margin:-3px 0 12px;color:#c4ccd5;font-size:12px;line-height:1.45}
+.people-links{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 12px}
+.people-link{display:inline-flex;align-items:center;border:1px solid var(--line);background:var(--panel-2);color:#d9e0e7;text-decoration:none;border-radius:7px;padding:6px 8px;font-size:10px;font-weight:800}
+.people-link:hover{border-color:#596575;filter:brightness(1.12)}
+.people-no-profiles{margin:0 0 12px;color:var(--muted);font-size:11px}
+.profile-artstation{color:#60a5fa}.profile-youtube{color:#f87171}.profile-twitch{color:#c4b5fd}.profile-instagram{color:#f0abfc}.profile-x{color:#d1d5db}.profile-bluesky{color:#7dd3fc}.profile-metafy{color:#86efac}.profile-patreon{color:#fb923c}.profile-tcgplayer{color:#93c5fd}
+.people-card .media-recent{margin-top:auto}
+@media(max-width:1180px){.people-filters{grid-template-columns:2fr 1fr 1fr}.people-filters #peopleSearchInput{grid-column:1/-1}}
+@media(max-width:950px){.people-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.people-filters{grid-template-columns:1fr 1fr}.people-filters #peopleSearchInput{grid-column:1/-1}}
+@media(max-width:700px){.view-tabs{width:100%;display:grid;grid-template-columns:1fr 1fr}.view-tab{width:100%}}
+@media(max-width:560px){.people-grid{grid-template-columns:1fr}.people-filters{grid-template-columns:1fr}.people-filters #peopleSearchInput{grid-column:auto}}
