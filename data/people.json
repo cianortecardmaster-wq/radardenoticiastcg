@@ -1,14 +1,888 @@
 {
-  "generated_at": "2026-10-01T18:37:56.081489+00:00",
+  "generated_at": "2026-10-01T18:45:02.114288+00:00",
   "window_days": 7,
   "count": 86,
   "artist_developer_count": 68,
   "pro_player_count": 18,
-  "active_count": 2,
-  "content_count": 2,
-  "content_ready": false,
+  "active_count": 9,
+  "content_count": 25,
+  "content_ready": true,
   "errors_count": 0,
   "people": [
+    {
+      "name": "Andrea Mengucci",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "YouTube / Twitch"
+      ],
+      "description": "Campeão de grande evento e criador diário; gameplay competitivo e Magic em papel.",
+      "profiles": [
+        {
+          "platform": "youtube",
+          "label": "YouTube — VEEDEO",
+          "url": "https://www.youtube.com/andreamengucci"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube — Mengu's Workshop",
+          "url": "https://www.youtube.com/@MengusWorkshop"
+        },
+        {
+          "platform": "twitch",
+          "label": "Twitch",
+          "url": "https://www.twitch.tv/andreamengucci"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/mengu09/"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/Mengu09"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Andrea Mengucci VEEDEO",
+          "platform": "youtube",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.youtube.com/andreamengucci",
+          "youtube_search_fallback": false,
+          "id": "5b879535bc0174c9",
+          "recent_items": [
+            {
+              "id": "1242c90c5dc106d0ce60",
+              "title": "A new Phoenix arises in Modern! BG Reanimator | Modern | MTGO",
+              "url": "https://www.youtube.com/watch?v=CefjtsHMV8M",
+              "published_at": "2026-10-01T16:00:19+00:00",
+              "image_url": "https://i4.ytimg.com/vi/CefjtsHMV8M/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Andrea Mengucci VEEDEO",
+              "excerpt": "Time stamps: 0:00 Intro 1:05 Round1 vs UR Wizards 28:04 Round2 vs Scapeshift 47:08 Round3 vs Esper Ketra Decklist: https://partner.tcgplayer.com/2R9k3D Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keeping your cards safe, secure, and looking amazing at your LGS. Head to heav"
+            },
+            {
+              "id": "8f174224601d0b3708d5",
+              "title": "5-0 🏆with the best deck in Modern! Part 2 | MTGO",
+              "url": "https://www.youtube.com/watch?v=Lt2UpgPKL6w",
+              "published_at": "2026-09-30T16:00:36+00:00",
+              "image_url": "https://i1.ytimg.com/vi/Lt2UpgPKL6w/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Andrea Mengucci VEEDEO",
+              "excerpt": "Time stamps: 0:00 Round4 vs Esper Goryo 45:03 Round5 vs Ruby Storm Decklist: https://partner.tcgplayer.com/4anydo Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keeping your cards safe, secure, and looking amazing at your LGS. Head to heavyplay.com/MENGU and use code MENGU for"
+            },
+            {
+              "id": "2aae2ec4e364c8f5834d",
+              "title": "5-0 🏆with the best deck in Modern! Part 1 | MTGO",
+              "url": "https://www.youtube.com/watch?v=-hMicKNhcbg",
+              "published_at": "2026-09-29T16:00:06+00:00",
+              "image_url": "https://i2.ytimg.com/vi/-hMicKNhcbg/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Andrea Mengucci VEEDEO",
+              "excerpt": "Time stamps: 0:00 Intro 1:17 Round1 vs Boros Ponza 15:53 Round2 vs Boros Ponza 58:56 Round3 vs UR Cori Decklist: https://partner.tcgplayer.com/4anydo Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keeping your cards safe, secure, and looking amazing at your LGS. Head to heavyp"
+            },
+            {
+              "id": "d3e4ec57067627cf8878",
+              "title": "5-0 🏆 with Old School UR Murktide! I can't believe it!!! | Modern | MTGO",
+              "url": "https://www.youtube.com/watch?v=_YJ3gfC3lWc",
+              "published_at": "2026-09-27T16:00:22+00:00",
+              "image_url": "https://i4.ytimg.com/vi/_YJ3gfC3lWc/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Andrea Mengucci VEEDEO",
+              "excerpt": "Time stamps: 0:00 Intro 0:47 Round1 vs Esper Blink 21:48 Round2 vs Grixis Reanimator 32:51 Round3 vs Esper Goryo 49:21 Round4 vs Grixis Reanimator 1:06:59 Round5 vs Amulet Titan Decklist: https://partner.tcgplayer.com/ZVj4BX Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keepi"
+            },
+            {
+              "id": "86751a61f3dfd3625dfe",
+              "title": "Jund Saga is back in Modern! Almostttt trophyyyy!! | Modern | MTGO",
+              "url": "https://www.youtube.com/watch?v=zG60aAvI8j4",
+              "published_at": "2026-09-25T16:00:40+00:00",
+              "image_url": "https://i3.ytimg.com/vi/zG60aAvI8j4/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Andrea Mengucci VEEDEO",
+              "excerpt": "Time stamps: 0:00 Intro 1:52 Round1 vs Rakdos Shadow 29:19 Round2 vs BG Necro 55:08 Round3 vs UR Prowess 1:22:41 Round4 vs Abzan Samwise 1:41:10 Round5 vs BG Eldrazi Decklist: https://partner.tcgplayer.com/xJjxLA Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keeping your card"
+            }
+          ],
+          "last_checked_at": "2026-10-01T18:44:59.103040+00:00",
+          "resolved_url": "https://www.youtube.com/andreamengucci",
+          "resolved_feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCwIFsLCPrc1NGoNS0OGn0mw",
+          "resolved_channel_id": "UCwIFsLCPrc1NGoNS0OGn0mw",
+          "recent_count": 5,
+          "latest_published_at": "2026-10-01T16:00:19+00:00"
+        },
+        {
+          "name": "Mengu's Workshop",
+          "platform": "youtube",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.youtube.com/@MengusWorkshop",
+          "youtube_search_fallback": false,
+          "id": "d6d52298457dd5dd",
+          "recent_items": [
+            {
+              "id": "bd57a295207691004ad8",
+              "title": "Is Baleful Strix Broken in Pauper?! | Boros Snacker vs Dimir Strix | Mtg Gameplay",
+              "url": "https://www.youtube.com/watch?v=AHp5oZOYvEQ",
+              "published_at": "2026-09-28T19:00:17+00:00",
+              "image_url": "https://i2.ytimg.com/vi/AHp5oZOYvEQ/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Mengu's Workshop",
+              "excerpt": "This channel is sponsored by CARDTRADER and HEAVYPLAY! Use the code MENGU for extra discount! Do you want to buy our super cool CardTrader TOKENS? Shop here: https://www.cardtrader.com/it/games/magic/expansions/cardtrader-tokens/categories/magic-token-emblem/blueprints_search?sort=name+asc&share_code=MENGU CARDTRADER: https://www.cardtrader.com/it/invite/MEN"
+            },
+            {
+              "id": "305547cd26497dcbba2a",
+              "title": "A \"New\" Enchantress Decklist! #mtgo #premodernmtgo #premodernmtg #premodern",
+              "url": "https://www.youtube.com/shorts/h9pwwL3ja-k",
+              "published_at": "2026-09-25T19:00:29+00:00",
+              "image_url": "https://i1.ytimg.com/vi/h9pwwL3ja-k/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Mengu's Workshop",
+              "excerpt": "This channel is sponsored by CARDTRADER and HEAVYPLAY! Use the code MENGU for extra discount! Do you want to buy our super cool CardTrader TOKENS? Shop here: https://www.cardtrader.com/it/games/magic/expansions/cardtrader-tokens/categories/magic-token-emblem/blueprints_search?sort=name+asc&share_code=MENGU CARDTRADER: https://www.cardtrader.com/it/invite/MEN"
+            }
+          ],
+          "last_checked_at": "2026-10-01T18:45:00.000112+00:00",
+          "resolved_url": "https://www.youtube.com/@MengusWorkshop",
+          "resolved_feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCGZdKNOxKdSNL1Qht9aC8tQ",
+          "resolved_channel_id": "UCGZdKNOxKdSNL1Qht9aC8tQ",
+          "recent_count": 2,
+          "latest_published_at": "2026-09-28T19:00:17+00:00"
+        },
+        {
+          "name": "Andrea Mengucci",
+          "platform": "twitch",
+          "twitch_login": "andreamengucci",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.twitch.tv/andreamengucci",
+          "id": "5339172b5454719e",
+          "recent_items": [],
+          "last_checked_at": "2026-10-01T18:45:00.590208+00:00",
+          "resolved_url": "https://www.twitch.tv/andreamengucci",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
+        }
+      ],
+      "id": "aebc613c27e321f2",
+      "recent_items": [
+        {
+          "id": "1242c90c5dc106d0ce60",
+          "title": "A new Phoenix arises in Modern! BG Reanimator | Modern | MTGO",
+          "url": "https://www.youtube.com/watch?v=CefjtsHMV8M",
+          "published_at": "2026-10-01T16:00:19+00:00",
+          "image_url": "https://i4.ytimg.com/vi/CefjtsHMV8M/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Andrea Mengucci VEEDEO",
+          "excerpt": "Time stamps: 0:00 Intro 1:05 Round1 vs UR Wizards 28:04 Round2 vs Scapeshift 47:08 Round3 vs Esper Ketra Decklist: https://partner.tcgplayer.com/2R9k3D Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keeping your cards safe, secure, and looking amazing at your LGS. Head to heav",
+          "source_name": "Andrea Mengucci VEEDEO",
+          "source_platform": "youtube"
+        },
+        {
+          "id": "8f174224601d0b3708d5",
+          "title": "5-0 🏆with the best deck in Modern! Part 2 | MTGO",
+          "url": "https://www.youtube.com/watch?v=Lt2UpgPKL6w",
+          "published_at": "2026-09-30T16:00:36+00:00",
+          "image_url": "https://i1.ytimg.com/vi/Lt2UpgPKL6w/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Andrea Mengucci VEEDEO",
+          "excerpt": "Time stamps: 0:00 Round4 vs Esper Goryo 45:03 Round5 vs Ruby Storm Decklist: https://partner.tcgplayer.com/4anydo Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keeping your cards safe, secure, and looking amazing at your LGS. Head to heavyplay.com/MENGU and use code MENGU for",
+          "source_name": "Andrea Mengucci VEEDEO",
+          "source_platform": "youtube"
+        },
+        {
+          "id": "2aae2ec4e364c8f5834d",
+          "title": "5-0 🏆with the best deck in Modern! Part 1 | MTGO",
+          "url": "https://www.youtube.com/watch?v=-hMicKNhcbg",
+          "published_at": "2026-09-29T16:00:06+00:00",
+          "image_url": "https://i2.ytimg.com/vi/-hMicKNhcbg/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Andrea Mengucci VEEDEO",
+          "excerpt": "Time stamps: 0:00 Intro 1:17 Round1 vs Boros Ponza 15:53 Round2 vs Boros Ponza 58:56 Round3 vs UR Cori Decklist: https://partner.tcgplayer.com/4anydo Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keeping your cards safe, secure, and looking amazing at your LGS. Head to heavyp",
+          "source_name": "Andrea Mengucci VEEDEO",
+          "source_platform": "youtube"
+        },
+        {
+          "id": "bd57a295207691004ad8",
+          "title": "Is Baleful Strix Broken in Pauper?! | Boros Snacker vs Dimir Strix | Mtg Gameplay",
+          "url": "https://www.youtube.com/watch?v=AHp5oZOYvEQ",
+          "published_at": "2026-09-28T19:00:17+00:00",
+          "image_url": "https://i2.ytimg.com/vi/AHp5oZOYvEQ/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Mengu's Workshop",
+          "excerpt": "This channel is sponsored by CARDTRADER and HEAVYPLAY! Use the code MENGU for extra discount! Do you want to buy our super cool CardTrader TOKENS? Shop here: https://www.cardtrader.com/it/games/magic/expansions/cardtrader-tokens/categories/magic-token-emblem/blueprints_search?sort=name+asc&share_code=MENGU CARDTRADER: https://www.cardtrader.com/it/invite/MEN",
+          "source_name": "Mengu's Workshop",
+          "source_platform": "youtube"
+        },
+        {
+          "id": "d3e4ec57067627cf8878",
+          "title": "5-0 🏆 with Old School UR Murktide! I can't believe it!!! | Modern | MTGO",
+          "url": "https://www.youtube.com/watch?v=_YJ3gfC3lWc",
+          "published_at": "2026-09-27T16:00:22+00:00",
+          "image_url": "https://i4.ytimg.com/vi/_YJ3gfC3lWc/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Andrea Mengucci VEEDEO",
+          "excerpt": "Time stamps: 0:00 Intro 0:47 Round1 vs Esper Blink 21:48 Round2 vs Grixis Reanimator 32:51 Round3 vs Esper Goryo 49:21 Round4 vs Grixis Reanimator 1:06:59 Round5 vs Amulet Titan Decklist: https://partner.tcgplayer.com/ZVj4BX Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keepi",
+          "source_name": "Andrea Mengucci VEEDEO",
+          "source_platform": "youtube"
+        },
+        {
+          "id": "305547cd26497dcbba2a",
+          "title": "A \"New\" Enchantress Decklist! #mtgo #premodernmtgo #premodernmtg #premodern",
+          "url": "https://www.youtube.com/shorts/h9pwwL3ja-k",
+          "published_at": "2026-09-25T19:00:29+00:00",
+          "image_url": "https://i1.ytimg.com/vi/h9pwwL3ja-k/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Mengu's Workshop",
+          "excerpt": "This channel is sponsored by CARDTRADER and HEAVYPLAY! Use the code MENGU for extra discount! Do you want to buy our super cool CardTrader TOKENS? Shop here: https://www.cardtrader.com/it/games/magic/expansions/cardtrader-tokens/categories/magic-token-emblem/blueprints_search?sort=name+asc&share_code=MENGU CARDTRADER: https://www.cardtrader.com/it/invite/MEN",
+          "source_name": "Mengu's Workshop",
+          "source_platform": "youtube"
+        },
+        {
+          "id": "86751a61f3dfd3625dfe",
+          "title": "Jund Saga is back in Modern! Almostttt trophyyyy!! | Modern | MTGO",
+          "url": "https://www.youtube.com/watch?v=zG60aAvI8j4",
+          "published_at": "2026-09-25T16:00:40+00:00",
+          "image_url": "https://i3.ytimg.com/vi/zG60aAvI8j4/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Andrea Mengucci VEEDEO",
+          "excerpt": "Time stamps: 0:00 Intro 1:52 Round1 vs Rakdos Shadow 29:19 Round2 vs BG Necro 55:08 Round3 vs UR Prowess 1:22:41 Round4 vs Abzan Samwise 1:41:10 Round5 vs BG Eldrazi Decklist: https://partner.tcgplayer.com/xJjxLA Want to get premium card accessories like Mengu? Heavy Play is the answer. Their magnetic cases are some of the best in the game. Keeping your card",
+          "source_name": "Andrea Mengucci VEEDEO",
+          "source_platform": "youtube"
+        }
+      ],
+      "recent_count": 7,
+      "latest_published_at": "2026-10-01T16:00:19+00:00"
+    },
+    {
+      "name": "Alexis Susani",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://alexis-susani.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Alexis Susani",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://alexis-susani.artstation.com/",
+          "id": "5d13e225cd5c2a43",
+          "recent_items": [
+            {
+              "id": "61b9503bcba951173966",
+              "title": "Rumbling of i'Arathael",
+              "url": "https://www.artstation.com/artwork/mOAnWY",
+              "published_at": "2026-10-01T15:34:54.157000+00:00",
+              "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/874/904/small_square/alexis-susani-alexis-susani-thumb54jpg.jpg?1790868891",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Alexis Susani"
+            }
+          ],
+          "last_checked_at": "2026-10-01T18:44:48.955016+00:00",
+          "resolved_url": "https://alexis-susani.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 1,
+          "latest_published_at": "2026-10-01T15:34:54.157000+00:00"
+        }
+      ],
+      "id": "568a2788f1185757",
+      "recent_items": [
+        {
+          "id": "61b9503bcba951173966",
+          "title": "Rumbling of i'Arathael",
+          "url": "https://www.artstation.com/artwork/mOAnWY",
+          "published_at": "2026-10-01T15:34:54.157000+00:00",
+          "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/874/904/small_square/alexis-susani-alexis-susani-thumb54jpg.jpg?1790868891",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Alexis Susani",
+          "source_name": "Alexis Susani",
+          "source_platform": "artstation"
+        }
+      ],
+      "recent_count": 1,
+      "latest_published_at": "2026-10-01T15:34:54.157000+00:00"
+    },
+    {
+      "name": "Arif Wijaya",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://arifwijaya.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Arif Wijaya",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://arifwijaya.artstation.com/",
+          "id": "a2ca589ff5d23589",
+          "recent_items": [
+            {
+              "id": "1315347c7b8428239965",
+              "title": "Proctor of Potential",
+              "url": "https://www.artstation.com/artwork/QxKJvZ",
+              "published_at": "2026-10-01T12:37:14.142000+00:00",
+              "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/869/882/small_square/arif-wijaya-arif-wijaya-proctor-of-potential-thumbs.jpg?1790858228",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Arif Wijaya"
+            }
+          ],
+          "last_checked_at": "2026-10-01T18:44:49.618877+00:00",
+          "resolved_url": "https://arifwijaya.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 1,
+          "latest_published_at": "2026-10-01T12:37:14.142000+00:00"
+        }
+      ],
+      "id": "146d79d6940e050c",
+      "recent_items": [
+        {
+          "id": "1315347c7b8428239965",
+          "title": "Proctor of Potential",
+          "url": "https://www.artstation.com/artwork/QxKJvZ",
+          "published_at": "2026-10-01T12:37:14.142000+00:00",
+          "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/869/882/small_square/arif-wijaya-arif-wijaya-proctor-of-potential-thumbs.jpg?1790858228",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Arif Wijaya",
+          "source_name": "Arif Wijaya",
+          "source_platform": "artstation"
+        }
+      ],
+      "recent_count": 1,
+      "latest_published_at": "2026-10-01T12:37:14.142000+00:00"
+    },
+    {
+      "name": "Jim Davis",
+      "category": "pro-player",
+      "games": [
+        "magic"
+      ],
+      "roles": [
+        "Pro player",
+        "Criador diário"
+      ],
+      "description": "Jogador profissional e criador em tempo integral; vídeos, Twitch, artigos e séries de draft.",
+      "profiles": [
+        {
+          "platform": "website",
+          "label": "Site",
+          "url": "https://www.jimdavismtg.com/"
+        },
+        {
+          "platform": "youtube",
+          "label": "YouTube",
+          "url": "https://www.youtube.com/@JimDavisMTG"
+        },
+        {
+          "platform": "twitch",
+          "label": "Twitch",
+          "url": "https://www.twitch.tv/jimdavismtg"
+        },
+        {
+          "platform": "x",
+          "label": "X",
+          "url": "https://x.com/JimDavisMTG"
+        },
+        {
+          "platform": "bluesky",
+          "label": "Bluesky",
+          "url": "https://bsky.app/profile/jimdavismtg.com"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/jimdavismtg/"
+        },
+        {
+          "platform": "tiktok",
+          "label": "TikTok",
+          "url": "https://www.tiktok.com/@jimdavismtg"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Jim Davis MTG",
+          "platform": "youtube",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.youtube.com/@JimDavisMTG",
+          "youtube_search_fallback": false,
+          "id": "3ca7e44ab2d804cb",
+          "recent_items": [
+            {
+              "id": "f29fbacb03d6d14ea452",
+              "title": "🥉 Bronze To Mythic: Episode 1 - Starting Rank: Bronze 4 - MTG Arena: 🔮 Reality Fracture 🔮",
+              "url": "https://www.youtube.com/watch?v=NGhBOQm-CQ4",
+              "published_at": "2026-09-30T17:00:29+00:00",
+              "image_url": "https://i3.ytimg.com/vi/NGhBOQm-CQ4/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Bronze To Mythic",
+              "excerpt": "Back to in-universe Magic and the set I was most excited about in 2026 - will Reality Fracture live up to the hype? Welcome to Bronze to Mythic, the show where I show you how to go from the depths of Bronze all the way to the heights of Mythic! Follow along and learn what it's like to move through the ranks all the way to the top. The entire run will be stre"
+            },
+            {
+              "id": "8462b7c99bd13a962c8a",
+              "title": "🤖 Draftsmith Take The Wheel! 🤖 - MTG Arena: 🗻 The Hobbit 🗻",
+              "url": "https://www.youtube.com/watch?v=_-l004leHKE",
+              "published_at": "2026-09-27T17:00:16+00:00",
+              "image_url": "https://i4.ytimg.com/vi/_-l004leHKE/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Bronze To Mythic",
+              "excerpt": "ONE DRAFT TO RULE THEM ALL! 💍🤖 Be sure to tune-in for the premier of Bronze To Mythic - Reality Fracture this Tuesday, September 29th, 2026 at 8pm ET/5pm PT on Twitch or right here on YouTube on Wednesday September 30th, 2026 at 1pm ET/10am PT! Untapped.gg is the best MtG overlay and it's not close. One of the coolest features Untapped Premium offers is Draf"
+            },
+            {
+              "id": "bd0672c3137db5476357",
+              "title": "💎 Bronze To Mythic: Episode 20 - Starting Rank: Diamond 1 - MTG Arena: 🗻 The Hobbit 🗻",
+              "url": "https://www.youtube.com/watch?v=1TZ4_YxCbB4",
+              "published_at": "2026-09-25T17:00:33+00:00",
+              "image_url": "https://i2.ytimg.com/vi/1TZ4_YxCbB4/hqdefault.jpg",
+              "kind": "video",
+              "content_platform": "youtube",
+              "author": "Bronze To Mythic",
+              "excerpt": "Time to FINISH THIS 💪 🏆 Welcome to Bronze to Mythic, the show where I show you how to go from the depths of Bronze all the way to the heights of Mythic! Follow along and learn what it's like to move through the ranks all the way to the top. The entire run will be streamed on my Twitch channel and featured here on YouTube one draft per episode. 🔴 Bronze to My"
+            }
+          ],
+          "last_checked_at": "2026-10-01T18:45:01.021415+00:00",
+          "resolved_url": "https://www.youtube.com/@JimDavisMTG",
+          "resolved_feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCocZb0xawRZuE1CKpUvOM8A",
+          "resolved_channel_id": "UCocZb0xawRZuE1CKpUvOM8A",
+          "recent_count": 3,
+          "latest_published_at": "2026-09-30T17:00:29+00:00"
+        },
+        {
+          "name": "Jim Davis MTG",
+          "platform": "twitch",
+          "twitch_login": "jimdavismtg",
+          "language": "en",
+          "game_id": "magic",
+          "url": "https://www.twitch.tv/jimdavismtg",
+          "id": "30290ddbff005188",
+          "recent_items": [],
+          "last_checked_at": "2026-10-01T18:45:01.715252+00:00",
+          "resolved_url": "https://www.twitch.tv/jimdavismtg",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
+        }
+      ],
+      "id": "bb0f2f7699cc48ef",
+      "recent_items": [
+        {
+          "id": "f29fbacb03d6d14ea452",
+          "title": "🥉 Bronze To Mythic: Episode 1 - Starting Rank: Bronze 4 - MTG Arena: 🔮 Reality Fracture 🔮",
+          "url": "https://www.youtube.com/watch?v=NGhBOQm-CQ4",
+          "published_at": "2026-09-30T17:00:29+00:00",
+          "image_url": "https://i3.ytimg.com/vi/NGhBOQm-CQ4/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Bronze To Mythic",
+          "excerpt": "Back to in-universe Magic and the set I was most excited about in 2026 - will Reality Fracture live up to the hype? Welcome to Bronze to Mythic, the show where I show you how to go from the depths of Bronze all the way to the heights of Mythic! Follow along and learn what it's like to move through the ranks all the way to the top. The entire run will be stre",
+          "source_name": "Jim Davis MTG",
+          "source_platform": "youtube"
+        },
+        {
+          "id": "8462b7c99bd13a962c8a",
+          "title": "🤖 Draftsmith Take The Wheel! 🤖 - MTG Arena: 🗻 The Hobbit 🗻",
+          "url": "https://www.youtube.com/watch?v=_-l004leHKE",
+          "published_at": "2026-09-27T17:00:16+00:00",
+          "image_url": "https://i4.ytimg.com/vi/_-l004leHKE/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Bronze To Mythic",
+          "excerpt": "ONE DRAFT TO RULE THEM ALL! 💍🤖 Be sure to tune-in for the premier of Bronze To Mythic - Reality Fracture this Tuesday, September 29th, 2026 at 8pm ET/5pm PT on Twitch or right here on YouTube on Wednesday September 30th, 2026 at 1pm ET/10am PT! Untapped.gg is the best MtG overlay and it's not close. One of the coolest features Untapped Premium offers is Draf",
+          "source_name": "Jim Davis MTG",
+          "source_platform": "youtube"
+        },
+        {
+          "id": "bd0672c3137db5476357",
+          "title": "💎 Bronze To Mythic: Episode 20 - Starting Rank: Diamond 1 - MTG Arena: 🗻 The Hobbit 🗻",
+          "url": "https://www.youtube.com/watch?v=1TZ4_YxCbB4",
+          "published_at": "2026-09-25T17:00:33+00:00",
+          "image_url": "https://i2.ytimg.com/vi/1TZ4_YxCbB4/hqdefault.jpg",
+          "kind": "video",
+          "content_platform": "youtube",
+          "author": "Bronze To Mythic",
+          "excerpt": "Time to FINISH THIS 💪 🏆 Welcome to Bronze to Mythic, the show where I show you how to go from the depths of Bronze all the way to the heights of Mythic! Follow along and learn what it's like to move through the ranks all the way to the top. The entire run will be streamed on my Twitch channel and featured here on YouTube one draft per episode. 🔴 Bronze to My",
+          "source_name": "Jim Davis MTG",
+          "source_platform": "youtube"
+        }
+      ],
+      "recent_count": 3,
+      "latest_published_at": "2026-09-30T17:00:29+00:00"
+    },
+    {
+      "name": "Federico Musetti",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://www.artstation.com/fedemusettiart"
+        },
+        {
+          "platform": "instagram",
+          "label": "Instagram",
+          "url": "https://www.instagram.com/federicomusettiart/"
+        },
+        {
+          "platform": "facebook",
+          "label": "Facebook",
+          "url": "https://www.facebook.com/federicomusettiart"
+        },
+        {
+          "platform": "pinterest",
+          "label": "Pinterest",
+          "url": "https://linktr.ee/federicomusettiart"
+        },
+        {
+          "platform": "linkedin",
+          "label": "LinkedIn",
+          "url": "https://linktr.ee/federicomusettiart"
+        },
+        {
+          "platform": "website",
+          "label": "Site / Linktree",
+          "url": "https://linktr.ee/federicomusettiart"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Federico Musetti",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://www.artstation.com/fedemusettiart",
+          "id": "c756cbdf24a4560f",
+          "recent_items": [
+            {
+              "id": "9baf79dca4c02d1c9546",
+              "title": "Book cover \"Diebe der Nacht\"",
+              "url": "https://www.artstation.com/artwork/RqybvD",
+              "published_at": "2026-09-29T14:33:06.746000+00:00",
+              "image_url": "https://cdnb.artstation.com/p/assets/images/images/102/636/749/20260922155432/small_square/federico-musetti-1.jpg?1790110472",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            },
+            {
+              "id": "ce268e4caaa4a85a024a",
+              "title": "Terra - Flesh and Blood - TCG",
+              "url": "https://www.artstation.com/artwork/G1e4nN",
+              "published_at": "2026-09-29T14:32:45.540000+00:00",
+              "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/634/888/small_square/federico-musetti-federico-musetti-thumbs-0013-2-2.jpg?1790105304",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            },
+            {
+              "id": "98af45919f60af5852c9",
+              "title": "Imperial Edict / Long Whisker Loyalty - Flesh and Blood - TCG",
+              "url": "https://www.artstation.com/artwork/q0e4nN",
+              "published_at": "2026-09-29T14:32:21.043000+00:00",
+              "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/633/602/small_square/federico-musetti-federico-musetti-thumbs-0006-edict-long.jpg?1790102408",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            },
+            {
+              "id": "d3f2fcf73d95d769a0d7",
+              "title": "The Librarian, Magister of History - Flesh and Blood - TCG",
+              "url": "https://www.artstation.com/artwork/BaXgGl",
+              "published_at": "2026-09-24T21:06:00.187000+00:00",
+              "image_url": "https://cdnb.artstation.com/p/assets/covers/images/102/634/319/small_square/federico-musetti-federico-musetti-thumbs-0002-layer-36.jpg?1790103926",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            },
+            {
+              "id": "b90dbbe924ac6aff57de",
+              "title": "L'ultima torcia - cover art",
+              "url": "https://www.artstation.com/artwork/AolV8m",
+              "published_at": "2026-09-24T20:58:24.506000+00:00",
+              "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/636/948/small_square/federico-musetti-federico-musetti-thumbs-0023-layer-35.jpg?1790111084",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            },
+            {
+              "id": "d34c1e29b84591dd2b15",
+              "title": "DestinyQuest - La Legione delle Ombre",
+              "url": "https://www.artstation.com/artwork/0a4Nx5",
+              "published_at": "2026-09-24T20:58:22.125000+00:00",
+              "image_url": "https://cdnb.artstation.com/p/assets/covers/images/102/636/299/small_square/federico-musetti-federico-musetti-z.jpg?1790109118",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            },
+            {
+              "id": "e0fae9f9dd0deaa9c001",
+              "title": "Nightfell",
+              "url": "https://www.artstation.com/artwork/gw0YeK",
+              "published_at": "2026-09-24T20:58:19.042000+00:00",
+              "image_url": "https://cdnb.artstation.com/p/assets/covers/images/102/636/573/small_square/federico-musetti-federico-musetti-thumbs-0005-nightfell.jpg?1790110036",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            },
+            {
+              "id": "09f3903f2b01453b66cf",
+              "title": "Hala, Bladesaint of the Vow - Flesh and Blood - TCG",
+              "url": "https://www.artstation.com/artwork/EYvrD0",
+              "published_at": "2026-09-24T20:58:12.104000+00:00",
+              "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/632/802/small_square/federico-musetti-federico-musetti-thumbs-0005-layer-19.jpg?1790100740",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            },
+            {
+              "id": "4762c3e7f5f03728f891",
+              "title": "Command and Conquer - Flesh and Blood - TCG",
+              "url": "https://www.artstation.com/artwork/dLKzlQ",
+              "published_at": "2026-09-24T20:31:37.168000+00:00",
+              "image_url": "https://cdnb.artstation.com/p/assets/covers/images/102/695/313/small_square/federico-musetti-federico-musetti-thumbs-0019-sow2700-musetti2.jpg?1790283982",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Federico Musetti"
+            }
+          ],
+          "last_checked_at": "2026-10-01T18:44:50.459166+00:00",
+          "resolved_url": "https://www.artstation.com/fedemusettiart",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 9,
+          "latest_published_at": "2026-09-29T14:33:06.746000+00:00"
+        }
+      ],
+      "id": "5e5395aee83820d1",
+      "recent_items": [
+        {
+          "id": "9baf79dca4c02d1c9546",
+          "title": "Book cover \"Diebe der Nacht\"",
+          "url": "https://www.artstation.com/artwork/RqybvD",
+          "published_at": "2026-09-29T14:33:06.746000+00:00",
+          "image_url": "https://cdnb.artstation.com/p/assets/images/images/102/636/749/20260922155432/small_square/federico-musetti-1.jpg?1790110472",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        },
+        {
+          "id": "ce268e4caaa4a85a024a",
+          "title": "Terra - Flesh and Blood - TCG",
+          "url": "https://www.artstation.com/artwork/G1e4nN",
+          "published_at": "2026-09-29T14:32:45.540000+00:00",
+          "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/634/888/small_square/federico-musetti-federico-musetti-thumbs-0013-2-2.jpg?1790105304",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        },
+        {
+          "id": "98af45919f60af5852c9",
+          "title": "Imperial Edict / Long Whisker Loyalty - Flesh and Blood - TCG",
+          "url": "https://www.artstation.com/artwork/q0e4nN",
+          "published_at": "2026-09-29T14:32:21.043000+00:00",
+          "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/633/602/small_square/federico-musetti-federico-musetti-thumbs-0006-edict-long.jpg?1790102408",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        },
+        {
+          "id": "d3f2fcf73d95d769a0d7",
+          "title": "The Librarian, Magister of History - Flesh and Blood - TCG",
+          "url": "https://www.artstation.com/artwork/BaXgGl",
+          "published_at": "2026-09-24T21:06:00.187000+00:00",
+          "image_url": "https://cdnb.artstation.com/p/assets/covers/images/102/634/319/small_square/federico-musetti-federico-musetti-thumbs-0002-layer-36.jpg?1790103926",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        },
+        {
+          "id": "b90dbbe924ac6aff57de",
+          "title": "L'ultima torcia - cover art",
+          "url": "https://www.artstation.com/artwork/AolV8m",
+          "published_at": "2026-09-24T20:58:24.506000+00:00",
+          "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/636/948/small_square/federico-musetti-federico-musetti-thumbs-0023-layer-35.jpg?1790111084",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        },
+        {
+          "id": "d34c1e29b84591dd2b15",
+          "title": "DestinyQuest - La Legione delle Ombre",
+          "url": "https://www.artstation.com/artwork/0a4Nx5",
+          "published_at": "2026-09-24T20:58:22.125000+00:00",
+          "image_url": "https://cdnb.artstation.com/p/assets/covers/images/102/636/299/small_square/federico-musetti-federico-musetti-z.jpg?1790109118",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        },
+        {
+          "id": "e0fae9f9dd0deaa9c001",
+          "title": "Nightfell",
+          "url": "https://www.artstation.com/artwork/gw0YeK",
+          "published_at": "2026-09-24T20:58:19.042000+00:00",
+          "image_url": "https://cdnb.artstation.com/p/assets/covers/images/102/636/573/small_square/federico-musetti-federico-musetti-thumbs-0005-nightfell.jpg?1790110036",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        },
+        {
+          "id": "09f3903f2b01453b66cf",
+          "title": "Hala, Bladesaint of the Vow - Flesh and Blood - TCG",
+          "url": "https://www.artstation.com/artwork/EYvrD0",
+          "published_at": "2026-09-24T20:58:12.104000+00:00",
+          "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/632/802/small_square/federico-musetti-federico-musetti-thumbs-0005-layer-19.jpg?1790100740",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        },
+        {
+          "id": "4762c3e7f5f03728f891",
+          "title": "Command and Conquer - Flesh and Blood - TCG",
+          "url": "https://www.artstation.com/artwork/dLKzlQ",
+          "published_at": "2026-09-24T20:31:37.168000+00:00",
+          "image_url": "https://cdnb.artstation.com/p/assets/covers/images/102/695/313/small_square/federico-musetti-federico-musetti-thumbs-0019-sow2700-musetti2.jpg?1790283982",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Federico Musetti",
+          "source_name": "Federico Musetti",
+          "source_platform": "artstation"
+        }
+      ],
+      "recent_count": 9,
+      "latest_published_at": "2026-09-29T14:33:06.746000+00:00"
+    },
+    {
+      "name": "Jessada Sutthi",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://jessada.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Jessada Sutthi",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://jessada.artstation.com/",
+          "id": "347f719df76d9bc5",
+          "recent_items": [
+            {
+              "id": "37a3c085c14d6f543e44",
+              "title": "Shuck",
+              "url": "https://www.artstation.com/artwork/KR3RVX",
+              "published_at": "2026-09-26T13:00:45.894000+00:00",
+              "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/732/172/small_square/jessada-sutthi-jessada-sutthi-shuck-thumbnail.jpg?1790427642",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Jessada Sutthi"
+            }
+          ],
+          "last_checked_at": "2026-10-01T18:44:51.464159+00:00",
+          "resolved_url": "https://jessada.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 1,
+          "latest_published_at": "2026-09-26T13:00:45.894000+00:00"
+        }
+      ],
+      "id": "1c56bde044c2f34d",
+      "recent_items": [
+        {
+          "id": "37a3c085c14d6f543e44",
+          "title": "Shuck",
+          "url": "https://www.artstation.com/artwork/KR3RVX",
+          "published_at": "2026-09-26T13:00:45.894000+00:00",
+          "image_url": "https://cdna.artstation.com/p/assets/covers/images/102/732/172/small_square/jessada-sutthi-jessada-sutthi-shuck-thumbnail.jpg?1790427642",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Jessada Sutthi",
+          "source_name": "Jessada Sutthi",
+          "source_platform": "artstation"
+        }
+      ],
+      "recent_count": 1,
+      "latest_published_at": "2026-09-26T13:00:45.894000+00:00"
+    },
     {
       "name": "Pankaj Bhojwani",
       "category": "pro-player",
@@ -92,6 +966,68 @@
       "latest_published_at": "2026-09-25T11:59:47+00:00"
     },
     {
+      "name": "Lizhe Liang",
+      "category": "artist-developer",
+      "games": [
+        "flesh-and-blood"
+      ],
+      "roles": [
+        "Artista"
+      ],
+      "profiles": [
+        {
+          "platform": "artstation",
+          "label": "ArtStation",
+          "url": "https://lizhelart.artstation.com/"
+        }
+      ],
+      "content_sources": [
+        {
+          "name": "Lizhe Liang",
+          "platform": "artstation",
+          "language": "en",
+          "game_id": "flesh-and-blood",
+          "url": "https://lizhelart.artstation.com/",
+          "id": "27c2542215355004",
+          "recent_items": [
+            {
+              "id": "a277ed1697f41c435682",
+              "title": "Rhya and Zariah",
+              "url": "https://www.artstation.com/artwork/wOrJRV",
+              "published_at": "2026-09-25T02:15:08.323000+00:00",
+              "image_url": "https://cdna.artstation.com/p/assets/images/images/102/699/312/small_square/lizhe-liang-cm-juliejohnson-01-final-wm.jpg?1790302357",
+              "kind": "artwork",
+              "content_platform": "artstation",
+              "author": "Lizhe Liang"
+            }
+          ],
+          "last_checked_at": "2026-10-01T18:44:53.326882+00:00",
+          "resolved_url": "https://lizhelart.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 1,
+          "latest_published_at": "2026-09-25T02:15:08.323000+00:00"
+        }
+      ],
+      "id": "bc809c7dd79be426",
+      "recent_items": [
+        {
+          "id": "a277ed1697f41c435682",
+          "title": "Rhya and Zariah",
+          "url": "https://www.artstation.com/artwork/wOrJRV",
+          "published_at": "2026-09-25T02:15:08.323000+00:00",
+          "image_url": "https://cdna.artstation.com/p/assets/images/images/102/699/312/small_square/lizhe-liang-cm-juliejohnson-01-final-wm.jpg?1790302357",
+          "kind": "artwork",
+          "content_platform": "artstation",
+          "author": "Lizhe Liang",
+          "source_name": "Lizhe Liang",
+          "source_platform": "artstation"
+        }
+      ],
+      "recent_count": 1,
+      "latest_published_at": "2026-09-25T02:15:08.323000+00:00"
+    },
+    {
       "name": "Yuki Lee Bender",
       "category": "pro-player",
       "games": [
@@ -153,7 +1089,12 @@
           "url": "https://yuginmaffioli.artstation.com/",
           "id": "e59eb2442642af3f",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:58.828880+00:00",
+          "resolved_url": "https://yuginmaffioli.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "128d2ad22cc1e4ee",
@@ -186,7 +1127,12 @@
           "url": "https://yiian.artstation.com/",
           "id": "04b0c3059826bc55",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:58.579591+00:00",
+          "resolved_url": "https://yiian.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "7b4ff9341536c10c",
@@ -224,7 +1170,12 @@
           "url": "https://wisnutan.artstation.com/",
           "id": "d8672361aa948656",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:58.336837+00:00",
+          "resolved_url": "https://wisnutan.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "1076299d3291f7e2",
@@ -257,7 +1208,12 @@
           "url": "https://corbenyx.artstation.com/",
           "id": "9483b28f5e77cdde",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:58.087904+00:00",
+          "resolved_url": "https://corbenyx.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "da866c8066dcead4",
@@ -312,7 +1268,12 @@
           "url": "https://www.artstation.com/morano",
           "id": "49c9e176ceb6824c",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:57.819398+00:00",
+          "resolved_url": "https://www.artstation.com/morano",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "df10f966d470f045",
@@ -428,7 +1389,12 @@
           "url": "https://simondominic.artstation.com/",
           "id": "e2f5ed1564770040",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:57.440660+00:00",
+          "resolved_url": "https://simondominic.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "4a8dfe98c677816c",
@@ -485,7 +1451,12 @@
           "url": "https://satriasa.artstation.com/",
           "id": "6b957fa69602ee96",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:57.176108+00:00",
+          "resolved_url": "https://satriasa.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "bc43c56a39651f95",
@@ -542,7 +1513,12 @@
           "url": "https://samyang.artstation.com/",
           "id": "73f8663301c3471f",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:56.894965+00:00",
+          "resolved_url": "https://samyang.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "description": "Art Director; Concept Design; Character Design",
@@ -615,7 +1591,12 @@
           "url": "https://riordan.artstation.com/",
           "id": "06b6de0c14e1e2d9",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:56.618644+00:00",
+          "resolved_url": "https://riordan.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "a9653f57257c1f1d",
@@ -678,7 +1659,12 @@
           "url": "https://rezaafshar.artstation.com/",
           "id": "20955e06edd78ba9",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:55.591982+00:00",
+          "resolved_url": "https://rezaafshar.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         },
         {
           "name": "Reza Afshar",
@@ -689,7 +1675,12 @@
           "youtube_search_fallback": false,
           "id": "4db0ca75580bf43c",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:55.846331+00:00",
+          "resolved_url": "https://youtube.com/@rezaafsharr",
+          "resolved_feed_url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCtDQNLj3bZ_jBFtdz5w40aQ",
+          "resolved_channel_id": "UCtDQNLj3bZ_jBFtdz5w40aQ",
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "7f50840e5a45ed76",
@@ -807,7 +1798,12 @@
           "url": "https://www.artstation.com/mrcaptain",
           "id": "13e37397dcd73586",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:55.315677+00:00",
+          "resolved_url": "https://www.artstation.com/mrcaptain",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "322314d5ef8e2230",
@@ -940,7 +1936,12 @@
           "url": "https://www.artstation.com/ninesicks",
           "id": "93ab4c9338a7eedf",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:55.032846+00:00",
+          "resolved_url": "https://www.artstation.com/ninesicks",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "2dcddad3348fa171",
@@ -994,7 +1995,12 @@
           "url": "https://mateusz_wisniewski.artstation.com/",
           "id": "6f4719dcb89f11d3",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:54.515992+00:00",
+          "resolved_url": "https://mateusz_wisniewski.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "7bd711558b14c800",
@@ -1069,7 +2075,12 @@
           "url": "https://www.artstation.com/mariusz",
           "id": "936bb3a5ba9068eb",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:54.243957+00:00",
+          "resolved_url": "https://www.artstation.com/mariusz",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "5a016f059cfdd462",
@@ -1107,7 +2118,12 @@
           "url": "https://www.artstation.com/mario_wibisono",
           "id": "1260517571477846",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:53.981313+00:00",
+          "resolved_url": "https://www.artstation.com/mario_wibisono",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "0c0364fb249ebbc4",
@@ -1145,7 +2161,12 @@
           "url": "https://innervalue.artstation.com/",
           "id": "ec4333813799bc87",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:53.684956+00:00",
+          "resolved_url": "https://innervalue.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "7cfac5db33f3192e",
@@ -1179,7 +2200,12 @@
           "url": "https://www.artstation.com/mjfetesio",
           "id": "9bfa1845086db410",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:54.784274+00:00",
+          "resolved_url": "https://www.artstation.com/mjfetesio",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "description": "Concept Lead; Concept Design; Asset Rendering",
@@ -1224,43 +2250,15 @@
           "url": "https://www.twitch.tv/lsv",
           "id": "9c36b3a13040cb13",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:45:01.908916+00:00",
+          "resolved_url": "https://www.twitch.tv/lsv",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "9ec3c08445c17c04",
-      "recent_items": [],
-      "recent_count": 0,
-      "latest_published_at": null
-    },
-    {
-      "name": "Lizhe Liang",
-      "category": "artist-developer",
-      "games": [
-        "flesh-and-blood"
-      ],
-      "roles": [
-        "Artista"
-      ],
-      "profiles": [
-        {
-          "platform": "artstation",
-          "label": "ArtStation",
-          "url": "https://lizhelart.artstation.com/"
-        }
-      ],
-      "content_sources": [
-        {
-          "name": "Lizhe Liang",
-          "platform": "artstation",
-          "language": "en",
-          "game_id": "flesh-and-blood",
-          "url": "https://lizhelart.artstation.com/",
-          "id": "27c2542215355004",
-          "recent_items": [],
-          "recent_count": 0
-        }
-      ],
-      "id": "bc809c7dd79be426",
       "recent_items": [],
       "recent_count": 0,
       "latest_published_at": null
@@ -1295,7 +2293,12 @@
           "url": "https://dopaprime.artstation.com/",
           "id": "6309278ba135097d",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:53.040185+00:00",
+          "resolved_url": "https://dopaprime.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "a4b3e2be840d4951",
@@ -1328,7 +2331,12 @@
           "url": "https://lasahido.artstation.com/",
           "id": "f81cc7d641f5d713",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:52.782788+00:00",
+          "resolved_url": "https://lasahido.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "27ac40c4ff120004",
@@ -1361,7 +2369,12 @@
           "url": "https://k_ptn.artstation.com/",
           "id": "a8d4dca5d86787c9",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:52.515425+00:00",
+          "resolved_url": "https://k_ptn.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "53338079a0ab5d42",
@@ -1421,7 +2434,12 @@
           "url": "https://www.artstation.com/kevin_sidharta",
           "id": "bf798db6840ed944",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:52.218748+00:00",
+          "resolved_url": "https://www.artstation.com/kevin_sidharta",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "a09bbe0339230526",
@@ -1558,7 +2576,12 @@
           "url": "https://jguilherme08.artstation.com/",
           "id": "a139a80ecc09b443",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:51.906399+00:00",
+          "resolved_url": "https://jguilherme08.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "25e87c07aed19ec3",
@@ -1584,83 +2607,6 @@
       "latest_published_at": null
     },
     {
-      "name": "Jim Davis",
-      "category": "pro-player",
-      "games": [
-        "magic"
-      ],
-      "roles": [
-        "Pro player",
-        "Criador diário"
-      ],
-      "description": "Jogador profissional e criador em tempo integral; vídeos, Twitch, artigos e séries de draft.",
-      "profiles": [
-        {
-          "platform": "website",
-          "label": "Site",
-          "url": "https://www.jimdavismtg.com/"
-        },
-        {
-          "platform": "youtube",
-          "label": "YouTube",
-          "url": "https://www.youtube.com/@JimDavisMTG"
-        },
-        {
-          "platform": "twitch",
-          "label": "Twitch",
-          "url": "https://www.twitch.tv/jimdavismtg"
-        },
-        {
-          "platform": "x",
-          "label": "X",
-          "url": "https://x.com/JimDavisMTG"
-        },
-        {
-          "platform": "bluesky",
-          "label": "Bluesky",
-          "url": "https://bsky.app/profile/jimdavismtg.com"
-        },
-        {
-          "platform": "instagram",
-          "label": "Instagram",
-          "url": "https://www.instagram.com/jimdavismtg/"
-        },
-        {
-          "platform": "tiktok",
-          "label": "TikTok",
-          "url": "https://www.tiktok.com/@jimdavismtg"
-        }
-      ],
-      "content_sources": [
-        {
-          "name": "Jim Davis MTG",
-          "platform": "youtube",
-          "language": "en",
-          "game_id": "magic",
-          "url": "https://www.youtube.com/@JimDavisMTG",
-          "youtube_search_fallback": false,
-          "id": "3ca7e44ab2d804cb",
-          "recent_items": [],
-          "recent_count": 0
-        },
-        {
-          "name": "Jim Davis MTG",
-          "platform": "twitch",
-          "twitch_login": "jimdavismtg",
-          "language": "en",
-          "game_id": "magic",
-          "url": "https://www.twitch.tv/jimdavismtg",
-          "id": "30290ddbff005188",
-          "recent_items": [],
-          "recent_count": 0
-        }
-      ],
-      "id": "bb0f2f7699cc48ef",
-      "recent_items": [],
-      "recent_count": 0,
-      "latest_published_at": null
-    },
-    {
       "name": "Jessketchin",
       "category": "artist-developer",
       "games": [
@@ -1673,39 +2619,6 @@
       "profiles": [],
       "content_sources": [],
       "id": "95cf7a14ec3aeb18",
-      "recent_items": [],
-      "recent_count": 0,
-      "latest_published_at": null
-    },
-    {
-      "name": "Jessada Sutthi",
-      "category": "artist-developer",
-      "games": [
-        "flesh-and-blood"
-      ],
-      "roles": [
-        "Artista"
-      ],
-      "profiles": [
-        {
-          "platform": "artstation",
-          "label": "ArtStation",
-          "url": "https://jessada.artstation.com/"
-        }
-      ],
-      "content_sources": [
-        {
-          "name": "Jessada Sutthi",
-          "platform": "artstation",
-          "language": "en",
-          "game_id": "flesh-and-blood",
-          "url": "https://jessada.artstation.com/",
-          "id": "347f719df76d9bc5",
-          "recent_items": [],
-          "recent_count": 0
-        }
-      ],
-      "id": "1c56bde044c2f34d",
       "recent_items": [],
       "recent_count": 0,
       "latest_published_at": null
@@ -1900,7 +2813,12 @@
           "url": "https://lindnr.artstation.com/",
           "id": "23f278d7050e13b0",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:51.085172+00:00",
+          "resolved_url": "https://lindnr.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "description": "Assistant Art Director; Asset Rendering; Foiling",
@@ -1951,7 +2869,12 @@
           "url": "https://krotz.artstation.com/",
           "id": "fea91eb02c7098f8",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:50.733370+00:00",
+          "resolved_url": "https://krotz.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "e242c816b16f75be",
@@ -1992,7 +2915,12 @@
           "url": "https://www.twitch.tv/yellowhat",
           "id": "730413fc26c07ed3",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:45:00.805243+00:00",
+          "resolved_url": "https://www.twitch.tv/yellowhat",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "76db79ac2b14abb5",
@@ -2020,64 +2948,6 @@
       ],
       "content_sources": [],
       "id": "9dc9bd687604191f",
-      "recent_items": [],
-      "recent_count": 0,
-      "latest_published_at": null
-    },
-    {
-      "name": "Federico Musetti",
-      "category": "artist-developer",
-      "games": [
-        "flesh-and-blood"
-      ],
-      "roles": [
-        "Artista"
-      ],
-      "profiles": [
-        {
-          "platform": "artstation",
-          "label": "ArtStation",
-          "url": "https://www.artstation.com/fedemusettiart"
-        },
-        {
-          "platform": "instagram",
-          "label": "Instagram",
-          "url": "https://www.instagram.com/federicomusettiart/"
-        },
-        {
-          "platform": "facebook",
-          "label": "Facebook",
-          "url": "https://www.facebook.com/federicomusettiart"
-        },
-        {
-          "platform": "pinterest",
-          "label": "Pinterest",
-          "url": "https://linktr.ee/federicomusettiart"
-        },
-        {
-          "platform": "linkedin",
-          "label": "LinkedIn",
-          "url": "https://linktr.ee/federicomusettiart"
-        },
-        {
-          "platform": "website",
-          "label": "Site / Linktree",
-          "url": "https://linktr.ee/federicomusettiart"
-        }
-      ],
-      "content_sources": [
-        {
-          "name": "Federico Musetti",
-          "platform": "artstation",
-          "language": "en",
-          "game_id": "flesh-and-blood",
-          "url": "https://www.artstation.com/fedemusettiart",
-          "id": "c756cbdf24a4560f",
-          "recent_items": [],
-          "recent_count": 0
-        }
-      ],
-      "id": "5e5395aee83820d1",
       "recent_items": [],
       "recent_count": 0,
       "latest_published_at": null
@@ -2183,7 +3053,12 @@
           "url": "https://eilenecherie.artstation.com/",
           "id": "e79374ce24665a2e",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:50.127907+00:00",
+          "resolved_url": "https://eilenecherie.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "6a626da53089d714",
@@ -2238,7 +3113,12 @@
           "url": "https://savagehenry.artstation.com/",
           "id": "995b69226ce0c049",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:49.892911+00:00",
+          "resolved_url": "https://savagehenry.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "feac0a933d522a3e",
@@ -2345,39 +3225,6 @@
       "latest_published_at": null
     },
     {
-      "name": "Arif Wijaya",
-      "category": "artist-developer",
-      "games": [
-        "flesh-and-blood"
-      ],
-      "roles": [
-        "Artista"
-      ],
-      "profiles": [
-        {
-          "platform": "artstation",
-          "label": "ArtStation",
-          "url": "https://arifwijaya.artstation.com/"
-        }
-      ],
-      "content_sources": [
-        {
-          "name": "Arif Wijaya",
-          "platform": "artstation",
-          "language": "en",
-          "game_id": "flesh-and-blood",
-          "url": "https://arifwijaya.artstation.com/",
-          "id": "a2ca589ff5d23589",
-          "recent_items": [],
-          "recent_count": 0
-        }
-      ],
-      "id": "146d79d6940e050c",
-      "recent_items": [],
-      "recent_count": 0,
-      "latest_published_at": null
-    },
-    {
       "name": "Anthony Balmes",
       "category": "artist-developer",
       "games": [
@@ -2390,84 +3237,6 @@
       "profiles": [],
       "content_sources": [],
       "id": "7f4b4e006b9a33fe",
-      "recent_items": [],
-      "recent_count": 0,
-      "latest_published_at": null
-    },
-    {
-      "name": "Andrea Mengucci",
-      "category": "pro-player",
-      "games": [
-        "magic"
-      ],
-      "roles": [
-        "Pro player",
-        "YouTube / Twitch"
-      ],
-      "description": "Campeão de grande evento e criador diário; gameplay competitivo e Magic em papel.",
-      "profiles": [
-        {
-          "platform": "youtube",
-          "label": "YouTube — VEEDEO",
-          "url": "https://www.youtube.com/andreamengucci"
-        },
-        {
-          "platform": "youtube",
-          "label": "YouTube — Mengu's Workshop",
-          "url": "https://www.youtube.com/@MengusWorkshop"
-        },
-        {
-          "platform": "twitch",
-          "label": "Twitch",
-          "url": "https://www.twitch.tv/andreamengucci"
-        },
-        {
-          "platform": "instagram",
-          "label": "Instagram",
-          "url": "https://www.instagram.com/mengu09/"
-        },
-        {
-          "platform": "x",
-          "label": "X",
-          "url": "https://x.com/Mengu09"
-        }
-      ],
-      "content_sources": [
-        {
-          "name": "Andrea Mengucci VEEDEO",
-          "platform": "youtube",
-          "language": "en",
-          "game_id": "magic",
-          "url": "https://www.youtube.com/andreamengucci",
-          "youtube_search_fallback": false,
-          "id": "5b879535bc0174c9",
-          "recent_items": [],
-          "recent_count": 0
-        },
-        {
-          "name": "Mengu's Workshop",
-          "platform": "youtube",
-          "language": "en",
-          "game_id": "magic",
-          "url": "https://www.youtube.com/@MengusWorkshop",
-          "youtube_search_fallback": false,
-          "id": "d6d52298457dd5dd",
-          "recent_items": [],
-          "recent_count": 0
-        },
-        {
-          "name": "Andrea Mengucci",
-          "platform": "twitch",
-          "twitch_login": "andreamengucci",
-          "language": "en",
-          "game_id": "magic",
-          "url": "https://www.twitch.tv/andreamengucci",
-          "id": "5339172b5454719e",
-          "recent_items": [],
-          "recent_count": 0
-        }
-      ],
-      "id": "aebc613c27e321f2",
       "recent_items": [],
       "recent_count": 0,
       "latest_published_at": null
@@ -2517,43 +3286,15 @@
           "url": "https://aluisiocsantos.artstation.com/",
           "id": "ac26b661e34084d0",
           "recent_items": [],
-          "recent_count": 0
+          "last_checked_at": "2026-10-01T18:44:49.294248+00:00",
+          "resolved_url": "https://aluisiocsantos.artstation.com/",
+          "resolved_feed_url": null,
+          "resolved_channel_id": null,
+          "recent_count": 0,
+          "latest_published_at": null
         }
       ],
       "id": "91eafdc06a23f9fc",
-      "recent_items": [],
-      "recent_count": 0,
-      "latest_published_at": null
-    },
-    {
-      "name": "Alexis Susani",
-      "category": "artist-developer",
-      "games": [
-        "flesh-and-blood"
-      ],
-      "roles": [
-        "Artista"
-      ],
-      "profiles": [
-        {
-          "platform": "artstation",
-          "label": "ArtStation",
-          "url": "https://alexis-susani.artstation.com/"
-        }
-      ],
-      "content_sources": [
-        {
-          "name": "Alexis Susani",
-          "platform": "artstation",
-          "language": "en",
-          "game_id": "flesh-and-blood",
-          "url": "https://alexis-susani.artstation.com/",
-          "id": "5d13e225cd5c2a43",
-          "recent_items": [],
-          "recent_count": 0
-        }
-      ],
-      "id": "568a2788f1185757",
       "recent_items": [],
       "recent_count": 0,
       "latest_published_at": null
