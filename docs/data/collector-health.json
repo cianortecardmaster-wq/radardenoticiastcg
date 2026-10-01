@@ -1,14 +1,68 @@
 {
-  "generated_at": "2026-09-30T15:52:37.159332+00:00",
+  "generated_at": "2026-10-01T00:38:04.530778+00:00",
   "official_sources_configured": 21,
   "official_sources_ok": 20,
   "official_sources_failed": 1,
+  "independent_sources_configured": 59,
+  "independent_sources_failed": 8,
+  "media_sources_configured": 94,
+  "media_sources_active_7d": 40,
+  "media_items_7d": 168,
+  "media_sources_failed": 0,
   "errors": [
     {
       "source_id": "fab-global",
       "source": "Flesh and Blood Official",
       "url": "https://fabtcg.com/en/articles/",
       "error": "403 Client Error: Forbidden for url: https://fabtcg.com/en/articles/"
+    },
+    {
+      "source_id": "sorcery-brasil",
+      "source": "Sorcery Brasil",
+      "url": "https://sorcery.com.br/artigos/",
+      "error": "403 Client Error: Forbidden for url: https://sorcery.com.br/artigos/"
+    },
+    {
+      "source_id": "rathe-adventures",
+      "source": "The Rathe Adventures / FaB PvE",
+      "url": "https://fabpve.com/",
+      "error": "HTTPSConnectionPool(host='fabpve.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)')))"
+    },
+    {
+      "source_id": "tcgplayer-content",
+      "source": "TCGplayer Content",
+      "url": "tcgplayer.com",
+      "error": "slice(None, 3, None)"
+    },
+    {
+      "source_id": "card-gamer",
+      "source": "Card Gamer",
+      "url": "cardgamer.com",
+      "error": "slice(None, 3, None)"
+    },
+    {
+      "source_id": "icv2",
+      "source": "ICv2",
+      "url": "icv2.com",
+      "error": "slice(None, 3, None)"
+    },
+    {
+      "source_id": "wargamer-tcg",
+      "source": "Wargamer",
+      "url": "wargamer.com",
+      "error": "slice(None, 3, None)"
+    },
+    {
+      "source_id": "tcg-rumors",
+      "source": "TCG Rumors",
+      "url": "tcgrumors.com",
+      "error": "slice(None, 3, None)"
+    },
+    {
+      "source_id": "bmj-tcg",
+      "source": "BMJ TCG",
+      "url": "bmjtcg.com.br",
+      "error": "slice(None, 3, None)"
     }
   ]
 }
