@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-02T00:50:40.633378+00:00",
+  "generated_at": "2026-10-02T09:46:45.178446+00:00",
   "official_sources_configured": 21,
   "official_sources_ok": 20,
   "official_sources_failed": 1,
   "independent_sources_configured": 59,
-  "independent_sources_failed": 9,
+  "independent_sources_failed": 8,
   "media_sources_configured": 94,
-  "media_sources_active_7d": 40,
-  "media_items_7d": 174,
+  "media_sources_active_7d": 41,
+  "media_items_7d": 177,
   "media_sources_failed": 0,
   "people_configured": 86,
-  "people_active_7d": 9,
-  "people_items_7d": 20,
+  "people_active_7d": 8,
+  "people_items_7d": 19,
   "people_sources_failed": 0,
   "errors": [
     {
@@ -19,12 +19,6 @@
       "source": "Flesh and Blood Official",
       "url": "https://fabtcg.com/en/articles/",
       "error": "403 Client Error: Forbidden for url: https://fabtcg.com/en/articles/"
-    },
-    {
-      "source_id": "pokebeach",
-      "source": "PokéBeach",
-      "url": "https://www.pokebeach.com/category/tcg",
-      "error": "HTTPSConnectionPool(host='www.pokebeach.com', port=443): Read timed out. (read timeout=20)"
     },
     {
       "source_id": "sorcery-brasil",
