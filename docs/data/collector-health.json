@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-10-03T21:16:13.545946+00:00",
+  "generated_at": "2026-10-03T23:50:31.823405+00:00",
   "official_sources_configured": 21,
   "official_sources_ok": 20,
   "official_sources_failed": 1,
   "independent_sources_configured": 59,
   "independent_sources_failed": 8,
   "media_sources_configured": 94,
-  "media_sources_active_7d": 42,
-  "media_items_7d": 176,
+  "media_sources_active_7d": 43,
+  "media_items_7d": 178,
   "media_sources_failed": 0,
   "people_configured": 86,
-  "people_active_7d": 7,
-  "people_items_7d": 18,
+  "people_active_7d": 8,
+  "people_items_7d": 19,
   "people_sources_failed": 0,
   "errors": [
     {
